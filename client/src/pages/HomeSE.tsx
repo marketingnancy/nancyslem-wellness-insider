@@ -36,6 +36,8 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => { document.documentElement.lang = "sv"; }, []);
+
   // Countdown timer
   useEffect(() => {
     if (!showTimer) return;
@@ -64,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness device" },
-    { src: "/PDP-1.jpg", alt: "Lem with lifestyle setting" },
-    { src: "/PDP-2.jpg", alt: "Close-up of Lem design" },
-    { src: "/PDP-3.jpg", alt: "Lem product details" },
-    { src: "/PDP-4.jpg", alt: "Lem in use demonstration" },
-    { src: "/PDP-5.jpg", alt: "Lem packaging and accessories" },
-    { src: "/PDP-6.jpg", alt: "Lem lifestyle image" },
-    { src: "/PDP-7.jpg", alt: "Lem product features" },
+    { src: "/PDP.jpg", alt: "Nancy's Lem wellness-enhet" },
+    { src: "/PDP-1.jpg", alt: "Lem i en livsstilsmiljö" },
+    { src: "/PDP-2.jpg", alt: "Närbild på Lems design" },
+    { src: "/PDP-3.jpg", alt: "Produktdetaljer för Lem" },
+    { src: "/PDP-4.jpg", alt: "Demonstration av Lem i användning" },
+    { src: "/PDP-5.jpg", alt: "Lems förpackning och tillbehör" },
+    { src: "/PDP-6.jpg", alt: "Livsstilsbild av Lem" },
+    { src: "/PDP-7.jpg", alt: "Produktegenskaper för Lem" },
   ];
 
   return (
@@ -160,7 +162,7 @@ export default function Home() {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF1493] to-[#FFE14D]" />
               <div>
                 <p className="font-semibold text-gray-900">Av Jessica Martinez</p>
-                <p className="text-xs sm:text-sm">Senior Wellness Redaktör</p>
+                <p className="text-xs sm:text-sm">Senior wellnessredaktör</p>
               </div>
             </div>
             <span className="hidden sm:inline">•</span>
@@ -271,7 +273,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            Gynekologer som specialiserar sig på klimakterievård förklarar: "När östrogenet sjunker minskar blodflödet till bäckenregionen. Detta leder till att vävnaden tunnas ut, förlorar elasticitet och minskad känsel. Det medicinska samfundet kallar det 'use it or lose it'-principen—du behöver konsekvent blodflöde för att bibehålla vävnadshälsa."
+            Gynekologer som specialiserar sig på klimakterievård förklarar: "När östrogenet sjunker minskar blodflödet till bäckenregionen. Detta leder till att vävnaden tunnas ut, förlorar elasticitet och känsel. Det medicinska samfundet kallar det 'use it or lose it'-principen—du behöver konsekvent blodflöde för att bibehålla vävnadshälsa."
           </p>
         </div>
 
@@ -392,7 +394,7 @@ export default function Home() {
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="Lem device sitting discreetly on nightstand" 
+                alt="Lem-enheten står diskret på ett nattduksbord"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -501,7 +503,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>"Self-Love Manual" med användartips och wellness-råd</span>
+                    <span>Handbok för självkärlek med användningstips och wellnessråd</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -921,7 +923,7 @@ export default function Home() {
                       <span className="font-mono text-2xl font-bold">{formatTime(timeLeft)}</span>
                     </div>
                   )}
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem Clitoral Massager</h3>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem Klitorismassageapparat</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
                     <span className="text-6xl font-bold text-[#FF1493]">775 kr</span>
                     <div className="text-left">
@@ -1203,7 +1205,7 @@ export default function Home() {
                 Om du upplever symptom på GSM, kämpar med traditionella lösningar, eller helt enkelt vill bibehålla din sexuella hälsa när du åldras, förtjänar Lem seriöst övervägande.
               </p>
               <p className="text-sm italic">
-                — Jessica Martinez, Senior Wellness Editor
+                — Jessica Martinez, Senior wellnessredaktör
               </p>
             </div>
             <div className="text-center pt-6">
@@ -1225,7 +1227,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Köp Nancy's Lem - 775,00 kr
+                Köp Nancy's Lem - 775 kr
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30-dagars garanti ✓ Fri frakt ✓ Diskret förpackning</p>

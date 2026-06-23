@@ -36,6 +36,8 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => { document.documentElement.lang = "fr"; }, []);
+
   // Countdown timer
   useEffect(() => {
     if (!showTimer) return;
@@ -64,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness device" },
-    { src: "/PDP-1.jpg", alt: "Lem with lifestyle setting" },
-    { src: "/PDP-2.jpg", alt: "Close-up of Lem design" },
-    { src: "/PDP-3.jpg", alt: "Lem product details" },
-    { src: "/PDP-4.jpg", alt: "Lem in use demonstration" },
-    { src: "/PDP-5.jpg", alt: "Lem packaging and accessories" },
-    { src: "/PDP-6.jpg", alt: "Lem lifestyle image" },
-    { src: "/PDP-7.jpg", alt: "Lem product features" },
+    { src: "/PDP.jpg", alt: "L'appareil de bien-être Lem de Nancy" },
+    { src: "/PDP-1.jpg", alt: "Le Lem dans un cadre de vie" },
+    { src: "/PDP-2.jpg", alt: "Gros plan sur le design du Lem" },
+    { src: "/PDP-3.jpg", alt: "Détails du produit Lem" },
+    { src: "/PDP-4.jpg", alt: "Démonstration d'utilisation du Lem" },
+    { src: "/PDP-5.jpg", alt: "Emballage et accessoires du Lem" },
+    { src: "/PDP-6.jpg", alt: "Image lifestyle du Lem" },
+    { src: "/PDP-7.jpg", alt: "Caractéristiques du produit Lem" },
   ];
 
   return (
@@ -192,7 +194,7 @@ export default function Home() {
       <section className="container max-w-4xl py-8">
         <img 
           src="/PDP.jpg" 
-          alt="Nancy's Lem wellness device on nightstand" 
+          alt="L'appareil de bien-être Lem de Nancy sur une table de chevet"
           className="w-full rounded-lg shadow-lg"
         />
         <p className="text-sm text-gray-500 mt-2 italic">Le Nancy's Lem se pose discrètement sur une table de chevet—la plupart des gens pensent que c'est un citron décoratif. Photo : Hello Nancy</p>
@@ -386,13 +388,13 @@ export default function Home() {
           </p>
           
           <div className="bg-[#FFE14D]/20 p-6 rounded-xl mb-6">
-            <h3 className="font-bold text-lg text-gray-900 mb-3">The "Nightstand Test"</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3">Le « test de la table de chevet »</h3>
             
             {/* Discretion Illustration */}
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="Lem device sitting discreetly on nightstand" 
+                alt="L'appareil Lem posé discrètement sur une table de chevet"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -476,7 +478,7 @@ export default function Home() {
             <div>
               <img 
                 src="/PDP-5.jpg" 
-                alt="Lem unboxing experience" 
+                alt="L'expérience de déballage du Lem"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -524,7 +526,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto mb-8">
             <img 
               src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
-              alt="Clitoral anatomy cross-section diagram" 
+              alt="Schéma en coupe de l'anatomie clitoridienne"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -555,7 +557,7 @@ export default function Home() {
                 <div className="mb-6">
                   <img 
                     src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
-                    alt="Blood flow comparison before and after menopause" 
+                    alt="Comparaison du flux sanguin avant et après la ménopause"
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
@@ -791,14 +793,14 @@ export default function Home() {
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">1M+ Vendus</h3>
-              <p className="text-sm text-gray-600">Plus de 1.000.000 unités vendues dans le monde depuis le lancement en 2023</p>
+              <p className="text-sm text-gray-600">Plus de 1 000 000 unités vendues dans le monde depuis le lancement en 2023</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Shield className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Qualité Médicale</h3>
-              <p className="text-sm text-gray-600">Installation enregistrée auprès de la FDA, silicone de qualité médicale, tests de sécurité rigoureux</p>
+              <p className="text-sm text-gray-600">Silicone de qualité médicale, tests de sécurité rigoureux</p>
             </div>
           </div>
 
@@ -927,7 +929,7 @@ export default function Home() {
                     <span className="text-6xl font-bold text-[#FF1493]">73,95 €</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">128,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">Économisez 55 € (44% de réduction)</span>
+                      <span className="text-sm text-green-600 font-bold">Économisez 55 € (43% de réduction)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">

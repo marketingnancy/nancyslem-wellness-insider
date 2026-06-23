@@ -11,6 +11,8 @@ export default function Home() {
 
   const [visitorCount, setVisitorCount] = useState(1847);
 
+  useEffect(() => { document.documentElement.lang = "nl"; }, []);
+
   // Sticky CTA bar and timer on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -64,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness device" },
-    { src: "/PDP-1.jpg", alt: "Lem with lifestyle setting" },
-    { src: "/PDP-2.jpg", alt: "Close-up of Lem design" },
-    { src: "/PDP-3.jpg", alt: "Lem product details" },
-    { src: "/PDP-4.jpg", alt: "Lem in use demonstration" },
-    { src: "/PDP-5.jpg", alt: "Lem packaging and accessories" },
-    { src: "/PDP-6.jpg", alt: "Lem lifestyle image" },
-    { src: "/PDP-7.jpg", alt: "Lem product features" },
+    { src: "/PDP.jpg", alt: "Nancy's Lem wellness-apparaat" },
+    { src: "/PDP-1.jpg", alt: "Lem in een lifestyle-omgeving" },
+    { src: "/PDP-2.jpg", alt: "Close-up van het ontwerp van de Lem" },
+    { src: "/PDP-3.jpg", alt: "Productdetails van de Lem" },
+    { src: "/PDP-4.jpg", alt: "Demonstratie van de Lem in gebruik" },
+    { src: "/PDP-5.jpg", alt: "Verpakking en accessoires van de Lem" },
+    { src: "/PDP-6.jpg", alt: "Lifestyle-afbeelding van de Lem" },
+    { src: "/PDP-7.jpg", alt: "Productkenmerken van de Lem" },
   ];
 
   return (
@@ -192,7 +194,7 @@ export default function Home() {
       <section className="container max-w-4xl py-8">
         <img 
           src="/PDP.jpg" 
-          alt="Nancy's Lem wellness device on nightstand" 
+          alt="Nancy's Lem wellness-apparaat op een nachtkastje"
           className="w-full rounded-lg shadow-lg"
         />
         <p className="text-sm text-gray-500 mt-2 italic">De Nancy's Lem staat discreet op een nachtkastje—de meeste mensen denken dat het een decoratieve citroen is. Foto: Hello Nancy</p>
@@ -392,7 +394,7 @@ export default function Home() {
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="Lem device sitting discreetly on nightstand" 
+                alt="Lem-apparaat dat discreet op een nachtkastje staat"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -476,7 +478,7 @@ export default function Home() {
             <div>
               <img 
                 src="/PDP-5.jpg" 
-                alt="Lem unboxing experience" 
+                alt="Unboxing-ervaring van de Lem"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -501,7 +503,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>"Self-Love Manual" met gebruikstips en wellness-advies</span>
+                    <span>"Zelfliefde-handleiding" met gebruikstips en wellness-advies</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -524,7 +526,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto mb-8">
             <img 
               src="/clitoral_anatomy_illustration.png" 
-              alt="Clitoral anatomy cross-section diagram" 
+              alt="Dwarsdoorsnede-diagram van de clitorale anatomie"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -555,7 +557,7 @@ export default function Home() {
                 <div className="mb-6">
                   <img 
                     src="/menopause_science_illustration.png" 
-                    alt="Blood flow comparison before and after menopause" 
+                    alt="Vergelijking van de bloedstroom voor en na de menopauze"
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
@@ -798,7 +800,7 @@ export default function Home() {
                 <Shield className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Medische Kwaliteit</h3>
-              <p className="text-sm text-gray-600">FDA-geregistreerde faciliteit, siliconen van medische kwaliteit, strenge veiligheidstests</p>
+              <p className="text-sm text-gray-600">Siliconen van medische kwaliteit, strenge veiligheidstests</p>
             </div>
           </div>
 
@@ -927,7 +929,7 @@ export default function Home() {
                     <span className="text-6xl font-bold text-[#FF1493]">€73,95</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">€128,95</span>
-                      <span className="text-sm text-green-600 font-bold">Bespaar €55 (44% korting)</span>
+                      <span className="text-sm text-green-600 font-bold">Bespaar €55 (43% korting)</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 mb-2">BTW inbegrepen</p>
@@ -1227,7 +1229,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Shop Nancy's Lem - €73,95
+                Koop Nancy's Lem - €73,95
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30-dagen garantie ✓ Gratis verzending ✓ Discrete verpakking</p>

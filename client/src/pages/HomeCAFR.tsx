@@ -11,6 +11,8 @@ export default function Home() {
 
   const [visitorCount, setVisitorCount] = useState(1847);
 
+  useEffect(() => { document.documentElement.lang = "fr-CA"; }, []);
+
   // Sticky CTA bar and timer on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -64,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness device" },
-    { src: "/PDP-1.jpg", alt: "Lem with lifestyle setting" },
-    { src: "/PDP-2.jpg", alt: "Close-up of Lem design" },
-    { src: "/PDP-3.jpg", alt: "Lem product details" },
-    { src: "/PDP-4.jpg", alt: "Lem in use demonstration" },
-    { src: "/PDP-5.jpg", alt: "Lem packaging and accessories" },
-    { src: "/PDP-6.jpg", alt: "Lem lifestyle image" },
-    { src: "/PDP-7.jpg", alt: "Lem product features" },
+    { src: "/PDP.jpg", alt: "Appareil de bien-être Lem de Nancy" },
+    { src: "/PDP-1.jpg", alt: "Lem dans une mise en scène lifestyle" },
+    { src: "/PDP-2.jpg", alt: "Gros plan sur le design du Lem" },
+    { src: "/PDP-3.jpg", alt: "Détails du produit Lem" },
+    { src: "/PDP-4.jpg", alt: "Démonstration du Lem en cours d'utilisation" },
+    { src: "/PDP-5.jpg", alt: "Emballage et accessoires du Lem" },
+    { src: "/PDP-6.jpg", alt: "Image lifestyle du Lem" },
+    { src: "/PDP-7.jpg", alt: "Caractéristiques du produit Lem" },
   ];
 
   return (
@@ -192,7 +194,7 @@ export default function Home() {
       <section className="container max-w-4xl py-8">
         <img 
           src="/PDP.jpg" 
-          alt="Nancy's Lem wellness device on nightstand" 
+          alt="Appareil de bien-être Lem de Nancy sur une table de chevet"
           className="w-full rounded-lg shadow-lg"
         />
         <p className="text-sm text-gray-500 mt-2 italic">Le Nancy's Lem se pose discrètement sur une table de chevet — la plupart des gens pensent que c'est un citron décoratif. Photo : Hello Nancy</p>
@@ -392,7 +394,7 @@ export default function Home() {
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="Lem device sitting discreetly on nightstand" 
+                alt="Appareil Lem posé discrètement sur une table de chevet"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -476,7 +478,7 @@ export default function Home() {
             <div>
               <img 
                 src="/PDP-5.jpg" 
-                alt="Lem unboxing experience" 
+                alt="Expérience de déballage du Lem"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -524,7 +526,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto mb-8">
             <img 
               src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
-              alt="Clitoral anatomy cross-section diagram" 
+              alt="Diagramme en coupe de l'anatomie du clitoris"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -555,7 +557,7 @@ export default function Home() {
                 <div className="mb-6">
                   <img 
                     src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
-                    alt="Blood flow comparison before and after menopause" 
+                    alt="Comparaison du flux sanguin avant et après la ménopause"
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
@@ -791,14 +793,14 @@ export default function Home() {
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">1M+ Vendus</h3>
-              <p className="text-sm text-gray-600">Plus de 1.000.000 unités vendues dans le monde depuis le lancement en 2023</p>
+              <p className="text-sm text-gray-600">Plus de 1 000 000 unités vendues dans le monde depuis le lancement en 2023</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Shield className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Qualité médicale</h3>
-              <p className="text-sm text-gray-600">Installation enregistrée auprès de la FDA, silicone de qualité médicale, tests de sécurité rigoureux</p>
+              <p className="text-sm text-gray-600">Silicone de qualité médicale, tests de sécurité rigoureux</p>
             </div>
           </div>
 
@@ -908,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">ÉCONOMISEZ 90 $</p>
+                <p className="font-bold">ÉCONOMISEZ 89 $</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -933,7 +935,7 @@ export default function Home() {
                   <p className="text-xs text-gray-500 mb-2">Pas de frais de douane ou de taxes cachés</p>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Just0,32 $ / jour</strong> sur un an d'utilisation
+                      <strong className="text-2xl text-[#FF1493]">Seulement 0,32 $/jour</strong> sur un an d'utilisation
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Moins que votre café quotidien. Dure des années.
@@ -1084,7 +1086,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous êtes prête à <strong>investir en vous-même</strong> (seulement 0,24 $/jour sur un an !)</span>
+                    <span>Vous êtes prête à <strong>investir en vous-même</strong> (seulement 0,32 $/jour sur un an !)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />

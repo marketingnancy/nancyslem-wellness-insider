@@ -36,6 +36,8 @@ export default function HomeJP() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => { document.documentElement.lang = "ja"; }, []);
+
   // Countdown timer
   useEffect(() => {
     if (!showTimer) return;
@@ -64,14 +66,14 @@ export default function HomeJP() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness device" },
-    { src: "/PDP-1.jpg", alt: "Lem with lifestyle setting" },
-    { src: "/PDP-2.jpg", alt: "Close-up of Lem design" },
-    { src: "/PDP-3.jpg", alt: "Lem product details" },
-    { src: "/PDP-4.jpg", alt: "Lem in use demonstration" },
-    { src: "/PDP-5.jpg", alt: "Lem packaging and accessories" },
-    { src: "/PDP-6.jpg", alt: "Lem lifestyle image" },
-    { src: "/PDP-7.jpg", alt: "Lem product features" },
+    { src: "/PDP.jpg", alt: "NancyのLemウェルネスデバイス" },
+    { src: "/PDP-1.jpg", alt: "ライフスタイルシーンの中のLem" },
+    { src: "/PDP-2.jpg", alt: "Lemのデザインのクローズアップ" },
+    { src: "/PDP-3.jpg", alt: "Lemの製品詳細" },
+    { src: "/PDP-4.jpg", alt: "Lemの使用イメージ" },
+    { src: "/PDP-5.jpg", alt: "Lemのパッケージと付属品" },
+    { src: "/PDP-6.jpg", alt: "Lemのライフスタイルイメージ" },
+    { src: "/PDP-7.jpg", alt: "Lemの製品特長" },
   ];
 
   return (
@@ -114,7 +116,7 @@ export default function HomeJP() {
                 )}
               </div>
               <a 
-                href="https://hellonancy.com/products/lem" 
+                href="https://hellonancy.com/en-jp/products/lem" 
                 onClick={() => {
                   // @ts-ignore
                   if (typeof window.gtag === 'function') {
@@ -192,7 +194,7 @@ export default function HomeJP() {
       <section className="container max-w-4xl py-8">
         <img 
           src="/PDP.jpg" 
-          alt="Nancy's Lem wellness device on nightstand" 
+          alt="ナイトスタンドに置かれたNancyのLemウェルネスデバイス"
           className="w-full rounded-lg shadow-lg"
         />
         <p className="text-sm text-gray-500 mt-2 italic">NancyのLemはナイトスタンドに置いても目立ちません。ほとんどの人は装飾用のレモンだと思うでしょう。写真：Hello Nancy</p>
@@ -392,7 +394,7 @@ export default function HomeJP() {
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="Lem device sitting discreetly on nightstand" 
+                alt="ナイトスタンドにさりげなく置かれたLemデバイス"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -476,7 +478,7 @@ export default function HomeJP() {
             <div>
               <img 
                 src="/PDP-5.jpg" 
-                alt="Lem unboxing experience" 
+                alt="Lemの開封体験"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -524,7 +526,7 @@ export default function HomeJP() {
           <div className="max-w-3xl mx-auto mb-8">
             <img 
               src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
-              alt="Clitoral anatomy cross-section diagram" 
+              alt="クリトリスの解剖学的断面図"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -555,7 +557,7 @@ export default function HomeJP() {
                 <div className="mb-6">
                   <img 
                     src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
-                    alt="Blood flow comparison before and after menopause" 
+                    alt="更年期前後の血流の比較"
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
@@ -790,15 +792,15 @@ export default function HomeJP() {
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">10万個以上販売</h3>
-              <p className="text-sm text-gray-600">2023年の発売以来、世界中で10万個以上を販売</p>
+              <h3 className="font-bold text-gray-900 mb-2">100万個以上販売</h3>
+              <p className="text-sm text-gray-600">2023年の発売以来、世界中で100万個以上を販売</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Shield className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">医療グレード</h3>
-              <p className="text-sm text-gray-600">FDA登録施設、医療グレードのシリコン、厳格な安全性試験</p>
+              <p className="text-sm text-gray-600">医療グレードのシリコン、厳格な安全性試験</p>
             </div>
           </div>
 
@@ -975,7 +977,7 @@ export default function HomeJP() {
                   </div>
                 </div>
 
-                <a href="https://hellonancy.com/products/lem"   className="w-full">
+                <a href="https://hellonancy.com/en-jp/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
                     今すぐ購入 - ¥13,500 (¥10,200 OFF)
                   </Button>
@@ -1101,7 +1103,7 @@ export default function HomeJP() {
                 <strong>これらの中で3つでも当てはまるなら、</strong>Lemはあなたのために特別に設計されました。
               </p>
               <a 
-                href="https://hellonancy.com/products/lem" 
+                href="https://hellonancy.com/en-jp/products/lem" 
                  
                 
                 onClick={() => {
@@ -1206,7 +1208,7 @@ export default function HomeJP() {
             </div>
             <div className="text-center pt-6">
               <a 
-                href="https://hellonancy.com/products/lem" 
+                href="https://hellonancy.com/en-jp/products/lem" 
                  
                 
                 onClick={() => {
