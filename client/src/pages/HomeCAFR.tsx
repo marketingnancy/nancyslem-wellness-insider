@@ -197,7 +197,7 @@ export default function Home() {
           alt="Appareil de bien-être Lem de Nancy sur une table de chevet"
           className="w-full rounded-lg shadow-lg"
         />
-        <p className="text-sm text-gray-500 mt-2 italic">Le Nancy's Lem se pose discrètement sur une table de chevet — la plupart des gens pensent que c'est un citron décoratif. Photo : Hello Nancy</p>
+        <p className="text-sm text-gray-500 mt-2 italic">Le Nancy's Lem se pose discrètement sur une table de chevet : la plupart des gens pensent que c'est un citron décoratif. Photo : Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
@@ -237,7 +237,7 @@ export default function Home() {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Pourquoi nous en parlons</h2>
           <p className="text-gray-700 leading-relaxed">
-            Lorsque notre équipe éditoriale a entendu parler pour la première fois d'un « appareil de bien-être en forme de citron » qui prenait d'assaut la communauté de la ménopause, nous l'admettons — nous étions sceptiques. Mais après avoir interviewé des dizaines de femmes, consulté des gynécologues et, oui, l'avoir testé nous-mêmes, nous comprenons l'engouement.
+            Lorsque notre équipe éditoriale a entendu parler pour la première fois d'un « appareil de bien-être en forme de citron » qui prenait d'assaut la communauté de la ménopause, nous l'admettons, nous étions sceptiques. Mais après avoir interviewé des dizaines de femmes, consulté des gynécologues et, oui, l'avoir testé nous-mêmes, nous comprenons l'engouement.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Ce n'est pas juste une autre tendance bien-être. Cela répond à un véritable problème médical qui touche des millions de femmes mais qui est rarement discuté : <strong>l'atrophie clitoridienne</strong> et la perte de bien-être sexuel pendant la ménopause.
@@ -251,16 +251,16 @@ export default function Home() {
             Nous entendons tout sur les bouffées de chaleur qui nous laissent en sueur dans nos draps en soie à 3 heures du matin. Nous entendons parler du brouillard cérébral qui nous fait chercher nos lunettes alors qu'elles sont sur notre nez.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
-            Mais personne ne vous assoit avec un verre de Pinot pour vous chuchoter : « Hé, au fait, si vous ne gardez pas les choses actives en bas, votre clitoris pourrait littéralement rétrécir. »
+            Mais personne ne vous assoit avec un verre de Pinot pour vous chuchoter : « Hé, au fait, si vous ne gardez pas les choses actives en bas, votre clitoris pourrait carrément rétrécir. »
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Cela s'appelle l'<strong>Atrophie Clitoridienne</strong>, et cela fait partie du Syndrome Génito-Urinaire de la Ménopause (SGUM) — une condition affectant jusqu'à 50 % des femmes ménopausées, selon la Société Nord-Américaine de la Ménopause.
+            Cela s'appelle l'<strong>Atrophie Clitoridienne</strong>, et cela fait partie du Syndrome Génito-Urinaire de la Ménopause (SGUM), une condition affectant jusqu'à 50 % des femmes ménopausées, selon la Société Nord-Américaine de la Ménopause.
           </p>
           
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
             <h3 className="font-bold text-lg text-gray-900 mb-3">« La Grande Déconnexion »</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Pour beaucoup de femmes que nous avons interrogées, ce n'était pas seulement la sécheresse. C'était l'<strong>engourdissement</strong>. Une testeuse a décrit avoir essayé d'utiliser son vieux vibromasseur de ses 30 ans : « Au lieu de faire du bien, c'était juste... irritant. Ou engourdi. Comme essayer de chatouiller un cal. »
+              Pour beaucoup de femmes que nous avons interrogées, ce n'était pas seulement la sécheresse. C'était l'<strong>engourdissement</strong>. Une testeuse a décrit avoir essayé d'utiliser son vieux vibromasseur de ses 30 ans : « Au lieu de faire du bien, c'était juste… irritant. Ou engourdi. Comme essayer de chatouiller un cal. »
             </p>
             <p className="text-gray-700 leading-relaxed">
               Les experts médicaux expliquent que les vibromasseurs traditionnels fonctionnent par friction et impact. Lorsque les tissus s'amincissent en raison d'un faible taux d'œstrogènes, la vibration directe peut en fait <em>désensibiliser davantage les nerfs</em>, conduisant à cette sensation d'« engourdissement ».
@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            Les gynécologues spécialisés dans les soins de la ménopause expliquent : « Lorsque les œstrogènes chutent, le flux sanguin vers la région pelvienne diminue. Cela entraîne un amincissement des tissus, une perte d'élasticité et une sensation réduite. La communauté médicale appelle cela le principe 'l'utiliser ou le perdre' — vous avez besoin d'un flux sanguin constant pour maintenir la santé des tissus. »
+            Les gynécologues spécialisés dans les soins de la ménopause expliquent : « Lorsque les œstrogènes chutent, le flux sanguin vers la région pelvienne diminue. Cela entraîne un amincissement des tissus, une perte d'élasticité et une sensation réduite. La communauté médicale appelle cela le principe “l'utiliser ou le perdre”, vous avez besoin d'un flux sanguin constant pour maintenir la santé des tissus. »
           </p>
         </div>
 
@@ -281,7 +281,7 @@ export default function Home() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Entrez : Le Nancy's Lem</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            C'est là qu'intervient ce petit appareil jaune. Le Nancy's Lem n'est pas commercialisé comme un jouet sexuel — il est positionné comme un appareil de bien-être. Et après nos recherches, nous comprenons pourquoi.
+            C'est là qu'intervient ce petit appareil jaune. Le Nancy's Lem n'est pas commercialisé comme un jouet sexuel : il est positionné comme un appareil de bien-être. Et après nos recherches, nous comprenons pourquoi.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Contrairement aux vibromasseurs traditionnels qui reposent sur la friction (ce qui peut irriter les tissus ménopausiques amincis), le Lem utilise ce qu'on appelle la <strong>Technologie à Pulsations d'Air</strong>. Pensez-y comme la différence entre frotter du papier de verre sur votre peau et utiliser un massage doux par aspiration.
@@ -304,7 +304,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Voici comment cela fonctionne : Le Lem crée un joint doux autour du clitoris et utilise des ondes de pression d'air pour le stimuler — imitant la sensation du sexe oral, mais constant et infatigable. Comme il n'y a pas de frottement, il n'y a aucune irritation.
+            Voici comment cela fonctionne : Le Lem crée un joint doux autour du clitoris et utilise des ondes de pression d'air pour le stimuler, imitant la sensation du sexe oral, mais constant et infatigable. Comme il n'y a pas de frottement, il n'y a aucune irritation.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Mais la vraie magie réside dans la physique : cette douce aspiration crée un effet de vide, attirant physiquement le sang profond et riche en oxygène dans les tissus. Il réveille des nerfs qui dormaient depuis des années.
@@ -312,7 +312,7 @@ export default function Home() {
 
           <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
             <p className="text-lg italic text-gray-900 mb-2">
-              « On dirait qu'il aspire l'orgasme... il fait durer les pulsations beaucoup plus longtemps. »
+              « On dirait qu'il aspire l'orgasme… il fait durer les pulsations beaucoup plus longtemps. »
             </p>
             <p className="font-semibold text-gray-700">— Alisha, Testeuse Bêta (d'après des avis clients vérifiés)</p>
           </div>
@@ -484,7 +484,7 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                L'une des premières choses que nos testeuses ont remarquées ? L'emballage est <em>élégant</em>. Pas de couleurs criardes, pas d'images embarrassantes. La boîte est d'un blanc minimaliste avec de subtils accents dorés — on pourrait facilement la confondre avec un produit de soin de luxe.
+                L'une des premières choses que nos testeuses ont remarquées ? L'emballage est <em>élégant</em>. Pas de couleurs criardes, pas d'images embarrassantes. La boîte est d'un blanc minimaliste avec de subtils accents dorés : on pourrait facilement la confondre avec un produit de soin de luxe.
               </p>
               <div className="bg-white p-6 rounded-lg border-2 border-[#FFE14D]">
                 <h3 className="font-bold text-lg text-gray-900 mb-3">Ce qu'il y a dans la boîte :</h3>
@@ -512,7 +512,7 @@ export default function Home() {
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                « Quand j'ai ouvert la boîte, j'ai été sincèrement surprise par la qualité <strong>premium</strong> de l'ensemble. Ça ne ressemblait pas à un 'jouet sexuel' — ça ressemblait à un investissement bien-être. » — Utilisatrice test, 54 ans
+                « Quand j'ai ouvert la boîte, j'ai été sincèrement surprise par la qualité <strong>haut de gamme</strong> de l'ensemble. Ça ne ressemblait pas à un “jouet sexuel”, ça ressemblait à un investissement bien-être. » — Utilisatrice test, 54 ans
               </p>
             </div>
           </div>
@@ -544,7 +544,7 @@ export default function Home() {
             
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Voici quelque chose qu'on n'enseigne pas en cours de santé : le clitoris possède environ <strong>8 000 terminaisons nerveuses</strong> — plus que toute autre partie du corps humain, homme ou femme. Pour le contexte, le pénis en a environ 4 000.
+                Voici quelque chose qu'on n'enseigne pas en cours de santé : le clitoris possède environ <strong>8 000 terminaisons nerveuses</strong>, plus que toute autre partie du corps humain, homme ou femme. Pour le contexte, le pénis en a environ 4 000.
               </p>
               <p>
                 Mais voici le truc : <strong>75 % des femmes ne peuvent pas atteindre l'orgasme par la seule pénétration</strong>, selon une recherche publiée dans le Journal of Sex & Marital Therapy. Le clitoris est la clé.
@@ -628,11 +628,11 @@ export default function Home() {
                 L'une des questions les plus courantes que nous avons reçues lors de nos recherches : <em>« Mon partenaire se sentira-t-il menacé par cela ? »</em>
               </p>
               <p>
-                Voici ce que nous avons trouvé : <strong>Le Lem n'est pas un remplaçant — c'est une amélioration.</strong> De nombreux couples que nous avons interrogés ont rapporté que l'intégration du Lem dans leur intimité a en fait <em>amélioré</em> leur connexion.
+                Voici ce que nous avons trouvé : <strong>Le Lem n'est pas un remplaçant : c'est une amélioration.</strong> De nombreux couples que nous avons interrogés ont rapporté que l'intégration du Lem dans leur intimité a en fait <em>amélioré</em> leur connexion.
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  « Mon mari était curieux, pas menacé. Maintenant, il l'utilise sur moi pendant les préliminaires. Ça lui enlève la pression de 'performer' et j'obtiens exactement ce dont j'ai besoin. Gagnant-gagnant. »
+                  « Mon mari était curieux, pas menacé. Maintenant, il l'utilise sur moi pendant les préliminaires. Ça lui enlève la pression de “performer” et j'obtiens exactement ce dont j'ai besoin. Tout le monde y gagne. »
                 </p>
                 <p className="font-semibold text-gray-700">— Valeria, 55 ans, mariée depuis 28 ans</p>
               </div>
@@ -694,7 +694,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">Garantie "Plaisir" de 30 Jours</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Pas satisfaite ? Obtenez un <strong>remboursement complet</strong> — aucun retour requis. Ils vous font confiance pour être honnête. C'est dire à quel point ils sont confiants.
+                  Pas satisfaite ? Obtenez un <strong>remboursement complet</strong>, aucun retour requis. Ils vous font confiance pour être honnête. C'est dire à quel point ils sont confiants.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
                   Traduction : Zéro risque financier. Essayez-le pendant un mois.
@@ -837,7 +837,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">« Mieux que la crème aux œstrogènes »</p>
                 <p className="text-gray-700 italic">
-                  « Je n'ai pas acheté ça pour le 'plaisir', je l'ai acheté parce que mon médecin a dit que j'avais besoin de flux sanguin. Mais wow. La libération m'aide à dormir toute la nuit sans me réveiller en sueur. C'est ma nouvelle vitamine. »
+                  « Je n'ai pas acheté ça pour le “plaisir”, je l'ai acheté parce que mon médecin a dit que j'avais besoin de flux sanguin. Mais wow. La libération m'aide à dormir toute la nuit sans me réveiller en sueur. C'est ma nouvelle vitamine. »
                 </p>
                 <p className="font-semibold text-gray-900">- Sarah J., 58 ans</p>
                 <p className="text-xs text-gray-500">✓ Achat vérifié</p>
@@ -989,7 +989,7 @@ export default function Home() {
                     Garantie Sans Risque
                   </p>
                   <p className="text-center text-sm text-green-700 mt-2">
-                    Garantie de remboursement de 30 jours. Si vous ne l'aimez pas, obtenez un remboursement complet — <strong>aucun retour nécessaire</strong>.
+                    Garantie de remboursement de 30 jours. Si vous ne l'aimez pas, obtenez un remboursement complet : <strong>aucun retour nécessaire</strong>.
                   </p>
                 </div>
 
@@ -1162,7 +1162,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Et si je ne l'aime pas ?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy offre une garantie de satisfaction de 30 jours. Si vous ne l'aimez pas, ils offrent un remboursement de courtoisie unique — <strong>aucun retour nécessaire</strong>. Ils vous font confiance pour trouver ce qui fonctionne pour votre corps.
+                  Hello Nancy offre une garantie de satisfaction de 30 jours. Si vous ne l'aimez pas, ils offrent un remboursement de courtoisie unique : <strong>aucun retour nécessaire</strong>. Ils vous font confiance pour trouver ce qui fonctionne pour votre corps.
                 </p>
               </CardContent>
             </Card>
@@ -1180,7 +1180,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Est-il bruyant ?</h3>
                 <p className="text-gray-700">
-                  Silencieux comme un murmure. Le moteur ultra-silencieux assure une discrétion totale — vous pouvez l'utiliser sans craindre que quelqu'un l'entende, même dans la pièce voisine.
+                  Silencieux comme un murmure. Le moteur ultra-silencieux assure une discrétion totale : vous pouvez l'utiliser sans craindre que quelqu'un l'entende, même dans la pièce voisine.
                 </p>
               </CardContent>
             </Card>
