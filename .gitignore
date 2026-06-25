@@ -106,3 +106,7 @@ temp/
 *.db
 *.sqlite
 *.sqlite3
+
+# Localized-image working folders (source assets; deployed copies live in client/public)
+image localized/
+image-localization/

@@ -70,10 +70,10 @@ export default function Home() {
     { src: "/PDP-1.jpg", alt: "Lem in einem Lifestyle-Umfeld" },
     { src: "/PDP-2.jpg", alt: "Nahaufnahme des Lem-Designs" },
     { src: "/PDP-3.jpg", alt: "Lem Produktdetails" },
-    { src: "/PDP-4.jpg", alt: "Lem in Anwendung" },
+    { src: "/PDP-4_DE.png", alt: "Lem in Anwendung" },
     { src: "/PDP-5.jpg", alt: "Lem Verpackung und Zubehör" },
-    { src: "/PDP-6.jpg", alt: "Lem Lifestyle-Bild" },
-    { src: "/PDP-7.jpg", alt: "Lem Produktmerkmale" },
+    { src: "/PDP-6_DE.png", alt: "Lem Lifestyle-Bild" },
+    { src: "/PDP-7_DE.png", alt: "Lem Produktmerkmale" },
   ];
 
   return (
@@ -524,7 +524,7 @@ export default function Home() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
+              src="/anatomy_DE.png" 
               alt="Klitoris-Anatomie Querschnittsdiagramm" 
               className="w-full rounded-xl shadow-2xl"
             />
@@ -555,7 +555,7 @@ export default function Home() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
+                    src="/bloodflow_DE.png" 
                     alt="Vergleich der Durchblutung vor und nach der Menopause" 
                     className="w-full rounded-lg shadow-lg"
                   />

@@ -70,10 +70,10 @@ export default function Home() {
     { src: "/PDP-1.jpg", alt: "Lem in een lifestyle-omgeving" },
     { src: "/PDP-2.jpg", alt: "Close-up van het ontwerp van de Lem" },
     { src: "/PDP-3.jpg", alt: "Productdetails van de Lem" },
-    { src: "/PDP-4.jpg", alt: "Demonstratie van de Lem in gebruik" },
+    { src: "/PDP-4_NL.png", alt: "Demonstratie van de Lem in gebruik" },
     { src: "/PDP-5.jpg", alt: "Verpakking en accessoires van de Lem" },
-    { src: "/PDP-6.jpg", alt: "Lifestyle-afbeelding van de Lem" },
-    { src: "/PDP-7.jpg", alt: "Productkenmerken van de Lem" },
+    { src: "/PDP-6_NL.png", alt: "Lifestyle-afbeelding van de Lem" },
+    { src: "/PDP-7_NL.png", alt: "Productkenmerken van de Lem" },
   ];
 
   return (
@@ -525,7 +525,7 @@ export default function Home() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img 
-              src="/clitoral_anatomy_illustration.png" 
+              src="/anatomy_NL.png" 
               alt="Dwarsdoorsnede-diagram van de clitorale anatomie"
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function Home() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img 
-                    src="/menopause_science_illustration.png" 
+                    src="/bloodflow_NL.png" 
                     alt="Vergelijking van de bloedstroom voor en na de menopauze"
                     className="w-full rounded-lg shadow-lg"
                   />

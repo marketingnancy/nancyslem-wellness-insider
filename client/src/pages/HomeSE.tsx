@@ -70,10 +70,10 @@ export default function Home() {
     { src: "/PDP-1.jpg", alt: "Lem i en livsstilsmiljö" },
     { src: "/PDP-2.jpg", alt: "Närbild på Lems design" },
     { src: "/PDP-3.jpg", alt: "Produktdetaljer för Lem" },
-    { src: "/PDP-4.jpg", alt: "Demonstration av Lem i användning" },
+    { src: "/PDP-4_SE.png", alt: "Demonstration av Lem i användning" },
     { src: "/PDP-5.jpg", alt: "Lems förpackning och tillbehör" },
-    { src: "/PDP-6.jpg", alt: "Livsstilsbild av Lem" },
-    { src: "/PDP-7.jpg", alt: "Produktegenskaper för Lem" },
+    { src: "/PDP-6_SE.png", alt: "Livsstilsbild av Lem" },
+    { src: "/PDP-7_SE.png", alt: "Produktegenskaper för Lem" },
   ];
 
   return (
@@ -525,7 +525,7 @@ export default function Home() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img 
-              src="/clitoral_anatomy_illustration.png" 
+              src="/anatomy_SE.png" 
               alt="Klitorisanatomi tvärsnittsdiagram" 
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function Home() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img 
-                    src="/menopause_science_illustration.png" 
+                    src="/bloodflow_SE.png" 
                     alt="Blodflödesjämförelse före och efter klimakteriet" 
                     className="w-full rounded-lg shadow-lg"
                   />

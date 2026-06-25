@@ -70,10 +70,10 @@ export default function HomeJP() {
     { src: "/PDP-1.jpg", alt: "ライフスタイルシーンの中のLem" },
     { src: "/PDP-2.jpg", alt: "Lemのデザインのクローズアップ" },
     { src: "/PDP-3.jpg", alt: "Lemの製品詳細" },
-    { src: "/PDP-4.jpg", alt: "Lemの使用イメージ" },
+    { src: "/PDP-4_JP.png", alt: "Lemの使用イメージ" },
     { src: "/PDP-5.jpg", alt: "Lemのパッケージと付属品" },
-    { src: "/PDP-6.jpg", alt: "Lemのライフスタイルイメージ" },
-    { src: "/PDP-7.jpg", alt: "Lemの製品特長" },
+    { src: "/PDP-6_JP.png", alt: "Lemのライフスタイルイメージ" },
+    { src: "/PDP-7_JP.png", alt: "Lemの製品特長" },
   ];
 
   return (
@@ -525,7 +525,7 @@ export default function HomeJP() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
+              src="/anatomy_JP.png" 
               alt="クリトリスの解剖学的断面図"
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function HomeJP() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
+                    src="/bloodflow_JP.png" 
                     alt="更年期前後の血流の比較"
                     className="w-full rounded-lg shadow-lg"
                   />
