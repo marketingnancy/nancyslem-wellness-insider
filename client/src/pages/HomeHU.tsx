@@ -99,7 +99,7 @@ export default function Home() {
         <div className="fixed top-14 left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4,7 (14 907 értékelés) • 1M+ eladva</span>
+              <span className="text-sm font-medium">⭐ 4,7 (14 907 értékelés) • Több mint 1 millió eladva</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -791,7 +791,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">1M+ eladva</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Több mint 1 millió eladva</h3>
               <p className="text-sm text-gray-600">Több mint 1 000 000 darab kelt el világszerte a 2023-as indulás óta</p>
             </div>
             <div className="text-center">
