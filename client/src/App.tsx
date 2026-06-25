@@ -14,6 +14,8 @@ import HomeSE from "./pages/HomeSE";
 import HomeHU from "./pages/HomeHU";
 import HomeIT from "./pages/HomeIT";
 import HomeES from "./pages/HomeES";
+import HomeDA from "./pages/HomeDA";
+import HomeCS from "./pages/HomeCS";
 
 function Router() {
   return (
@@ -28,6 +30,8 @@ function Router() {
       <Route path={"/hu"} component={HomeHU} />
       <Route path={"/it"} component={HomeIT} />
       <Route path={"/es"} component={HomeES} />
+      <Route path={"/da"} component={HomeDA} />
+      <Route path={"/cs"} component={HomeCS} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
