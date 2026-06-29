@@ -21,6 +21,7 @@ import HomePL from "./pages/HomePL";
 import HomeRO from "./pages/HomeRO";
 import HomeGR from "./pages/HomeGR";
 import HomePT from "./pages/HomePT";
+import HomeHK from "./pages/HomeHK";
 
 function Router() {
   return (
@@ -42,6 +43,7 @@ function Router() {
       <Route path={"/ro"} component={HomeRO} />
       <Route path={"/gr"} component={HomeGR} />
       <Route path={"/pt"} component={HomePT} />
+      <Route path={"/hk"} component={HomeHK} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
