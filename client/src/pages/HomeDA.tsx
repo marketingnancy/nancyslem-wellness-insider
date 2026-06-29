@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">581 kr.</span>
-                  <span className="text-sm line-through text-white/70">1.037 kr.</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPAR 456 KR.</span>
+                  <span className="text-lg font-bold">596 kr.</span>
+                  <span className="text-sm line-through text-white/70">1.065 kr.</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPAR 469 KR.</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Pris</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">581 kr. (engangskøb)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">596 kr. (engangskøb)</td>
                   <td className="border border-gray-300 p-4 text-center">370–1.120 kr.</td>
                   <td className="border border-gray-300 p-4 text-center">225–370 kr. om måneden</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function Home() {
                       <li>✓ Genopdager måske en nydelse, du troede var væk</li>
                       <li>✓ Forbedrer måske vævssundheden og forebygger atrofi</li>
                       <li>✓ Sover måske bedre (orgasmer frigiver oxytocin)</li>
-                      <li>✓ Værst tænkelige tilfælde: få dine 581 kr. tilbage</li>
+                      <li>✓ Værst tænkelige tilfælde: få dine 596 kr. tilbage</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">SPAR 456 KR.</p>
+                <p className="font-bold">SPAR 469 KR.</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,15 +926,15 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem klitorisstimulator</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">581 kr.</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">596 kr.</span>
                     <div className="text-left">
-                      <span className="text-3xl text-gray-400 line-through block">1.037 kr.</span>
-                      <span className="text-sm text-green-600 font-bold">Spar 456 kr. (44 % rabat)</span>
+                      <span className="text-3xl text-gray-400 line-through block">1.065 kr.</span>
+                      <span className="text-sm text-green-600 font-bold">Spar 469 kr. (44 % rabat)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Kun 1,59 kr. om dagen</strong> over et års brug
+                      <strong className="text-2xl text-[#FF1493]">Kun 1,63 kr. om dagen</strong> over et års brug
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Mindre end din daglige kaffe. Holder i årevis.
@@ -978,7 +978,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Køb nu – 581 kr. (spar 456 kr.)
+                    Køb nu – 596 kr. (spar 469 kr.)
                   </Button>
                 </a>
 
@@ -1085,7 +1085,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Du er villig til at <strong>investere i dig selv</strong> (kun 1,59 kr. om dagen over et år!)</span>
+                    <span>Du er villig til at <strong>investere i dig selv</strong> (kun 1,63 kr. om dagen over et år!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1228,7 +1228,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Køb Nancy's Lem – 581 kr.
+                Køb Nancy's Lem – 596 kr.
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30 dages garanti ✓ Fri fragt ✓ Diskret emballage</p>

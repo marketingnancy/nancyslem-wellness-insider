@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">73,95 €</span>
-                  <span className="text-sm line-through text-white/70">128,95 €</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPARE 55 €</span>
+                  <span className="text-lg font-bold">77,95 €</span>
+                  <span className="text-sm line-through text-white/70">138,95 €</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPARE 61 €</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Preis</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">73,95 € (einmalig)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">77,95 € (einmalig)</td>
                   <td className="border border-gray-300 p-4 text-center">50–150 €</td>
                   <td className="border border-gray-300 p-4 text-center">30–50 €/Monat</td>
                 </tr>
@@ -747,7 +747,7 @@ export default function Home() {
                       <li>✓ Du entdeckst vielleicht Genuss wieder, den du längst verloren glaubtest</li>
                       <li>✓ Du verbesserst womöglich die Gewebegesundheit und beugst der Atrophie vor</li>
                       <li>✓ Du schläfst vielleicht besser (Orgasmen setzen Oxytocin frei)</li>
-                      <li>✓ Schlimmstenfalls: Du bekommst deine 73,95 € zurück</li>
+                      <li>✓ Schlimmstenfalls: Du bekommst deine 77,95 € zurück</li>
                     </ul>
                   </div>
                   <div>
@@ -908,7 +908,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">SPARE 55 €</p>
+                <p className="font-bold">SPARE 61 €</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -924,16 +924,16 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem Klitoris-Massagegerät</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">73,95 €</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">77,95 €</span>
                     <div className="text-left">
-                      <span className="text-3xl text-gray-400 line-through block">128,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">Spare 55 € (43 % Rabatt)</span>
+                      <span className="text-3xl text-gray-400 line-through block">138,95 €</span>
+                      <span className="text-sm text-green-600 font-bold">Spare 61 € (44 % Rabatt)</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 mb-2">Inkl. MwSt.</p>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Nur 0,20 €/Tag</strong> bei einem Jahr Nutzung
+                      <strong className="text-2xl text-[#FF1493]">Nur 0,21 €/Tag</strong> bei einem Jahr Nutzung
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Weniger als dein täglicher Kaffee. Und hält jahrelang.
@@ -977,7 +977,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Jetzt kaufen – 73,95 € (Spare 55 €)
+                    Jetzt kaufen – 77,95 € (Spare 61 €)
                   </Button>
                 </a>
 
@@ -1084,7 +1084,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Du bereit bist, <strong>in dich selbst zu investieren</strong> (nur 0,20 €/Tag bei einem Jahr!)</span>
+                    <span>Du bereit bist, <strong>in dich selbst zu investieren</strong> (nur 0,21 €/Tag bei einem Jahr!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1227,7 +1227,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Nancy's Lem kaufen – 73,95 €
+                Nancy's Lem kaufen – 77,95 €
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30-Tage-Garantie ✓ Kostenloser Versand ✓ Diskrete Verpackung</p>

@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">73,95 €</span>
-                  <span className="text-sm line-through text-white/70">128,95 €</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">55,00 € D'ÉCONOMIE</span>
+                  <span className="text-lg font-bold">77,95 €</span>
+                  <span className="text-sm line-through text-white/70">138,95 €</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">61,00 € D'ÉCONOMIE</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Prix</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">73,95 € (une seule fois)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">77,95 € (une seule fois)</td>
                   <td className="border border-gray-300 p-4 text-center">50 à 150 €</td>
                   <td className="border border-gray-300 p-4 text-center">30 à 50 €/mois</td>
                 </tr>
@@ -748,7 +748,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                       <li>✓ Vous pourriez redécouvrir un plaisir que vous croyiez perdu</li>
                       <li>✓ Vous pourriez préserver la santé des tissus et prévenir l'atrophie</li>
                       <li>✓ Vous pourriez mieux dormir (l'orgasme libère de l'ocytocine)</li>
-                      <li>✓ Au pire&nbsp;: vous récupérez vos 73,95 €</li>
+                      <li>✓ Au pire&nbsp;: vous récupérez vos 77,95 €</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">55 € D'ÉCONOMIE</p>
+                <p className="font-bold">61 € D'ÉCONOMIE</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,15 +926,15 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Lem, le stimulateur clitoridien de Hello Nancy</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">73,95 €</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">77,95 €</span>
                     <div className="text-left">
-                      <span className="text-3xl text-gray-400 line-through block">128,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">55 € d'économie (-43&nbsp;%)</span>
+                      <span className="text-3xl text-gray-400 line-through block">138,95 €</span>
+                      <span className="text-sm text-green-600 font-bold">61 € d'économie (-44&nbsp;%)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">À peine 0,20 €/jour</strong> sur un an d'utilisation
+                      <strong className="text-2xl text-[#FF1493]">À peine 0,21 €/jour</strong> sur un an d'utilisation
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Moins que votre café du matin. Et il vous suivra des années.
@@ -978,7 +978,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Je commande le mien - 73,95 € (55 € d'économie)
+                    Je commande le mien - 77,95 € (61 € d'économie)
                   </Button>
                 </a>
 
@@ -1085,7 +1085,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous êtes prête à <strong>investir sur vous</strong> (à peine 0,20 €/jour sur un an&nbsp;!)</span>
+                    <span>Vous êtes prête à <strong>investir sur vous</strong> (à peine 0,21 €/jour sur un an&nbsp;!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1228,7 +1228,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Je commande le Lem - 73,95 €
+                Je commande le Lem - 77,95 €
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ Satisfait ou remboursé sous 30 jours ✓ Livraison gratuite ✓ Emballage discret</p>
