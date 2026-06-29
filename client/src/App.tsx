@@ -15,6 +15,12 @@ import HomeIT from "./pages/HomeIT";
 import HomeES from "./pages/HomeES";
 import HomeDA from "./pages/HomeDA";
 import HomeCS from "./pages/HomeCS";
+import HomeNO from "./pages/HomeNO";
+import HomeFI from "./pages/HomeFI";
+import HomePL from "./pages/HomePL";
+import HomeRO from "./pages/HomeRO";
+import HomeGR from "./pages/HomeGR";
+import HomePT from "./pages/HomePT";
 
 function Router() {
   return (
@@ -30,6 +36,12 @@ function Router() {
       <Route path={"/es"} component={HomeES} />
       <Route path={"/da"} component={HomeDA} />
       <Route path={"/cs"} component={HomeCS} />
+      <Route path={"/no"} component={HomeNO} />
+      <Route path={"/fi"} component={HomeFI} />
+      <Route path={"/pl"} component={HomePL} />
+      <Route path={"/ro"} component={HomeRO} />
+      <Route path={"/gr"} component={HomeGR} />
+      <Route path={"/pt"} component={HomePT} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
