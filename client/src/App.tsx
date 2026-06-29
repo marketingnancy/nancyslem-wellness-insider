@@ -6,7 +6,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import HomeJP from "./pages/HomeJP";
-import HomeCAFR from "./pages/HomeCAFR";
 import HomeNL from "./pages/HomeNL";
 import HomeDE from "./pages/HomeDE";
 import HomeFR from "./pages/HomeFR";
@@ -22,7 +21,6 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/jp"} component={HomeJP} />
-      <Route path={"/cafr"} component={HomeCAFR} />
       <Route path={"/nl"} component={HomeNL} />
       <Route path={"/de"} component={HomeDE} />
       <Route path={"/fr"} component={HomeFR} />
