@@ -70,10 +70,10 @@ export default function Home() {
     { src: "/PDP-1.jpg", alt: "Lem in un contesto lifestyle" },
     { src: "/PDP-2.jpg", alt: "Primo piano del design del Lem" },
     { src: "/PDP-3.jpg", alt: "Dettagli del prodotto Lem" },
-    { src: "/PDP-4.jpg", alt: "Lem in uso" },
+    { src: "/PDP-4_IT.png", alt: "Lem in uso" },
     { src: "/PDP-5.jpg", alt: "Confezione e accessori del Lem" },
-    { src: "/PDP-6.jpg", alt: "Immagine lifestyle del Lem" },
-    { src: "/PDP-7.jpg", alt: "Caratteristiche del prodotto Lem" },
+    { src: "/PDP-6_IT.png", alt: "Immagine lifestyle del Lem" },
+    { src: "/PDP-7_IT.png", alt: "Caratteristiche del prodotto Lem" },
   ];
 
   return (
@@ -525,7 +525,7 @@ export default function Home() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png"
+              src="/anatomy_IT.png"
               alt="Diagramma in sezione dell'anatomia clitoridea"
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function Home() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png"
+                    src="/bloodflow_IT.png"
                     alt="Confronto dell'afflusso di sangue prima e dopo la menopausa"
                     className="w-full rounded-lg shadow-lg"
                   />
