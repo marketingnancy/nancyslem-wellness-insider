@@ -67,13 +67,13 @@ export default function Home() {
 
   const galleryImages = [
     { src: "/PDP.jpg", alt: "Dispositivo de bienestar Nancy's Lem" },
-    { src: "/PDP-1.jpg", alt: "Lem en un ambiente de estilo de vida" },
-    { src: "/PDP-2.jpg", alt: "Primer plano del diseño de Lem" },
-    { src: "/PDP-3.jpg", alt: "Detalles del producto Lem" },
-    { src: "/PDP-4.jpg", alt: "Demostración de Lem en uso" },
-    { src: "/PDP-5.jpg", alt: "Embalaje y accesorios de Lem" },
-    { src: "/PDP-6.jpg", alt: "Imagen de estilo de vida de Lem" },
-    { src: "/PDP-7.jpg", alt: "Características del producto Lem" },
+    { src: "/PDP-1.jpg", alt: "El Lem en un ambiente cotidiano" },
+    { src: "/PDP-2.jpg", alt: "Primer plano del diseño del Lem" },
+    { src: "/PDP-3.jpg", alt: "Detalles del Lem" },
+    { src: "/PDP-4.jpg", alt: "El Lem en uso" },
+    { src: "/PDP-5.jpg", alt: "Embalaje y accesorios del Lem" },
+    { src: "/PDP-6.jpg", alt: "El Lem en una imagen de su día a día" },
+    { src: "/PDP-7.jpg", alt: "Características del Lem" },
   ];
 
   return (
@@ -248,7 +248,7 @@ export default function Home() {
         <div className="bg-gray-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">La conversación que nadie nos avisó que tendríamos</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Nos lo cuentan todo sobre los sofocos que nos dejan empapadas en sudor entre nuestras sábanas de seda a las 3 de la mañana. Nos cuentan lo de la niebla mental que nos hace buscar las gafas cuando las llevamos puestas.
+            Nos lo cuentan todo sobre los sofocos que nos dejan empapadas en sudor a las tres de la madrugada. Nos hablan de la niebla mental que nos hace buscar las gafas cuando las llevamos puestas.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
             Pero nadie te sienta con una copa de pinot y te susurra: «Oye, por cierto, si no mantienes la zona de ahí abajo activa, puede que tu clítoris se encoja de verdad».
@@ -260,7 +260,7 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
             <h3 className="font-bold text-lg text-gray-900 mb-3">«La gran desconexión»</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Para muchas de las mujeres que entrevistamos, no era solo la sequedad. Era el <strong>adormecimiento</strong>. Una de las que lo probó describió así su intento de usar el vibrador que tenía desde los 30: «En lugar de sentir placer, solo me resultaba… irritante. O insensible. Como intentar hacerle cosquillas a un callo».
+              Para muchas de las mujeres que entrevistamos, no era solo la sequedad. Era el <strong>adormecimiento</strong>. Una de ellas, al contarnos cómo había intentado usar el vibrador que tenía desde los treinta, lo resumió así: «En lugar de placer, lo único que notaba era… molestia. O nada de nada. Como intentar hacerle cosquillas a un callo».
             </p>
             <p className="text-gray-700 leading-relaxed">
               Las expertas médicas explican que los vibradores de toda la vida funcionan por fricción e impacto. Cuando los tejidos se adelgazan por la falta de estrógenos, la vibración directa puede de hecho <em>insensibilizar aún más los nervios</em>, lo que provoca esa sensación de «adormecimiento».
@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            Las ginecólogas especializadas en menopausia lo explican así: «Cuando bajan los estrógenos, el riego sanguíneo de la zona pélvica disminuye. Esto provoca adelgazamiento de los tejidos, pérdida de elasticidad y menos sensibilidad. En medicina lo llamamos el principio de "úsalo o piérdelo": necesitas un riego constante para mantener los tejidos sanos».
+            Las ginecólogas especializadas en menopausia lo explican así: «Cuando bajan los estrógenos, el riego sanguíneo de la zona pélvica disminuye. Eso adelgaza los tejidos, les resta elasticidad y reduce la sensibilidad. En medicina lo llamamos el principio de “úsalo o lo pierdes”: hace falta un riego constante para que el tejido se mantenga sano».
           </p>
         </div>
 
@@ -403,7 +403,7 @@ export default function Home() {
               Todas tenemos ese cajón. El <em>cajón de la vergüenza</em>. Donde escondemos esos aparatos de plástico fálicos y poco favorecedores debajo de los calcetines viejos.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Una de nuestras probadoras nos contó esto: «Me dejé el Lem en la encimera del baño sin querer cuando vino mi suegra de visita. Lo cogió y dijo: "Ay, ¿esto es uno de esos nuevos cepillos faciales sónicos? ¡Qué suave es!"».
+              Una de nuestras probadoras nos contó esto: «Me dejé el Lem olvidado en la encimera del baño justo cuando vino mi suegra de visita. Lo cogió y va y dice: “Ay, ¿esto es uno de esos cepillos faciales sónicos nuevos? ¡Qué suave es!”».
             </p>
             <p className="text-gray-700 leading-relaxed font-semibold">
               Pasa la prueba de la mesilla de noche. Parece tecnología de autocuidado de alta gama, no un juguete erótico. Porque es justo eso.
@@ -413,7 +413,7 @@ export default function Home() {
           <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg mb-6">
             <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Cuidado con las imitaciones baratas</h3>
             <p className="text-red-800 leading-relaxed mb-3">
-              Tras publicar nuestra primera reseña, varias lectoras nos preguntaron por qué no comprar la versión de pocos euros que hay en Amazon. Esto es lo que dicen las expertas médicas.
+              Tras publicar nuestra primera reseña, varias lectoras nos preguntaron por qué no tirar de la versión de cuatro euros que hay en Amazon. Esto es lo que nos respondió una de las expertas médicas que consultamos.
             </p>
             <p className="text-red-800 leading-relaxed font-semibold">
               «Los juguetes baratos usan materiales porosos de gel o TPE», advirtió. «Las bacterias microscópicas se quedan atrapadas en los poros, lo que supone un riesgo enorme para las mujeres menopáusicas, que ya son propensas a las infecciones de orina».
@@ -512,7 +512,7 @@ export default function Home() {
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                «Cuando abrí la caja, me sorprendió de verdad lo <strong>premium</strong> que parecía todo. No daba la sensación de un "juguete erótico": daba la sensación de una inversión en bienestar». — Probadora, 54 años
+                «Cuando abrí la caja, me sorprendió lo <strong>premium</strong> que parecía todo. No daba la sensación de un “juguete erótico”, sino la de una inversión en bienestar». — Probadora, 54 años
               </p>
             </div>
           </div>
@@ -544,10 +544,10 @@ export default function Home() {
 
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Esto no lo enseñan en la clase de educación para la salud: el clítoris tiene unas <strong>8000 terminaciones nerviosas</strong>, más que ninguna otra parte del cuerpo humano, sea de hombre o de mujer. Para que te hagas una idea, el pene tiene unas 4000.
+                Esto no nos lo contaron en clase de educación sexual: el clítoris tiene unas <strong>8000 terminaciones nerviosas</strong>, más que ninguna otra parte del cuerpo humano, sea de hombre o de mujer. Para que te hagas una idea, el pene tiene unas 4000.
               </p>
               <p>
-                Pero aquí está el truco: <strong>el 75 % de las mujeres no pueden llegar al orgasmo solo con la penetración</strong>, según un estudio publicado en el Journal of Sex & Marital Therapy. El clítoris es la clave.
+                Pero ahí está el quid: <strong>el 75 % de las mujeres no llega al orgasmo solo con la penetración</strong>, según un estudio publicado en el Journal of Sex & Marital Therapy. La clave está en el clítoris.
               </p>
 
               <div className="bg-white p-6 rounded-lg my-6">
@@ -593,7 +593,7 @@ export default function Home() {
               <div className="bg-[#FFE14D]/30 p-6 rounded-lg border-l-4 border-[#FFE14D]">
                 <p className="font-bold text-gray-900 mb-2">💡 En resumen:</p>
                 <p className="text-gray-700">
-                  La estimulación regular del clítoris no va solo de placer (aunque eso es un buen extra). Va de mantener sano el tejido, conservar la función nerviosa y prevenir los cambios irreversibles que llegan con el abandono. Esto es <em>salud preventiva</em>.
+                  La estimulación regular del clítoris no va solo de placer (aunque eso es un extra de lujo). Va de mantener sano el tejido, conservar la función nerviosa y evitar los cambios irreversibles que trae el desuso. Esto es <em>salud preventiva</em>.
                 </p>
               </div>
             </div>
@@ -614,10 +614,10 @@ export default function Home() {
                 <strong>La mayor objeción de las mujeres:</strong> «¿Sentirá mi pareja que la sustituyo?».
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>En absoluto.</strong> El Lem es diminuto. Muchas parejas lo usan <em>durante</em> el coito. Hace de «puente»: garantiza que estés del todo excitada y lubricada de forma natural, y le quita a tu pareja la presión de «rendir».
+                <strong>En absoluto.</strong> El Lem es diminuto. Muchas parejas lo usan <em>durante</em> el coito. Hace de «puente»: se asegura de que llegues bien excitada y lubricada de forma natural, y le quita a tu pareja la presión de «cumplir».
               </p>
               <p className="text-gray-700 leading-relaxed italic">
-                Una de nuestras probadoras nos contó: «Convirtió nuestro dormitorio de un sitio de ansiedad en un parque de juegos otra vez».
+                Una de nuestras probadoras nos contó: «Volvió a convertir nuestro dormitorio en un lugar para jugar, y no en una fuente de agobio».
               </p>
             </div>
           </div>
@@ -632,7 +632,7 @@ export default function Home() {
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  «Mi marido sentía curiosidad, no se sentía amenazado. Ahora me lo aplica él durante los preliminares. Le quita la presión de "rendir" y yo consigo justo lo que necesito. Todos ganamos».
+                  «Mi marido sentía curiosidad, no se sentía amenazado. Ahora es él quien me lo pone durante los preliminares. A él le quita la presión de “cumplir” y yo consigo justo lo que necesito. Salimos ganando los dos».
                 </p>
                 <p className="font-semibold text-gray-700">— Valeria, 55, casada desde hace 28 años</p>
               </div>
@@ -837,7 +837,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">«Mejor que la crema de estrógenos»</p>
                 <p className="text-gray-700 italic">
-                  «No lo compré para "pasarlo bien", lo compré porque mi médica me dijo que necesitaba riego sanguíneo. Pero, madre mía. El alivio me ayuda a dormir toda la noche sin despertarme empapada en sudor. Es mi nueva vitamina».
+                  «No lo compré para “pasármelo bien”, lo compré porque mi médica me dijo que necesitaba riego sanguíneo. Pero, madre mía. El alivio me ayuda a dormir del tirón sin despertarme empapada en sudor. Es mi nueva vitamina».
                 </p>
                 <p className="font-semibold text-gray-900">- Sarah J., 58</p>
                 <p className="text-xs text-gray-500">✓ Compra verificada</p>
@@ -988,7 +988,7 @@ export default function Home() {
                     Garantía sin riesgo
                   </p>
                   <p className="text-center text-sm text-green-700 mt-2">
-                    Garantía de devolución del dinero de 30 días. Si no te encanta, te devolvemos todo el dinero—<strong>sin necesidad de devolución</strong>.
+                    Garantía de devolución del dinero de 30 días. Si no te enamora, te devolvemos hasta el último euro —<strong>y sin tener que devolver nada</strong>.
                   </p>
                 </div>
 
@@ -1162,7 +1162,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">¿Y si no me gusta?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy ofrece una garantía de satisfacción de 30 días. Si no te encanta, te hacen un reembolso de cortesía por una vez—<strong>sin necesidad de devolución</strong>. Confían en que encuentres lo que le va bien a tu cuerpo.
+                  Hello Nancy ofrece una garantía de satisfacción de 30 días. Si no te enamora, te hacen un reembolso de cortesía por una vez —<strong>y sin tener que devolver nada</strong>. Confían en que des con lo que mejor le sienta a tu cuerpo.
                 </p>
               </CardContent>
             </Card>

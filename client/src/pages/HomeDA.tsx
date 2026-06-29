@@ -155,7 +155,7 @@ export default function Home() {
             1 mio.+ orgasmer senere: Derfor dropper kvinder over 50 vibratoren til fordel for denne »citron«
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-            Vi undersøgte, hvorfor tusindvis af kvinder over 50 dropper den klassiske vibrator til fordel for dette »fysioterapi«-apparat, der ligner en citron. Her er, hvad vi fandt ud af.
+            Vi gravede i, hvorfor tusindvis af kvinder over 50 lægger den klassiske vibrator på hylden til fordel for dette lille »fysioterapi«-apparat, der ligner en citron. Her er, hvad vi fandt ud af.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <p className="text-gray-700 text-xs leading-tight">
               <span className="font-bold text-gray-900 mr-1">Redaktørens note:</span>
-              Denne artikel indeholder affiliate-links. Vi kan tjene en kommission, hvis du køber gennem dem – uden ekstra omkostninger for dig. Vi anbefaler kun produkter, vi har undersøgt og testet grundigt.
+              Denne artikel indeholder affiliate-links. Vi kan tjene en kommission, hvis du køber gennem dem – uden at det koster dig en krone ekstra. Vi anbefaler kun produkter, vi selv har undersøgt og testet grundigt.
             </p>
           </div>
         </div>
@@ -237,10 +237,10 @@ export default function Home() {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Derfor taler vi om det her</h2>
           <p className="text-gray-700 leading-relaxed">
-            Da vores redaktion første gang hørte om et »citronformet wellnessapparat«, der tog overgangsalder-fællesskabet med storm, må vi indrømme det – vi var skeptiske. Men efter at have interviewet snesevis af kvinder, rådført os med gynækologer og ja, testet det selv, forstår vi godt hypen.
+            Da vi på redaktionen første gang hørte om et »citronformet wellnessapparat«, der tog overgangsalder-fællesskabet med storm, var vi – det må vi ærligt indrømme – godt skeptiske. Men efter at have interviewet snesevis af kvinder, rådført os med gynækologer og ja, testet det selv, forstår vi godt hypen.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Det her er ikke bare endnu en wellnesstrend. Det adresserer et reelt medicinsk problem, der rammer millioner af kvinder, men sjældent bliver talt om: <strong>klitorisatrofi</strong> og tabet af seksuel sundhed under overgangsalderen.
+            Det her er ikke bare endnu en wellnesstrend. Det handler om et reelt medicinsk problem, der rammer millioner af kvinder, men som der sjældent bliver talt om: <strong>klitorisatrofi</strong> og tabet af seksuel sundhed i overgangsalderen.
           </p>
         </div>
 
@@ -263,7 +263,7 @@ export default function Home() {
               For mange af de kvinder, vi interviewede, var det ikke kun tørheden. Det var <strong>følelsesløsheden</strong>. En tester beskrev, hvordan hun prøvede at bruge sin gamle vibrator fra 30'erne: »I stedet for at føles godt føltes det bare… irriterende. Eller følelsesløst. Som at prøve at kilde en hård hud.«
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Eksperter forklarer, at klassiske vibratorer virker gennem friktion og tryk. Når vævet bliver tyndere på grund af lavt østrogen, kan direkte vibration faktisk <em>desensibilisere nerverne yderligere</em> og føre til netop den »følelsesløse« fornemmelse.
+              Eksperter forklarer, at klassiske vibratorer virker gennem friktion og tryk. Når vævet bliver tyndere på grund af lavt østrogen, kan direkte vibration faktisk <em>sløve nerverne endnu mere</em> og føre til netop den »følelsesløse« fornemmelse.
             </p>
           </div>
 
@@ -307,7 +307,7 @@ export default function Home() {
             Sådan virker det: Lem skaber en blid forsegling omkring klitoris og bruger bølger af lufttryk til at stimulere den – så det minder om fornemmelsen af oralsex, bare konstant og utrætteligt. Fordi der ikke er nogen gnidning, er der nul irritation.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Men den rigtige magi ligger i fysikken: det blide sug skaber en vakuumeffekt, der fysisk trækker dybt, iltrigt blod ind i vævet. Det vækker nerver, der har ligget i dvale i årevis.
+            Men den egentlige magi ligger i fysikken: det blide sug skaber en vakuumeffekt, der rent fysisk trækker dybt, iltrigt blod ind i vævet. Det vækker nerver, der har ligget i dvale i årevis.
           </p>
 
           <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
@@ -419,7 +419,7 @@ export default function Home() {
               »Billigt legetøj bruger porøse jelly/TPE-materialer,« advarede hun. »Mikroskopiske bakterier sætter sig fast i porerne, hvilket er en kæmpe risiko for kvinder i overgangsalderen, der i forvejen er mere udsatte for urinvejsinfektioner.«
             </p>
             <p className="text-red-900 font-bold mt-3">
-              Hello Nancy Lem er 100 % medicinsk, ikke-porøs silikone. Lad være med at sætte dit helbred på spil for at spare på de billige kopier.
+              Hello Nancy Lem er 100 % medicinsk, ikke-porøs silikone. Sæt ikke dit helbred på spil bare for at spare et par kroner på en billig kopi.
             </p>
           </div>
 
@@ -429,7 +429,7 @@ export default function Home() {
                 <div className="text-4xl">🤫</div>
                 <h3 className="font-bold text-lg text-gray-900">Hviskestille</h3>
                 <p className="text-gray-600 text-sm">
-                  Ultrastille motor for fuld diskretion
+                  Ultrastille motor – fuld diskretion
                 </p>
               </CardContent>
             </Card>
@@ -614,7 +614,7 @@ export default function Home() {
                 <strong>Kvinders største indvending:</strong> »Vil min partner føle sig udskiftet?«
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>Absolut ikke.</strong> Lem er bittelille. Mange par bruger den <em>under</em> samleje. Den fungerer som en »bro«, der sikrer, at du er helt tændt og naturligt fugtig, og tager presset af din partner for at »præstere«.
+                <strong>Absolut ikke.</strong> Lem er bittelille. Mange par bruger den <em>under</em> samleje. Den fungerer som en »bro«, der sikrer, at du er helt tændt og naturligt fugtig, og tager presset af din partner for at skulle »præstere«.
               </p>
               <p className="text-gray-700 leading-relaxed italic">
                 En tester fortalte os: »Den forvandlede vores soveværelse fra et sted med angst tilbage til en legeplads.«
@@ -654,7 +654,7 @@ export default function Home() {
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
                   <div>
                     <p className="font-semibold text-gray-900">Under samleje</p>
-                    <p className="text-sm text-gray-600">Placeret for samtidig klitoris- og penetrationsstimulation</p>
+                    <p className="text-sm text-gray-600">Placeret, så du får klitorisstimulation og penetration på samme tid</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -674,7 +674,7 @@ export default function Home() {
               </div>
               <div className="mt-6 p-4 bg-white rounded-lg">
                 <p className="text-sm text-gray-700">
-                  <strong>Proff-tip:</strong> Kommunikation er nøglen. Tal om det som et wellnessværktøj, der gavner <em>jer begge</em> ved at mindske presset og øge nydelsen.
+                  <strong>Godt råd:</strong> Tal sammen om det – det er nøglen. Beskriv det som et wellnessværktøj, der gavner <em>jer begge</em>: mindre pres, mere nydelse.
                 </p>
               </div>
             </div>
@@ -709,7 +709,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">12 måneders garanti</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Hvis der sker noget med apparatet inden for det første år, erstatter de det. Gratis. Uden spørgsmål.
+                  Hvis der sker noget med apparatet inden for det første år, erstatter de det. Gratis. Helt uden bøvl.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
                   Oversat: Det her er ikke en engangsdims. Den er bygget til at holde.
@@ -722,9 +722,9 @@ export default function Home() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto">
                   <Heart className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg text-center text-gray-900">Support på livstid</h3>
+                <h3 className="font-bold text-lg text-center text-gray-900">Livslang support</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Spørgsmål om brugen? I tvivl om rengøring? Deres kundeserviceteam svarer inden for 24 timer.
+                  Spørgsmål om brugen? I tvivl om rengøringen? Deres kundeservice svarer inden for 24 timer.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
                   Oversat: Du køber ikke et produkt. Du bliver en del af et fællesskab.
@@ -737,7 +737,7 @@ export default function Home() {
             <h3 className="font-bold text-2xl text-gray-900 mb-4 text-center">Det rigtige spørgsmål: Hvad har du at miste?</h3>
             <div className="space-y-3 text-gray-700">
               <p className="text-center leading-relaxed">
-                Vi har dækket videnskaben. Vi har vist dig anmeldelserne. Vi har forklaret garantierne. På dette tidspunkt er den eneste risiko <em>ikke</em> at prøve den.
+                Vi har gennemgået videnskaben. Vi har vist dig anmeldelserne. Vi har forklaret garantierne. Så reelt er den eneste risiko <em>ikke</em> at prøve den.
               </p>
               <div className="bg-white p-6 rounded-lg">
                 <p className="font-semibold text-center text-lg text-gray-900 mb-3">Lad os regne på det:</p>
@@ -770,7 +770,7 @@ export default function Home() {
         <div className="my-12 bg-gray-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Derfor har Hello Nancy vores tillid</h2>
           <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-            Vi anbefaler ikke produkter let. Her er, hvorfor Hello Nancy bestod vores redaktionelle standarder.
+            Vi kaster ikke om os med anbefalinger. Her er, hvorfor Hello Nancy levede op til vores redaktionelle krav.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
@@ -885,7 +885,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">»Et vendepunkt«</p>
                 <p className="text-gray-700 italic">
-                  »Som en, der sætter pris på diskretion i intime produkter, kunne valget ikke være mere perfekt. Sugefunktionen er ulig noget andet, jeg har prøvet.«
+                  »For mig, der sætter pris på diskretion i intime produkter, kunne valget ikke være mere oplagt. Sugefunktionen er ulig alt andet, jeg har prøvet.«
                 </p>
                 <p className="font-semibold text-gray-900">– Maxine, verificeret køber</p>
                 <p className="text-xs text-gray-500">✓ Verificeret køb</p>
@@ -1069,7 +1069,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Du værdsætter <strong>videnskabeligt funderet wellness</strong> frem for tricks</span>
+                    <span>Du går op i <strong>videnskabeligt funderet wellness</strong> frem for løse løfter</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1135,9 +1135,9 @@ export default function Home() {
       <section className="container px-4 py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Dine spørgsmål, besvaret
+            Svar på dine spørgsmål
           </h2>
-          <p className="text-center text-gray-600 mb-12">Vi stillede Hello Nancy de spørgsmål, vores læsere gerne ville have svar på</p>
+          <p className="text-center text-gray-600 mb-12">Vi stillede Hello Nancy de spørgsmål, vores læsere helst ville have svar på</p>
 
           <div className="space-y-6">
             <Card>
@@ -1153,7 +1153,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Er emballagen pinlig?</h3>
                 <p className="text-gray-700">
-                  Nul procent. De sender i neutrale brune kasser uden logoer. Afsenderadressen står bare som »Care & Bloom Ltd«. Fuld diskretion garanteret.
+                  Overhovedet ikke. De sender i neutrale brune kasser uden logoer. Afsenderen står bare som »Care & Bloom Ltd«. Fuld diskretion garanteret.
                 </p>
               </CardContent>
             </Card>
@@ -1162,7 +1162,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Hvad hvis jeg ikke kan lide den?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy tilbyder en 30 dages tilfredshedsgaranti. Hvis du ikke elsker den, tilbyder de en engangsrefusion som en service – <strong>ingen returnering nødvendig</strong>. De stoler på, at du finder det, der virker for din krop.
+                  Hello Nancy har en 30 dages tilfredshedsgaranti. Hvis du ikke falder for den, giver de dig pengene tilbage som en engangsservice – <strong>ingen returnering nødvendig</strong>. De stoler på, at du finder frem til det, der virker for din krop.
                 </p>
               </CardContent>
             </Card>
@@ -1180,7 +1180,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Hvor høj er den?</h3>
                 <p className="text-gray-700">
-                  Hviskestille. Den ultrastille motor sikrer fuld diskretion – du kan bruge den uden at bekymre dig om, at nogen hører noget, selv i det næste rum.
+                  Hviskestille. Den ultrastille motor sikrer fuld diskretion – du kan bruge den uden at være bange for, at nogen hører noget, selv i værelset ved siden af.
                 </p>
               </CardContent>
             </Card>
@@ -1244,7 +1244,7 @@ export default function Home() {
             <div className="bg-gray-800 p-6 rounded-lg mb-8">
               <h3 className="font-bold text-lg mb-3">Affiliate-oplysning</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Wellness Insider er læserstøttet. Når du køber gennem links på vores side, kan vi tjene en affiliate-kommission uden ekstra omkostninger for dig. Det hjælper os med fortsat at levere gratis, researchbaseret indhold. Vi anbefaler kun produkter, vores redaktion har gennemgået grundigt og tror på vil gavne vores læsere. Alle holdninger er vores egne og er ikke påvirket af kompensation.
+                Wellness Insider er læserstøttet. Når du køber gennem links på vores side, kan vi tjene en affiliate-kommission, uden at det koster dig ekstra. Det er med til, at vi fortsat kan levere gratis, researchbaseret indhold. Vi anbefaler kun produkter, som vores redaktion har gennemgået grundigt og tror på vil gavne vores læsere. Alle holdninger er vores egne og er ikke betalt for.
               </p>
             </div>
 
@@ -1252,7 +1252,7 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-lg mb-4">Om os</h3>
                 <p className="text-gray-400 text-sm">
-                  Wellness Insider leverer evidensbaseret sundheds- og wellnessjournalistik for moderne kvinder.
+                  Wellness Insider leverer evidensbaseret sundheds- og wellnessjournalistik til moderne kvinder.
                 </p>
               </div>
               <div>

@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            I ginecologi specializzati nella cura della menopausa spiegano: «Quando gli estrogeni calano, diminuisce l'afflusso di sangue alla zona pelvica. Questo porta all'assottigliamento dei tessuti, alla perdita di elasticità e a una sensibilità ridotta. In medicina lo chiamiamo il principio del ‹use it or lose it› – serve un afflusso di sangue costante per mantenere i tessuti in salute.»
+            I ginecologi specializzati nella cura della menopausa spiegano: «Quando gli estrogeni calano, diminuisce l'afflusso di sangue alla zona pelvica. Questo porta all'assottigliamento dei tessuti, alla perdita di elasticità e a una sensibilità ridotta. In medicina lo chiamiamo il principio del "usa o perdi": serve un afflusso di sangue costante per mantenere i tessuti in salute.»
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export default function Home() {
             Ed è qui che entra in gioco questo piccolo dispositivo giallo. Il Nancy's Lem non viene presentato come un sex toy, ma come un dispositivo wellness. E dopo la nostra ricerca, capiamo anche perché.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            A differenza dei vibratori tradizionali, che si basano sull'attrito (e possono irritare i tessuti assottigliati della menopausa), il Lem usa la cosiddetta <strong>tecnologia a onde di pressione</strong>. Pensa alla differenza tra strofinare carta vetrata sulla pelle e una delicata massaggio sottovuoto.
+            A differenza dei vibratori tradizionali, che si basano sull'attrito (e possono irritare i tessuti assottigliati dalla menopausa), il Lem usa la cosiddetta <strong>tecnologia a onde di pressione</strong>. Immagina la differenza tra strofinare carta vetrata sulla pelle e lasciarsi avvolgere da un delicato massaggio sottovuoto.
           </p>
         </div>
 
@@ -403,7 +403,7 @@ export default function Home() {
               Tutte abbiamo quel cassetto. Il <em>cassetto della vergogna</em>. Dove nascondiamo, sotto i calzini vecchi, quei dispositivi di plastica antiestetici e fallici.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Una delle nostre tester ci ha raccontato questa storia: «Avevo lasciato il mio Lem sul mobile del bagno per sbaglio mentre era in visita mia suocera. Lo ha preso in mano e ha detto: ‹Oh, è uno di quei nuovi spazzolini sonici per il viso? È così morbido!›»
+              Una delle nostre tester ci ha raccontato questo episodio: «Avevo dimenticato il Lem sul mobile del bagno proprio mentre era da noi mia suocera. Lo ha preso in mano e ha detto: "Oh, è uno di quei nuovi spazzolini sonici per il viso? Com'è morbido!"»
             </p>
             <p className="text-gray-700 leading-relaxed font-semibold">
               Supera il test del comodino. Sembra tecnologia di self-care di fascia alta, non un sex toy. Perché è esattamente quello che è.
@@ -512,7 +512,7 @@ export default function Home() {
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                «Quando ho aperto la scatola, sono rimasta davvero sorpresa da quanto tutto sembrasse <strong>premium</strong>. Non sembrava un ‹sex toy›: sembrava un investimento nel benessere.» – Tester, 54 anni
+                «Quando ho aperto la scatola, mi ha davvero sorpresa quanto tutto sembrasse <strong>premium</strong>. Non sembrava un sex toy: sembrava un investimento nel benessere.» – Tester, 54 anni
               </p>
             </div>
           </div>
@@ -614,7 +614,7 @@ export default function Home() {
                 <strong>L'obiezione più grande che hanno le donne:</strong> «Il mio partner si sentirà sostituito?»
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>Assolutamente no.</strong> Il Lem è piccolissimo. Molte coppie lo usano persino <em>durante</em> il rapporto. Funziona come un «ponte», assicurandoti di essere pienamente eccitata e naturalmente lubrificata, e togliendo al tuo partner la pressione di dover «dare buoni risultati».
+                <strong>Assolutamente no.</strong> Il Lem è piccolissimo. Molte coppie lo usano persino <em>durante</em> il rapporto. Fa da «ponte»: ti assicura di essere pienamente eccitata e naturalmente lubrificata, e toglie al partner l'ansia di dover «essere all'altezza».
               </p>
               <p className="text-gray-700 leading-relaxed italic">
                 Una tester ci ha detto: «Ha trasformato la nostra camera da letto da un luogo di ansia di nuovo in un parco giochi.»
@@ -632,7 +632,7 @@ export default function Home() {
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  «Mio marito era curioso, non minacciato. Ora lo usa lui su di me durante i preliminari. A lui toglie la pressione di dover ‹dare buoni risultati› e io ricevo esattamente ciò di cui ho bisogno. Ci guadagniamo tutti e due.»
+                  «Mio marito era curioso, non si è sentito minacciato. Ora durante i preliminari lo usa lui su di me. A lui toglie l'ansia di dover "essere all'altezza" e io ricevo esattamente quello di cui ho bisogno. Ci guadagniamo entrambi.»
                 </p>
                 <p className="font-semibold text-gray-700">– Valeria, 55 anni, sposata da 28 anni</p>
               </div>
@@ -837,7 +837,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">«Meglio della crema agli estrogeni»</p>
                 <p className="text-gray-700 italic">
-                  «Non l'ho comprato per ‹divertimento›, l'ho comprato perché la mia dottoressa mi aveva detto che mi serviva afflusso di sangue. Ma wow. Il rilascio mi aiuta a dormire tutta la notte senza svegliarmi in un bagno di sudore. È la mia nuova vitamina.»
+                  «Non l'ho comprato per "divertimento", l'ho comprato perché la mia dottoressa mi aveva detto che mi serviva afflusso di sangue. E invece, wow. Quel rilascio mi aiuta a dormire tutta la notte senza svegliarmi in un bagno di sudore. È la mia nuova vitamina.»
                 </p>
                 <p className="font-semibold text-gray-900">– Sarah J., 58 anni</p>
                 <p className="text-xs text-gray-500">✓ Acquisto verificato</p>
@@ -1069,7 +1069,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Preferisci il <strong>benessere supportato dalla scienza</strong> rispetto agli espedienti</span>
+                    <span>Preferisci un <strong>benessere con basi scientifiche</strong> rispetto agli espedienti</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />

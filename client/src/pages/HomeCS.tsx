@@ -88,7 +88,7 @@ export default function Home() {
               className="h-8 md:h-10"
             />
             <div className="text-right">
-              <p className="text-xs text-gray-500 font-medium">Důvěryhodné ženské zdraví</p>
+              <p className="text-xs text-gray-500 font-medium">Zdraví žen, kterému můžeš věřit</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Home() {
             Milion orgasmů později: proč ženy po padesátce vyměňují vibrátory za tenhle „citron“
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-            Zjišťovaly jsme, proč tisíce žen po padesátce mění klasické vibrátory za tenhle „fyzioterapeutický“ přístroj, který vypadá jako citron. Tady je to, co jsme zjistily.
+            Zjišťovaly jsme, proč tisíce žen po padesátce mění klasické vibrátory za tenhle „fyzioterapeutický“ přístroj, který vypadá jako citron. A na co jsme přišly?
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
@@ -237,7 +237,7 @@ export default function Home() {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Proč o tom mluvíme</h2>
           <p className="text-gray-700 leading-relaxed">
-            Když naše redakce poprvé zaslechla o „wellness přístroji ve tvaru citronu“, který bere komunitu žen v menopauze útokem, přiznáme se – byly jsme skeptické. Ale po desítkách rozhovorů se ženami, konzultacích s gynekoložkami a ano, po vlastním testování, ten humbuk chápeme.
+            Když naše redakce poprvé zaslechla o „wellness přístroji ve tvaru citronu“, kterým žije celá komunita žen v menopauze, přiznáme se – byly jsme skeptické. Jenže po desítkách rozhovorů se ženami, konzultacích s gynekoložkami a ano, po vlastním testování tomu povyku rozumíme.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Tohle není jen další wellness trend. Řeší skutečný zdravotní problém, který se týká milionů žen, ale málokdy se o něm mluví: <strong>atrofii klitorisu</strong> a ztrátu sexuálního zdraví během menopauzy.
@@ -263,7 +263,7 @@ export default function Home() {
               Pro mnoho žen, se kterými jsme mluvily, nešlo jen o suchost. Šlo o <strong>necitlivost</strong>. Jedna testerka popsala, jak zkoušela svůj starý vibrátor z dob, kdy jí bylo třicet: „Místo příjemného pocitu mě to jen… dráždilo. Nebo bylo necitlivé. Jako kdybych se snažila polechtat mozol.“
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Lékařské autority vysvětlují, že klasické vibrátory fungují na principu tření a nárazu. Když tkáně kvůli nízké hladině estrogenu řídnou, přímé vibrace mohou ve skutečnosti <em>nervy ještě víc otupit</em>, což vede k tomu „necitlivému“ pocitu.
+              Odborníci vysvětlují, že klasické vibrátory fungují na principu tření a tlaku. Když tkáně kvůli nízké hladině estrogenu řídnou, přímé vibrace můžou nervy ve skutečnosti <em>ještě víc otupit</em> – a právě odtud ten „necitlivý“ pocit.
             </p>
           </div>
 
@@ -382,7 +382,7 @@ export default function Home() {
 
         {/* Design Features */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Designová filozofie „proti studu“</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Design, který říká studu sbohem</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Jedna věc naši redakci při testování zaujala: design je <em>záměrně</em> diskrétní. Je jasně žlutý, vejde se do dlaně a opravdu vypadá jako dekorativní citron.
           </p>
@@ -400,7 +400,7 @@ export default function Home() {
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-3">
-              Všechny tu zásuvku máme. Tu <em>zásuvku studu</em>. Kam pod staré ponožky schováváme ty nevzhledné plastové falické pomůcky.
+              Všechny ji známe. Tu <em>zásuvku studu</em>. Tu, kam pod staré ponožky schováváme ty nevzhledné plastové hračky ve tvaru penisu.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
               Jedna z našich testerek se s námi podělila o tenhle příběh: „Omylem jsem nechala Lem na desce v koupelně, když přijela tchyně na návštěvu. Vzala ho do ruky a povídá: ‚Jé, to je některý z těch nových sonických čističů obličeje? Je tak jemný!’“
@@ -413,7 +413,7 @@ export default function Home() {
           <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg mb-6">
             <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Varování před levnými napodobeninami</h3>
             <p className="text-red-800 leading-relaxed mb-3">
-              Po zveřejnění naší první recenze se čtenářky ptaly, proč by si neměly koupit verzi za „levné napodobeniny“ na Amazonu. Tady je to, co říkají lékaři.
+              Po zveřejnění naší první recenze se čtenářky ptaly, proč si radši nepořídit některou z těch „levných napodobenin“ z Amazonu. Tady je, co na to říkají lékaři.
             </p>
             <p className="text-red-800 leading-relaxed font-semibold">
               „Levné hračky používají porézní materiály typu jelly nebo TPE,“ varovala. „V pórech se zachytávají mikroskopické bakterie, což je obrovské riziko pro ženy v menopauze, které už tak bývají náchylné k zánětům močových cest.“
@@ -520,7 +520,7 @@ export default function Home() {
 
         {/* Clitoral Stimulation Education Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Pojďme si o anatomii: proč na stimulaci klitorisu záleží</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Trocha anatomie: proč na stimulaci klitorisu záleží</h2>
 
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
@@ -607,7 +607,7 @@ export default function Home() {
           <div className="bg-gradient-to-r from-[#FFE14D]/20 to-[#FF1493]/20 p-8 rounded-xl mb-8">
             <h3 className="font-bold text-2xl text-gray-900 mb-4">„Tříminutový zázrak“ (a proč ho partneři milují)</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Buďme upřímné: spoustě žen po padesátce může trvat 20 minut i víc (a hromadu mentální gymnastiky), než se vůbec přiblíží vyvrcholení. S Lemem? <strong className="text-[#FF1493]">Tři minuty.</strong>
+              Buďme upřímné: spoustě žen po padesátce může trvat 20 minut i víc (a pořádnou porci soustředění), než se vůbec přiblíží vyvrcholení. S Lemem? <strong className="text-[#FF1493]">Tři minuty.</strong>
             </p>
             <div className="bg-white p-6 rounded-lg">
               <p className="text-lg text-gray-900 mb-3">
@@ -637,7 +637,7 @@ export default function Home() {
                 <p className="font-semibold text-gray-700">– Valeria, 55, 28 let vdaná</p>
               </div>
               <p>
-                Díky kompaktní velikosti se snadno zapojí do společných chvil, aniž by překážel. A protože po nasazení drží sám bez držení, oba partneři se můžou soustředit jeden na druhého.
+                Díky kompaktní velikosti se snadno zapojí do společných chvil, aniž by překážel. A protože po nasazení drží sám, s volnýma rukama, oba se můžete plně soustředit jeden na druhého.
               </p>
             </div>
             <div className="bg-gradient-to-br from-[#FF1493]/10 to-[#FFE14D]/10 p-8 rounded-xl">
@@ -683,7 +683,7 @@ export default function Home() {
 
         {/* Enhanced Risk Reversal Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Tisíc důvodů to zkusit, ani jeden mít obavy</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Tisíc důvodů to zkusit a ani jeden se bát</h2>
           <p className="text-center text-xl text-gray-600 mb-8">Prozkoumaly jsme záruky Hello Nancy. Tady je, co skutečně znamenají.</p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -837,7 +837,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Lepší než estrogenový krém“</p>
                 <p className="text-gray-700 italic">
-                  „Nekoupila jsem si to pro ‚zábavu’, koupila jsem si to, protože doktorka říkala, že potřebuju prokrvení. Ale teda. To uvolnění mi pomáhá prospat celou noc, aniž bych se budila zpocená. Je to můj nový vitamin.“
+                  „Nekoupila jsem si to pro ‚zábavu’, koupila jsem si to, protože doktorka říkala, že potřebuju prokrvení. Ale teda. Díky tomu uvolnění prospím celou noc, aniž bych se budila zpocená. Je to můj nový vitamín.“
                 </p>
                 <p className="font-semibold text-gray-900">– Sarah J., 58</p>
                 <p className="text-xs text-gray-500">✓ Ověřený nákup</p>
@@ -903,7 +903,7 @@ export default function Home() {
               Náš verdikt: stojí to za tu investici
             </h2>
             <p className="text-center text-xl text-gray-600">
-              Po důkladném testování a průzkumu dává naše redakce Nancy's Lemu silné doporučení pro ženy, které zažívají menopauzální změny tkáně.
+              Po důkladném testování a průzkumu naše redakce Nancy's Lem vřele doporučuje ženám, které procházejí menopauzálními změnami tkáně.
             </p>
           </div>
 
@@ -1162,7 +1162,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Co když mi to nebude vyhovovat?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy nabízí záruku spokojenosti na 30 dní. Pokud si to nezamiluješ, nabízejí jednorázovou náhradu z vstřícnosti – <strong>bez nutnosti cokoli vracet</strong>. Věří ti, že najdeš to, co tvému tělu sedí.
+                  Hello Nancy nabízí záruku spokojenosti na 30 dní. Pokud si to nezamiluješ, vrátí ti peníze – <strong>bez nutnosti cokoli posílat zpátky</strong>. Věří ti, že najdeš to, co tvému tělu sedí.
                 </p>
               </CardContent>
             </Card>
@@ -1171,7 +1171,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Můžu ho používat ve sprše nebo ve vaně?</h3>
                 <p className="text-gray-700">
-                  Ano! Má certifikaci vodotěsnosti IPX7, což znamená, že ho lze celý ponořit. Spousta uživatelek zjistí, že teplá voda umocňuje uvolnění i prožitek.
+                  Ano! Má certifikaci vodotěsnosti IPX7, takže ho můžeš celý ponořit. Spousta žen si pochvaluje, že teplá voda celý zážitek i uvolnění ještě umocní.
                 </p>
               </CardContent>
             </Card>
@@ -1197,13 +1197,13 @@ export default function Home() {
             </h2>
             <div className="text-white text-lg leading-relaxed space-y-4">
               <p>
-                Po týdnech průzkumu, konzultacích s odbornicemi a rozhovorech s uživatelkami naše redakce věří, že Nancy's Lem řeší skutečnou zdravotní potřebu, kterou jsme příliš dlouho přehlíželi.
+                Po týdnech průzkumu, konzultacích s odbornicemi a rozhovorech s uživatelkami naše redakce věří, že Nancy's Lem řeší skutečnou zdravotní potřebu, kterou jsme příliš dlouho přehlížely.
               </p>
               <p>
                 Tohle není o marnivosti ani o rozmazlování – jde o udržení zdraví tkáně, zlepšení kvality spánku a znovuzískání části sebe, kterou se ti menopauza snaží vzít.
               </p>
               <p className="text-xl font-bold">
-                Pokud zažíváš příznaky GSM, trápíš se s klasickými řešeními nebo si prostě chceš udržet sexuální zdraví i s přibývajícím věkem, Lem si zaslouží vážnou pozornost.
+                Pokud zažíváš příznaky GSM, trápíš se s klasickými řešeními nebo si prostě chceš udržet sexuální zdraví i s přibývajícím věkem, Lem rozhodně stojí za vyzkoušení.
               </p>
               <p className="text-sm italic">
                 – Jessica Martinez, hlavní redaktorka wellness
@@ -1244,7 +1244,7 @@ export default function Home() {
             <div className="bg-gray-800 p-6 rounded-lg mb-8">
               <h3 className="font-bold text-lg mb-3">Affiliate prohlášení</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Wellness Insider je podporovaný čtenářkami. Když nakoupíš přes odkazy na našem webu, můžeme získat affiliate provizi – pro tebe bez jakéhokoli příplatku. Pomáhá nám to dál poskytovat bezplatný obsah podložený výzkumem. Doporučujeme jen produkty, které naše redakce důkladně prověřila a věří, že našim čtenářkám prospějí. Všechny vyjádřené názory jsou naše vlastní a nejsou ovlivněny odměnou.
+                Wellness Insider funguje díky podpoře svých čtenářek. Když nakoupíš přes odkazy na našem webu, můžeme získat affiliate provizi – pro tebe bez jakéhokoli příplatku. Díky tomu pro vás můžeme dál tvořit bezplatný obsah podložený výzkumem. Doporučujeme jen produkty, které naše redakce důkladně prověřila a věří, že našim čtenářkám prospějí. Všechny názory jsou naše vlastní a žádná odměna je neovlivnila.
               </p>
             </div>
 
@@ -1252,7 +1252,7 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-lg mb-4">O nás</h3>
                 <p className="text-gray-400 text-sm">
-                  Wellness Insider přináší zdravotní a wellness žurnalistiku podloženou důkazy pro moderní ženy.
+                  Wellness Insider přináší moderním ženám zdravotní a wellness žurnalistiku podloženou důkazy.
                 </p>
               </div>
               <div>

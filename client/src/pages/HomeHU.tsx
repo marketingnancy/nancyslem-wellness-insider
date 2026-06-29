@@ -66,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "Nancy's Lem wellness-eszköz" },
-    { src: "/PDP-1.jpg", alt: "Lem életstílus-környezetben" },
-    { src: "/PDP-2.jpg", alt: "A Lem formaterve közelről" },
-    { src: "/PDP-3.jpg", alt: "Lem termékrészletek" },
-    { src: "/PDP-4.jpg", alt: "Lem használat közben" },
-    { src: "/PDP-5.jpg", alt: "Lem csomagolás és tartozékok" },
-    { src: "/PDP-6.jpg", alt: "Lem életstílus-kép" },
-    { src: "/PDP-7.jpg", alt: "Lem termékjellemzők" },
+    { src: "/PDP.jpg", alt: "A Nancy's Lem wellness-eszköz" },
+    { src: "/PDP-1.jpg", alt: "A Lem otthoni környezetben" },
+    { src: "/PDP-2.jpg", alt: "A Lem formája közelről" },
+    { src: "/PDP-3.jpg", alt: "A Lem részletei" },
+    { src: "/PDP-4.jpg", alt: "A Lem használat közben" },
+    { src: "/PDP-5.jpg", alt: "A Lem csomagolása és tartozékai" },
+    { src: "/PDP-6.jpg", alt: "A Lem otthoni környezetben" },
+    { src: "/PDP-7.jpg", alt: "A Lem jellemzői" },
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function Home() {
               className="h-8 md:h-10"
             />
             <div className="text-right">
-              <p className="text-xs text-gray-500 font-medium">Megbízható női egészség</p>
+              <p className="text-xs text-gray-500 font-medium">Hiteles női egészség</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Home() {
             Több mint 1 millió orgazmus után: miért cserélik le az 50 feletti nők a vibrátort erre a „citromra”
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-            Utánajártunk, miért hagyják ott több ezren az 50 feletti nők közül a hagyományos vibrátort egy „fizioterápiás” eszközért, ami úgy néz ki, mint egy citrom. Íme, amit találtunk.
+            Utánajártunk, miért cseréli le több ezer 50 feletti nő a hagyományos vibrátort egy „gyógytornász” eszközre, ami úgy néz ki, mint egy citrom. Íme, amit kiderítettünk.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <p className="text-gray-700 text-xs leading-tight">
               <span className="font-bold text-gray-900 mr-1">Szerkesztői megjegyzés:</span>
-              Ez a cikk affiliate linkeket tartalmaz. Ha ezeken keresztül vásárolsz, jutalékot kaphatunk, neked viszont ez egy fillérbe sem kerül többe. Csak olyan termékeket ajánlunk, amelyeket alaposan utánajártunk és kipróbáltunk.
+              Ez a cikk affiliate linkeket tartalmaz. Ha ezeken keresztül vásárolsz, jutalékot kaphatunk, neked viszont egy fillérrel sem kerül többe. Csak olyan termékeket ajánlunk, amelyeknek alaposan utánajártunk, és magunk is kipróbáltunk.
             </p>
           </div>
         </div>
@@ -194,10 +194,10 @@ export default function Home() {
       <section className="container max-w-4xl py-8">
         <img
           src="/PDP.jpg"
-          alt="Nancy's Lem wellness-eszköz az éjjeliszekrényen"
+          alt="A Nancy's Lem wellness-eszköz az éjjeliszekrényen"
           className="w-full rounded-lg shadow-lg"
         />
-        <p className="text-sm text-gray-500 mt-2 italic">A Nancy's Lem diszkréten megül az éjjeliszekrényen – a legtöbben azt hiszik, dekorációs citrom. Fotó: Hello Nancy</p>
+        <p className="text-sm text-gray-500 mt-2 italic">A Nancy's Lem ott lapul az éjjeliszekrényen – a legtöbben dísznek szánt citromnak nézik. Fotó: Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
@@ -237,43 +237,43 @@ export default function Home() {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Miért beszélünk erről</h2>
           <p className="text-gray-700 leading-relaxed">
-            Amikor a szerkesztőségünk először hallott egy „citrom alakú wellness-eszközről”, ami viharos sebességgel hódítja meg a menopauzás közösséget, bevalljuk – szkeptikusak voltunk. De miután tucatnyi nővel beszélgettünk, nőgyógyászokkal konzultáltunk, és igen, magunk is kipróbáltuk, már értjük, miért ez most a felkapott téma.
+            Amikor a szerkesztőségünk először hallott egy „citrom alakú wellness-eszközről”, amiről egyszer csak minden menopauzán átesett nő beszélni kezdett, bevalljuk – kétkedve fogadtuk. De miután tucatnyi nővel leültünk beszélgetni, nőgyógyászokkal egyeztettünk, és igen, magunk is kipróbáltuk, már értjük, miért kapott rajta mindenki.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Ez nem csak egy újabb wellness-trend. Egy valódi orvosi problémára adott válasz, ami nők millióit érinti, mégis ritkán esik róla szó: a <strong>csiklósorvadásra</strong> és a szexuális jóllét elvesztésére a menopauza alatt.
+            Ez nem csak egy újabb wellness-divat. Válasz egy valódi orvosi problémára, ami nők millióit érinti, mégis alig esik róla szó: a menopauza alatti <strong>csiklósorvadásra</strong> és a szexuális jóllét elvesztésére.
           </p>
         </div>
 
         {/* Problem Section */}
         <div className="bg-gray-50 p-8 rounded-xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">A beszélgetés, amire senki sem figyelmeztetett</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">A beszélgetés, amire senki sem készít fel</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Mindent hallunk a hőhullámokról, amelyek hajnali 3-kor az izzadt selyemlepedőből rángatnak ki. Hallunk az agyködről, ami miatt a szemüvegünket keressük, miközben az ott van az orrunkon.
+            A hőhullámokról mindent hallunk – arról, ahogy hajnali 3-kor felrángatnak az izzadt selyemlepedőről. Hallunk az agyködről is, ami miatt a szemüvegünket keressük, pedig ott van az orrunkon.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
-            De senki sem ül le hozzád egy pohár Pinot mellé, hogy odasúgja: „Hé, amúgy, ha odalent nem tartod aktívan a dolgokat, a csiklód szó szerint összemehet.”
+            De senki sem ül le hozzád egy pohár bor mellé, hogy a füledbe súgja: „Figyelj, ha odalent nem tartod karban a dolgokat, a csiklód szó szerint összezsugorodhat.”
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Ezt <strong>csiklósorvadásnak</strong> hívják, és a menopauza urogenitális tünetegyüttesének (GSM) része – a North American Menopause Society szerint a posztmenopauzás nők akár 50%-át érinti.
+            Ezt <strong>csiklósorvadásnak</strong> hívják, és a menopauza urogenitális tünetegyüttesének (GSM) része – a North American Menopause Society szerint a változókoron túljutott nők akár 50%-át érinti.
           </p>
 
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
-            <h3 className="font-bold text-lg text-gray-900 mb-3">„A nagy elidegenedés”</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3">„A nagy eltávolodás”</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Sok megkérdezett nőnek nem csak a szárazság volt a baj. Hanem a <strong>zsibbadtság</strong>. Az egyik tesztelőnk így írta le, amikor elővette a harmincas éveiből megmaradt régi vibrátorát: „Ahelyett, hogy jó lett volna, csak… ingerlő volt. Vagy zsibbadt. Mintha egy bőrkeményedést próbálnál csiklandozni.”
+              Sok megkérdezett nőnél nem a szárazság volt az igazi baj. Hanem a <strong>zsibbadtság</strong>. Az egyik tesztelőnk így mesélte el, amikor elővette a harmincas éveiből megmaradt régi vibrátorát: „Ahelyett, hogy jó lett volna, csak… kellemetlen volt. Vagy zsibbadt. Mintha egy bőrkeményedést próbálnál csiklandozni.”
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Az orvosi szakemberek szerint a hagyományos vibrátorok dörzsöléssel és ütéssel hatnak. Amikor a szövetek az alacsony ösztrogénszint miatt elvékonyodnak, a közvetlen rezgés valójában <em>tovább érzéketlenítheti az idegeket</em>, és pont ettől lesz az a „zsibbadt” érzés.
+              A szakemberek szerint a hagyományos vibrátorok dörzsöléssel és ütögetéssel hatnak. Csakhogy amikor a szövet az alacsony ösztrogénszint miatt elvékonyodik, a közvetlen rezgés valójában <em>tovább tompíthatja az idegeket</em> – innen ered az a bizonyos „zsibbadt” érzés.
             </p>
           </div>
 
           <div className="bg-gradient-to-r from-[#FFE14D]/30 to-[#FF1493]/30 p-6 rounded-lg">
-            <p className="text-2xl font-bold text-gray-900 mb-2 italic">„Hagyd a rezgést. Kezdd a szívást.”</p>
-            <p className="text-gray-700">– Medenctáji szakemberek</p>
+            <p className="text-2xl font-bold text-gray-900 mb-2 italic">„Felejtsd el a rezgést. Kezdd a szívással.”</p>
+            <p className="text-gray-700">– Medencefenék-szakértők</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            A menopauzára szakosodott nőgyógyászok így magyarázzák: „Amikor az ösztrogénszint leesik, a medencei vérkeringés csökken. Ez szövetelvékonyodáshoz, a rugalmasság elvesztéséhez és az érzékelés csökkenéséhez vezet. Az orvostudomány ezt a »használd, vagy elveszíted« elvnek nevezi – állandó vérkeringés kell ahhoz, hogy a szövet egészséges maradjon.”
+            A menopauzára szakosodott nőgyógyászok így magyarázzák: „Amikor leesik az ösztrogénszint, a medencei vérkeringés is visszaesik. Ettől elvékonyodik a szövet, csökken a rugalmassága és az érzékelése. Az orvostudományban ezt »használod vagy elveszíted« elvnek hívjuk – a szövet csak akkor marad egészséges, ha folyamatos a vérellátása.”
           </p>
         </div>
 
@@ -281,10 +281,10 @@ export default function Home() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Itt jön a képbe: a Nancy's Lem</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Itt lép színre ez a kis sárga eszköz. A Nancy's Lemet nem szexjátékként reklámozzák – wellness-eszközként pozicionálják. És a kutatásunk után már értjük, miért.
+            Itt lép színre ez a kis sárga eszköz. A Nancy's Lemet nem szexjátékként hirdetik, hanem wellness-eszközként – és a kutatásunk után már értjük, miért.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            A dörzsölésre építő hagyományos vibrátorokkal ellentétben (amelyek irritálhatják az elvékonyodott menopauzás szövetet) a Lem egy <strong>légpulzusos technológiát</strong> használ. Képzeld el a különbséget: dörzspapírt húzol végig a bőrödön, vagy egy finom vákuummasszázst kapsz.
+            A dörzsölésre építő hagyományos vibrátorokkal ellentétben (amelyek irritálhatják az elvékonyodott menopauzás szövetet) a Lem <strong>légpulzusos technológiával</strong> dolgozik. Hogy érezd a különbséget: az egyik olyan, mintha dörzspapírt húznál végig a bőrödön, a másik egy finom vákuummasszázs.
           </p>
         </div>
 
@@ -295,19 +295,19 @@ export default function Home() {
           <div className="space-y-4 max-w-2xl mx-auto mb-6">
             <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded">
               <p className="font-semibold text-red-800 mb-2">❌ Hagyományos vibrátorok:</p>
-              <p className="text-red-700 text-sm">Felületi dörzsölésre építenek, ami irritálhatja az érzékeny, elvékonyodott szövetet. Zsibbadtságot vagy mikrorepedéseket okozhat.</p>
+              <p className="text-red-700 text-sm">Felületi dörzsölésre épülnek, ami irritálhatja az érzékeny, elvékonyodott szövetet. Zsibbadtsághoz vagy apró berepedésekhez vezethet.</p>
             </div>
             <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded">
               <p className="font-semibold text-green-800 mb-2">✓ Légpulzusos technológia:</p>
-              <p className="text-green-700 text-sm">Finom szívóhullámokat kelt közvetlen érintés nélkül. Oxigéndús vért szív a szövetbe, ezzel támogatja az egészséget és az érzékelést.</p>
+              <p className="text-green-700 text-sm">Finom szívóhullámokkal hat, közvetlen érintés nélkül. Oxigéndús vért hív a szövetbe, így segíti az egészségét és az érzékelését.</p>
             </div>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Így működik: a Lem finom légzárat hoz létre a csikló körül, és légnyomáshullámokkal ingerli – az orális szex érzését utánozza, csak épp kitartóan és fáradhatatlanul. Mivel nincs dörzsölés, nulla az irritáció.
+            Így működik: a Lem finom légzárat képez a csikló körül, és légnyomáshullámokkal kényezteti – az orális szex érzését idézi, csak épp kitartóan, fáradhatatlanul. És mivel nincs dörzsölés, az irritáció is elmarad.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            De az igazi varázslat a fizika: ez a finom szívóhatás vákuumot kelt, ami fizikailag mélyre, a szövetbe szívja az oxigéndús vért. Felébreszti az éveken át szunnyadó idegeket.
+            De az igazi varázslat a fizikában rejlik: ez a finom szívóhatás vákuumot kelt, ami a mélybe, egészen a szövetbe húzza az oxigéndús vért. Felébreszti az éveken át szunnyadó idegeket.
           </p>
 
           <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
@@ -320,8 +320,8 @@ export default function Home() {
 
         {/* Comparison Table */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Hogyan teljesít: az összehasonlításunk</h2>
-          <p className="text-center text-gray-600 mb-8">Összevetettük a Lemet a menopauzás szövetegészségre szánt hagyományos megoldásokkal</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Hogyan vizsgázott: a mi összehasonlításunk</h2>
+          <p className="text-center text-gray-600 mb-8">Egymás mellé tettük a Lemet és a menopauzás szövet egészségére szánt szokványos megoldásokat</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
               <thead>
@@ -334,7 +334,7 @@ export default function Home() {
               </thead>
               <tbody className="text-sm">
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Működik érzékeny szöveten</td>
+                  <td className="border border-gray-300 p-4 font-medium">Érzékeny szöveten is működik</td>
                   <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Igen</td>
                   <td className="border border-gray-300 p-4 text-center">❌ Irritálhat</td>
                   <td className="border border-gray-300 p-4 text-center">⚠️ Lassú eredmény</td>
@@ -382,9 +382,9 @@ export default function Home() {
 
         {/* Design Features */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">A „szégyenmentes” formatervezési filozófia</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">A „szégyenkezés nélküli” formatervezés</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Egy dolog a tesztelés alatt nagyon megfogta a szerkesztőségünket: a forma <em>szándékosan</em> diszkrét. Élénksárga, elfér a tenyeredben, és tényleg úgy néz ki, mint egy dekorációs citrom.
+            A tesztelés közben egy dolog nagyon megfogta a szerkesztőségünket: a forma <em>szándékosan</em> diszkrét. Élénksárga, elfér a tenyeredben, és tényleg pont úgy néz ki, mint egy dísznek szánt citrom.
           </p>
 
           <div className="bg-[#FFE14D]/20 p-6 rounded-xl mb-6">
@@ -394,32 +394,32 @@ export default function Home() {
             <div className="max-w-md mx-auto mb-6">
               <img
                 src="/discretion_illustration.png"
-                alt="A Lem eszköz diszkréten megül az éjjeliszekrényen"
+                alt="A Lem eszköz diszkréten elvegyül az éjjeliszekrényen"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-3">
-              Mindannyiunknak megvan az a bizonyos fiók. A <em>szégyenfiók</em>. Ahova a régi zoknik alá dugjuk a randa, falloszformájú műanyag eszközöket.
+              Mindannyiunknak megvan az a bizonyos fiók. A <em>szégyenfiók</em>. Ahova a régi zoknik alá dugjuk a randa, falloszformájú műanyag holmikat.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Az egyik tesztelőnk megosztotta velünk ezt a sztorit: „Véletlenül a fürdőszobapulton hagytam a Lememet, amikor az anyósom látogatóba jött. Felvette, és azt mondta: »Jaj, ez valami új szónikus arctisztító? Olyan puha tapintású!«”
+              Az egyik tesztelőnk ezt a történetet osztotta meg velünk: „Véletlenül a fürdőszobapulton felejtettem a Lememet, amikor az anyósom beugrott. Kézbe vette, és csak annyit mondott: »Jaj, ez valami új arctisztító kefe? Milyen puha tapintású!«”
             </p>
             <p className="text-gray-700 leading-relaxed font-semibold">
-              Átmegy az éjjeliszekrény-teszten. Úgy néz ki, mint egy csúcskategóriás öngondoskodási kütyü, nem mint egy szexjáték. Mert pontosan az is.
+              Átmegy az éjjeliszekrény-teszten. Úgy fest, mint egy csúcskategóriás öngondoskodási kütyü, nem mint egy szexjáték. Mert pontosan az is.
             </p>
           </div>
 
           <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg mb-6">
-            <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Figyelmeztetés az olcsó utánzatokkal kapcsolatban</h3>
+            <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Óvakodj az olcsó utánzatoktól</h3>
             <p className="text-red-800 leading-relaxed mb-3">
-              Az első tesztünk megjelenése után az olvasók megkérdezték, miért ne vegyék meg inkább a pár ezer forintos utánzatot az Amazonról. Íme, mit mondanak az orvosi szakemberek.
+              Az első tesztünk megjelenése után többen megkérdezték, miért ne vegyék meg inkább a pár ezer forintos utánzatot az Amazonról. Íme, mit mondanak erre a szakemberek.
             </p>
             <p className="text-red-800 leading-relaxed font-semibold">
-              „Az olcsó eszközök porózus Jelly/TPE anyagokat használnak” – figyelmeztetett. „A mikroszkopikus baktériumok megtelepednek a pórusokban, ami óriási kockázat a menopauzás nőknek, akik amúgy is hajlamosak a húgyúti fertőzésekre.”
+              „Az olcsó eszközök porózus Jelly- vagy TPE-anyagból készülnek” – figyelmeztetett egyikük. „A pórusokban megtelepednek a parányi baktériumok, ami óriási kockázat a menopauzás nőknek, akik amúgy is hajlamosabbak a húgyúti fertőzésekre.”
             </p>
             <p className="text-red-900 font-bold mt-3">
-              A Hello Nancy Lem 100%-ban orvosi minőségű, nem porózus szilikon. Ne kockáztasd az egészséged azért, hogy pár ezer forintot spórolj.</p>
+              A Hello Nancy Lem 100%-ban orvosi minőségű, nem porózus szilikonból van. Ne tedd kockára az egészséged pár ezer forintért.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -477,13 +477,13 @@ export default function Home() {
             <div>
               <img
                 src="/PDP-5.jpg"
-                alt="A Lem kicsomagolásának élménye"
+                alt="A Lem kicsomagolása"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                Az egyik első dolog, ami feltűnt a tesztelőinknek? A csomagolás <em>elegáns</em>. Semmi rikító szín, semmi kínos kép. A doboz minimalista fehér, finom aranyszínű részletekkel – könnyen össze lehetne téveszteni egy luxus bőrápolási termékkel.
+                Mi tűnt fel elsőként a tesztelőinknek? Hogy a csomagolás <em>elegáns</em>. Semmi rikító szín, semmi kínos kép. A doboz letisztult fehér, finom aranyszínű részletekkel – simán összetéveszthető egy luxus bőrápoló termékkel.
               </p>
               <div className="bg-white p-6 rounded-lg border-2 border-[#FFE14D]">
                 <h3 className="font-bold text-lg text-gray-900 mb-3">Mi van a dobozban:</h3>
@@ -511,7 +511,7 @@ export default function Home() {
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                „Amikor kinyitottam a dobozt, őszintén meglepett, mennyire <strong>prémium</strong> tapintású volt minden. Nem »szexjáték« érzése volt – inkább egy wellness-befektetésé.” – Tesztelő, 54 éves
+                „Amikor kinyitottam a dobozt, őszintén meglepett, milyen <strong>igényes</strong> tapintású minden. Nem »szexjáték«-érzés volt, hanem inkább egy wellness-befektetésé.” – Tesztelő, 54 éves
               </p>
             </div>
           </div>
@@ -543,10 +543,10 @@ export default function Home() {
 
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Itt van valami, amit a biológiaórán nem tanítanak: a csiklóban körülbelül <strong>8000 idegvégződés</strong> van – több, mint az emberi test bármely más részén, akár férfiról, akár nőről van szó. Összehasonlításképp: a péniszben nagyjából 4000.
+                Van itt valami, amit a biológiaórán nem tanítanak: a csiklóban nagyjából <strong>8000 idegvégződés</strong> található – több, mint az emberi test bármely más pontján, legyen szó férfiról vagy nőről. Összehasonlításképp: a péniszben körülbelül 4000.
               </p>
               <p>
-                De itt a bökkenő: <strong>a nők 75%-a önmagában behatolással nem jut el az orgazmusig</strong>, ezt a Journal of Sex & Marital Therapy egyik tanulmánya állapította meg. A csikló a kulcs.
+                De itt a bökkenő: <strong>a nők 75%-a pusztán behatolástól nem jut el az orgazmusig</strong> – ezt a Journal of Sex & Marital Therapy egyik tanulmánya mutatta ki. A csikló a kulcs.
               </p>
 
               <div className="bg-white p-6 rounded-lg my-6">
@@ -586,13 +586,13 @@ export default function Home() {
               </div>
 
               <p>
-                A nőgyógyászok kerek perec kimondják: „Gondolj rá úgy, mint a medencefenék edzésére. Ha nem használod ezeket az izmokat, és nem tartod fenn a vérkeringést, elsorvadnak. Ugyanez érvényes a csiklószövetre is.”
+                A nőgyógyászok kertelés nélkül kimondják: „Képzeld el úgy, mint a medencefenék edzését. Ha nem mozgatod ezeket az izmokat, és nem tartod fenn a vérkeringést, leépülnek. Ugyanez igaz a csiklószövetre is.”
               </p>
 
               <div className="bg-[#FFE14D]/30 p-6 rounded-lg border-l-4 border-[#FFE14D]">
                 <p className="font-bold text-gray-900 mb-2">💡 A lényeg:</p>
                 <p className="text-gray-700">
-                  A rendszeres csiklóingerlés nem csak az élvezetről szól (bár az is szép ráadás). A szövet egészségének megőrzéséről, az idegműködés fenntartásáról és azoknak a visszafordíthatatlan változásoknak a megelőzéséről, amelyek az elhanyagolással járnak. Ez <em>megelőző egészségvédelem</em>.
+                  A rendszeres csiklóingerlés nem csak az élvezetről szól (bár az is szép ráadás). Hanem a szövet egészségének megőrzéséről, az idegműködés karbantartásáról és azoknak a visszafordíthatatlan változásoknak a megelőzéséről, amelyeket az elhanyagolás hoz magával. Ez <em>megelőző egészségvédelem</em>.
                 </p>
               </div>
             </div>
@@ -604,19 +604,19 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">„De mi lesz a párommal?” Ennek is utánajártunk</h2>
 
           <div className="bg-gradient-to-r from-[#FFE14D]/20 to-[#FF1493]/20 p-8 rounded-xl mb-8">
-            <h3 className="font-bold text-2xl text-gray-900 mb-4">A „3 perces csoda” (és miért imádják a párok)</h3>
+            <h3 className="font-bold text-2xl text-gray-900 mb-4">A „3 perces csoda” (és hogy miért imádják a párok)</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Legyünk őszinték: sok 50 feletti nőnek 20+ percbe (és sok fejben tornázásba) telik, mire egyáltalán a csúcs közelébe ér. A Lemmel? <strong className="text-[#FF1493]">Három perc.</strong>
+              Valljuk be: sok 50 feletti nőnek 20 percnél is több (és rengeteg fejben kapkodás) kell, mire egyáltalán a csúcs közelébe ér. A Lemmel? <strong className="text-[#FF1493]">Három perc.</strong>
             </p>
             <div className="bg-white p-6 rounded-lg">
               <p className="text-lg text-gray-900 mb-3">
-                <strong>A nők legnagyobb ellenvetése:</strong> „A párom úgy érzi majd, hogy lecseréltem?”
+                <strong>A nők legnagyobb aggálya:</strong> „A párom nem érzi majd, hogy lecseréltem?”
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>Egyáltalán nem.</strong> A Lem pici. Sok pár <em>együttlét közben</em> használja. „Hídként” működik: gondoskodik róla, hogy teljesen izgalomba jöjj és természetesen nedves legyél, így leveszi a terhet a párodról, hogy neki kelljen „teljesítenie”.
+                <strong>Szó sincs róla.</strong> A Lem pici. Sok pár <em>együttlét közben</em> használja. „Hídként” működik: gondoskodik róla, hogy teljesen felizzulj és magadtól nedves legyél, így leveszi a párod válláról a terhet, hogy neki kelljen „teljesítenie”.
               </p>
               <p className="text-gray-700 leading-relaxed italic">
-                Az egyik tesztelőnk azt mondta: „A hálószobánkat a szorongás helyéből újra játszótérré varázsolta.”
+                Az egyik tesztelőnk így fogalmazott: „A hálószobánk a szorongás helyéből újra játszótér lett.”
               </p>
             </div>
           </div>
@@ -624,19 +624,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                A kutatásunk során az egyik leggyakoribb kérdés ez volt: <em>„A párom fenyegetve érzi majd magát ettől?”</em>
+                A kutatásunk során az egyik leggyakoribb kérdés ez volt: <em>„A párom nem érzi majd magát fenyegetve emiatt?”</em>
               </p>
               <p>
-                Íme, amit találtunk: <strong>a Lem nem helyettesítés – hanem fokozás.</strong> Sok megkérdezett pár arról számolt be, hogy amikor a Lemet bevonták az intim együttléteikbe, az valójában <em>elmélyítette</em> a kapcsolatukat.
+                Íme, amit kiderítettünk: <strong>a Lem nem pótlék, hanem ráadás.</strong> Sok megkérdezett pár arról számolt be, hogy amikor a Lemet bevonták az együttléteikbe, az igazából <em>elmélyítette</em> a kapcsolatukat.
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  „A férjem kíváncsi volt, nem fenyegetve érezte magát. Most ő használja rajtam az előjáték közben. Leveszi róla a »teljesítés« terhét, én pedig pontosan azt kapom, amire szükségem van. Mindenki jól jár.”
+                  „A férjem nem fenyegetve érezte magát, hanem kíváncsi lett. Most ő használja rajtam előjáték közben. Lekerül róla a »teljesítés« terhe, én meg pontosan azt kapom, amire szükségem van. Mindketten jól járunk.”
                 </p>
                 <p className="font-semibold text-gray-700">– Valeria, 55, 28 éve házas</p>
               </div>
               <p>
-                A kompakt méret miatt könnyen beilleszthető a páros együttlétekbe, anélkül, hogy ott lenne útban. És mivel egyszer beállítva már érintésmentes, mindkét fél egymásra koncentrálhat.
+                A kicsi mérete miatt könnyen belefér a páros együttlétekbe, anélkül, hogy útban lenne. És mivel egyszeri beállítás után már érintésmentesen működik, mindkét fél egymásra figyelhet.
               </p>
             </div>
             <div className="bg-gradient-to-br from-[#FF1493]/10 to-[#FFE14D]/10 p-8 rounded-xl">
@@ -646,7 +646,7 @@ export default function Home() {
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
                   <div>
                     <p className="font-semibold text-gray-900">Előjáték közben</p>
-                    <p className="text-sm text-gray-600">A pár a helyén tartja, miközben csókolózik és simogat</p>
+                    <p className="text-sm text-gray-600">A pár a helyén tartja, miközben csókolóztok és simogatjátok egymást</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -673,7 +673,7 @@ export default function Home() {
               </div>
               <div className="mt-6 p-4 bg-white rounded-lg">
                 <p className="text-sm text-gray-700">
-                  <strong>Profi tipp:</strong> A kulcs a kommunikáció. Tekintsd wellness-eszköznek, ami <em>mindkettőtöknek</em> jót tesz: csökkenti a nyomást és növeli az élvezetet.
+                  <strong>Jó tudni:</strong> a kulcs a nyílt beszéd. Tekintsd olyan wellness-eszköznek, ami <em>mindkettőtöknek</em> jót tesz: csökkenti a nyomást, és fokozza az élvezetet.
                 </p>
               </div>
             </div>
@@ -683,7 +683,7 @@ export default function Home() {
         {/* Enhanced Risk Reversal Section */}
         <div className="my-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Minden ok megvan, hogy kipróbáld, egy sem, hogy aggódj</h2>
-          <p className="text-center text-xl text-gray-600 mb-8">Utánajártunk a Hello Nancy garanciáinak. Íme, mit jelentenek valójában.</p>
+          <p className="text-center text-xl text-gray-600 mb-8">Átnéztük a Hello Nancy garanciáit. Íme, mit jelentenek a gyakorlatban.</p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="border-2 border-green-200 bg-green-50">
@@ -693,10 +693,10 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">30 napos „élvezetgarancia”</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Nem vagy elégedett? <strong>Teljes árat visszakapod</strong> – visszaküldeni sem kell. Megbíznak az őszinteségedben. Ennyire biztosak a dolgukban.
+                  Nem vagy elégedett? <strong>A teljes árat visszakapod</strong> – még visszaküldened sem kell. Bíznak az őszinteségedben. Ennyire biztosak a dolgukban.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Magyarán: nulla pénzügyi kockázat. Próbáld ki egy hónapig.
+                  Magyarán: semmi pénzügyi kockázat. Próbáld ki egy hónapig.
                 </p>
               </CardContent>
             </Card>
@@ -708,10 +708,10 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">12 hónap garancia</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Ha az első évben bármi gond adódik az eszközzel, kicserélik. Ingyen. Kérdés nélkül.
+                  Ha az első évben bármi baja lesz az eszköznek, kicserélik. Ingyen. Felesleges kérdezősködés nélkül.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Magyarán: ez nem egy eldobható kütyü. Tartós darab.
+                  Magyarán: ez nem egy eldobható kütyü. Sokáig kitart.
                 </p>
               </CardContent>
             </Card>
@@ -723,10 +723,10 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">Élethosszig tartó támogatás</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Kérdésed van a használatról? Aggódsz a tisztítás miatt? Az ügyfélszolgálatuk 24 órán belül válaszol.
+                  Kérdésed van a használatról? Bizonytalan vagy a tisztítás körül? Az ügyfélszolgálatuk 24 órán belül válaszol.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Magyarán: nem egy terméket veszel. Egy közösséghez csatlakozol.
+                  Magyarán: nem csak egy terméket kapsz. Egy közösséghez is csatlakozol.
                 </p>
               </CardContent>
             </Card>
@@ -755,8 +755,8 @@ export default function Home() {
                     <ul className="space-y-1 text-gray-600">
                       <li>• A szövetsorvadás folytatódik</li>
                       <li>• Az idegérzékenység tovább csökken</li>
-                      <li>• A szexuális jóllét továbbra is küzdelem marad</li>
-                      <li>• Mindig azon fogsz tűnődni: „mi lett volna, ha?”</li>
+                      <li>• A szexuális jóllét továbbra is napi küzdelem marad</li>
+                      <li>• És örökké ott motoszkál benned: „mi lett volna, ha?”</li>
                     </ul>
                   </div>
                 </div>
@@ -769,7 +769,7 @@ export default function Home() {
         <div className="my-12 bg-gray-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Miért bízunk a Hello Nancyben</h2>
           <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-            Nem ajánlunk termékeket csak úgy, könnyelműen. Íme, miért felelt meg a Hello Nancy a szerkesztőségi mércénknek.
+            Nem ajánlgatunk csak úgy, vaktában termékeket. Íme, miért állta ki a Hello Nancy a szerkesztőségi próbánkat.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
@@ -836,7 +836,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Jobb, mint az ösztrogénkrém”</p>
                 <p className="text-gray-700 italic">
-                  „Nem »szórakozásból« vettem, hanem azért, mert az orvosom azt mondta, vérkeringésre van szükségem. De hűha. A feloldódás segít végigaludni az éjszakát, anélkül, hogy izzadtan ébrednék. Ez az új vitaminom.”
+                  „Nem »szórakozásból« vettem, hanem azért, mert az orvosom azt mondta, mozgatnom kell a vérkeringést. De hát… hűha. Az utána jövő ellazulástól végigalszom az éjszakát, és nem izzadtan ébredek. Ez az új vitaminom.”
                 </p>
                 <p className="font-semibold text-gray-900">– Sarah J., 58</p>
                 <p className="text-xs text-gray-500">✓ Ellenőrzött vásárlás</p>
@@ -852,7 +852,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Felébresztette a testem”</p>
                 <p className="text-gray-700 italic">
-                  „Korábban kipróbáltam a Lelo Sonát, de az túl erős volt nekem. A Lem elég gyengéd az érzékenységemhez, mégis elég mély ahhoz, hogy tényleg működjön. 10/10.”
+                  „Korábban kipróbáltam a Lelo Sonát, de az túl erős volt nekem. A Lem elég gyengéd az érzékenységemhez, mégis elég mélyre hat ahhoz, hogy tényleg működjön. Tízből tíz.”
                 </p>
                 <p className="font-semibold text-gray-900">– Carly, ellenőrzött vásárló</p>
                 <p className="text-xs text-gray-500">✓ Ellenőrzött vásárlás</p>
@@ -867,7 +867,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Rákattantam”</p>
                 <p className="text-gray-700 italic">
-                  „Rákattantam. A Lem a legvadabb módon szív és húz. Amikor elélvezel, olyan, mintha egyenesen kiszívná belőled az orgazmust, és sokkal tovább tartja a lüktetést. Annyira jó!”
+                  „Teljesen rákattantam. A Lem a legvadabb módon szív és húz. Amikor elélvezel, olyan, mintha egyenesen kiszívná belőled az orgazmust, és sokkal tovább tartja a lüktetést. Annyira jó!”
                 </p>
                 <p className="font-semibold text-gray-900">– Alisha, béta-tesztelő</p>
                 <p className="text-xs text-gray-500">✓ Ellenőrzött vásárlás</p>
@@ -883,7 +883,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Ez mindent megváltoztat”</p>
                 <p className="text-gray-700 italic">
-                  „Olyasvalakiként, akinek fontos a diszkréció az intim termékeknél, nem is létezhetne ennél tökéletesebb választás. A szívófunkció más, mint bármi, amit eddig kipróbáltam.”
+                  „Nekem fontos a diszkréció az intim termékeknél, és ennél tökéletesebb választást el sem tudok képzelni. A szívóhatás más, mint bármi, amit eddig kipróbáltam.”
                 </p>
                 <p className="font-semibold text-gray-900">– Maxine, ellenőrzött vásárló</p>
                 <p className="text-xs text-gray-500">✓ Ellenőrzött vásárlás</p>
@@ -898,10 +898,10 @@ export default function Home() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto mb-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-4">
-              A verdiktünk: megéri az árát
+              Az ítéletünk: megéri az árát
             </h2>
             <p className="text-center text-xl text-gray-600">
-              Alapos tesztelés és kutatás után a szerkesztőségünk határozottan ajánlja a Nancy's Lemet azoknak a nőknek, akik menopauzás szövetváltozásokat tapasztalnak.
+              Alapos tesztelés és kutatás után a szerkesztőségünk jó szívvel ajánlja a Nancy's Lemet azoknak a nőknek, akik menopauzás szövetváltozásokat tapasztalnak.
             </p>
           </div>
 
@@ -913,7 +913,7 @@ export default function Home() {
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
                   <div className="inline-block bg-[#FFE14D] text-black px-6 py-3 rounded-full text-sm font-bold mb-4">
-                    ⚡ IDŐLIMITES OLVASÓI AJÁNLAT ⚡
+                    ⚡ IDŐKORLÁTOS OLVASÓI AJÁNLAT ⚡
                   </div>
                   {showTimer && (
                     <div className="flex items-center justify-center gap-2 bg-red-500 text-white px-6 py-3 rounded-lg mb-4 animate-pulse">
@@ -935,11 +935,11 @@ export default function Home() {
                       <strong className="text-2xl text-[#FF1493]">Mindössze napi 78 Ft</strong> egy évnyi használat alatt
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
-                      Kevesebb, mint a napi kávéd. Évekig kitart.
+                      Kevesebb, mint a napi kávéd ára. És évekig kitart.
                     </p>
                   </div>
                   <div className="bg-[#FFE14D]/30 p-4 rounded-lg mb-4">
-                    <p className="text-gray-900 font-semibold">💡 OLVASÓI TIPP: Add meg a <span className="font-bold text-[#FF1493]">TIFFANY</span> vagy <span className="font-bold text-[#FF1493]">ISABELLA</span> kódot a pénztárnál egy plusz meglepetésért!</p>
+                    <p className="text-gray-900 font-semibold">💡 OLVASÓI TIPP: a pénztárnál írd be a <span className="font-bold text-[#FF1493]">TIFFANY</span> vagy az <span className="font-bold text-[#FF1493]">ISABELLA</span> kódot egy kis plusz meglepetésért!</p>
                   </div>
                 </div>
 
@@ -1017,7 +1017,7 @@ export default function Home() {
             Neked való a Lem?
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">
-            Több ezer 50 feletti nő azt mondja: „igen”. Nézd meg, magadra ismersz-e valamelyikben:
+            Több ezer 50 feletti nő azt mondja: „igen”. Nézd meg, magadra ismersz-e valamelyik pontban:
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -1133,43 +1133,43 @@ export default function Home() {
       <section className="container px-4 py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            A kérdéseid, megválaszolva
+            Kérdések és válaszok
           </h2>
-          <p className="text-center text-gray-600 mb-12">Feltettük a Hello Nancynek a kérdéseket, amelyekre az olvasóink kíváncsiak voltak</p>
+          <p className="text-center text-gray-600 mb-12">Feltettük a Hello Nancynek azokat a kérdéseket, amelyek az olvasóinkat foglalkoztatták</p>
 
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Fáj, ha érzékeny vagyok vagy sorvadásom van?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Fáj, ha érzékeny vagyok, vagy sorvadásom van?</h3>
                 <p className="text-gray-700">
-                  Egyáltalán nem. Mivel légszívást használ, nem közvetlen érintéssel ható rezgést, elkerüli a dörzsölést, ami a fájdalmat okozza. A 12 fokozat közül a legalacsonyabbon kezdheted, és finoman tornázhatod fel magad. Kifejezetten úgy tervezték, hogy gyengéd legyen az érzékeny szövethez.
+                  Egyáltalán nem. Mivel légszívással hat, nem közvetlen érintéssel adott rezgéssel, elkerüli a dörzsölést, amitől a fájdalom ered. A 12 fokozat közül a legalacsonyabbon is kezdheted, és fokozatosan haladhatsz feljebb. Kifejezetten úgy tervezték, hogy kíméletes legyen az érzékeny szövethez.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Kínos a csomagolás?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Kínos lesz a csomag?</h3>
                 <p className="text-gray-700">
-                  Egy cseppet sem. Sima barna dobozban szállítanak, logók nélkül. A feladó címénél csak annyi áll: „Care & Bloom Ltd.” Teljes diszkréció garantálva.
+                  Egy cseppet sem. Sima, logó nélküli barna dobozban érkezik. A feladónál csak ennyi szerepel: „Care & Bloom Ltd.” A teljes diszkréció garantált.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Mi van, ha nem tetszik?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Mi van, ha mégsem tetszik?</h3>
                 <p className="text-gray-700">
-                  A Hello Nancy 30 napos elégedettségi garanciát kínál. Ha nem szereted meg, egyszeri méltányossági visszatérítést adnak – <strong>visszaküldeni sem kell</strong>. Megbíznak benned, hogy megtalálod, ami a testednek jó.
+                  A Hello Nancy 30 napos elégedettségi garanciát ad. Ha nem szereted meg, egyszeri, méltányos visszatérítést kapsz – <strong>még visszaküldened sem kell</strong>. Bíznak benned, hogy megtalálod, ami a testednek jó.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Használhatom zuhany vagy fürdés közben?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Használhatom zuhanyzás vagy fürdés közben?</h3>
                 <p className="text-gray-700">
-                  Igen! IPX7 minősítésű vízálló, vagyis teljesen víz alá meríthető. Sokan úgy tapasztalják, hogy a meleg víz fokozza az ellazulást és az érzékelést.
+                  Igen! IPX7 minősítésű, vízálló, tehát teljesen víz alá meríthető. Sokan úgy tapasztalják, hogy a meleg víz fokozza az ellazulást és az érzékelést.
                 </p>
               </CardContent>
             </Card>
@@ -1178,7 +1178,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Mennyire hangos?</h3>
                 <p className="text-gray-700">
-                  Suttogóan halk. Az ultrahalk motor teljes diszkréciót biztosít – úgy használhatod, hogy nem kell aggódnod amiatt, hogy bárki meghallja, még a szomszéd szobában sem.
+                  Suttogóan halk. Az ultrahalk motor teljes diszkréciót ad – nyugodtan használhatod anélkül, hogy attól tartanál, bárki meghallja, még a szomszéd szobában sem.
                 </p>
               </CardContent>
             </Card>
@@ -1195,13 +1195,13 @@ export default function Home() {
             </h2>
             <div className="text-white text-lg leading-relaxed space-y-4">
               <p>
-                Hetekig tartó kutatás, szakértői konzultációk és felhasználói interjúk után a szerkesztőségünk úgy véli, hogy a Nancy's Lem egy valódi orvosi igényre ad választ, amelyet túl sokáig figyelmen kívül hagytak.
+                Hetekig tartó kutatás, szakértői konzultációk és felhasználói beszélgetések után a szerkesztőségünk úgy látja, hogy a Nancy's Lem egy valódi orvosi igényre ad választ – olyanra, amelyet túl sokáig nem vettünk komolyan.
               </p>
               <p>
-                Ez nem a hiúságról vagy a kényeztetésről szól – hanem a szövet egészségének megőrzéséről, a jobb alvásról és arról, hogy visszaszerezd önmagad egy darabját, amelyet a menopauza próbál elvenni tőled.
+                Ez nem a hiúságról vagy a kényeztetésről szól. Hanem a szövet egészségének megőrzéséről, a jobb alvásról és arról, hogy visszakapj magadból egy darabot, amelyet a menopauza próbál elvenni tőled.
               </p>
               <p className="text-xl font-bold">
-                Ha GSM tüneteit tapasztalod, küzdesz a hagyományos megoldásokkal, vagy egyszerűen csak meg akarod őrizni a szexuális jólléted, ahogy idősödsz, a Lem megérdemli, hogy komolyan fontolóra vedd.
+                Ha GSM-tüneteid vannak, nem boldogulsz a hagyományos megoldásokkal, vagy egyszerűen csak meg szeretnéd őrizni a szexuális jólléted, ahogy telnek az évek, a Lemet érdemes komolyan fontolóra venned.
               </p>
               <p className="text-sm italic">
                 – Jessica Martinez, vezető wellness-szerkesztő
@@ -1242,7 +1242,7 @@ export default function Home() {
             <div className="bg-gray-800 p-6 rounded-lg mb-8">
               <h3 className="font-bold text-lg mb-3">Affiliate-tájékoztatás</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                A Wellness Insidert az olvasók támogatják. Amikor az oldalunkon lévő linkeken keresztül vásárolsz, affiliate jutalékot kaphatunk, neked viszont ez egy fillérbe sem kerül többe. Ez segít nekünk abban, hogy továbbra is ingyenes, kutatásokon alapuló tartalmat nyújtsunk. Csak olyan termékeket ajánlunk, amelyeket a szerkesztőségünk alaposan átvizsgált, és úgy gondoljuk, hogy az olvasóink javát szolgálják. Minden véleményünk a sajátunk, és nem befolyásolja semmilyen ellentételezés.
+                A Wellness Insidert az olvasók tartják fenn. Amikor az oldalunkon lévő linkeken keresztül vásárolsz, affiliate jutalékot kaphatunk, neked viszont egy fillérrel sem kerül többe. Ez segít abban, hogy továbbra is ingyenes, kutatásokon alapuló tartalmat készíthessünk. Csak olyan termékeket ajánlunk, amelyeket a szerkesztőségünk alaposan átvizsgált, és amelyekről úgy gondoljuk, hogy az olvasóink javát szolgálják. A vélemény mindig a sajátunk, és semmilyen ellentételezés nem befolyásolja.
               </p>
             </div>
 
@@ -1250,7 +1250,7 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-lg mb-4">Rólunk</h3>
                 <p className="text-gray-400 text-sm">
-                  A Wellness Insider bizonyítékokon alapuló egészség- és wellness-újságírást kínál a modern nőknek.
+                  A Wellness Insider tényekre épülő egészség- és wellness-újságírást kínál a mai nőknek.
                 </p>
               </div>
               <div>

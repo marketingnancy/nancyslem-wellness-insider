@@ -66,14 +66,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { src: "/PDP.jpg", alt: "L'appareil de bien-être Lem de Nancy" },
-    { src: "/PDP-1.jpg", alt: "Le Lem dans un cadre de vie" },
+    { src: "/PDP.jpg", alt: "L'appareil de bien-être Lem de Hello Nancy" },
+    { src: "/PDP-1.jpg", alt: "Le Lem dans son décor du quotidien" },
     { src: "/PDP-2.jpg", alt: "Gros plan sur le design du Lem" },
-    { src: "/PDP-3.jpg", alt: "Détails du produit Lem" },
-    { src: "/PDP-4_FR-FR.png", alt: "Démonstration d'utilisation du Lem" },
-    { src: "/PDP-5.jpg", alt: "Emballage et accessoires du Lem" },
-    { src: "/PDP-6_FR-FR.png", alt: "Image lifestyle du Lem" },
-    { src: "/PDP-7_FR-FR.png", alt: "Caractéristiques du produit Lem" },
+    { src: "/PDP-3.jpg", alt: "Les détails du Lem" },
+    { src: "/PDP-4_FR-FR.png", alt: "Comment utiliser le Lem" },
+    { src: "/PDP-5.jpg", alt: "L'emballage et les accessoires du Lem" },
+    { src: "/PDP-6_FR-FR.png", alt: "Le Lem en situation, scène de vie" },
+    { src: "/PDP-7_FR-FR.png", alt: "Les caractéristiques du Lem" },
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function Home() {
               className="h-8 md:h-10"
             />
             <div className="text-right">
-              <p className="text-xs text-gray-500 font-medium">Santé Féminine de Confiance</p>
+              <p className="text-xs text-gray-500 font-medium">La santé des femmes, en confiance</p>
             </div>
           </div>
         </div>
@@ -99,19 +99,19 @@ export default function Home() {
         <div className="fixed top-14 left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4.7 (14 907 avis) • 1M+ Vendus</span>
+              <span className="text-sm font-medium">⭐ 4,7 (14 907 avis) • 1M+ vendus</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-bold">73,95 €</span>
                   <span className="text-sm line-through text-white/70">128,95 €</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">ÉCONOMISEZ 55,00 €</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">55,00 € D'ÉCONOMIE</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
                     <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    <span>Se termine dans {formatTime(timeLeft)}</span>
+                    <span>Se termine dans&nbsp;: {formatTime(timeLeft)}</span>
                   </div>
                 )}
               </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 }}
               >
                 <Button className="bg-white text-[#FF1493] hover:bg-gray-100 font-bold">
-                  Acheter Maintenant
+                  J'en profite
                 </Button>
               </a>
             </div>
@@ -149,26 +149,26 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-gray-600 mb-4">
             <span className="text-[#FF1493] font-semibold bg-[#FF1493]/10 px-3 py-1 rounded-full">SANTÉ & BIEN-ÊTRE</span>
             <span className="hidden sm:inline">•</span>
-            <span className="bg-gray-100 px-3 py-1 rounded-full">REVUE PRODUIT</span>
+            <span className="bg-gray-100 px-3 py-1 rounded-full">TEST PRODUIT</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-            1M+ Orgasmes Plus Tard : Pourquoi les Femmes de Plus de 50 Ans Abandonnent les Vibrateurs pour ce "Citron"
+Un million d'orgasmes plus tard&nbsp;: pourquoi les femmes de plus de 50 ans délaissent le vibromasseur pour ce «&nbsp;citron&nbsp;»
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-            Nous avons enquêté sur les raisons pour lesquelles des milliers de femmes de plus de 50 ans délaissent les vibrateurs traditionnels pour cet appareil de « physiothérapie » qui ressemble à un citron. Voici ce que nous avons découvert.
+Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 ans abandonnent le vibromasseur classique au profit de cet appareil de «&nbsp;physiothérapie&nbsp;» en forme de citron. Voici ce que nous avons découvert.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF1493] to-[#FFE14D]" />
               <div>
                 <p className="font-semibold text-gray-900">Par Jessica Martinez</p>
-                <p className="text-xs sm:text-sm">Rédactrice Bien-être Senior</p>
+                <p className="text-xs sm:text-sm">Rédactrice bien-être senior</p>
               </div>
             </div>
             <span className="hidden sm:inline">•</span>
-            <span>Dernière mise à jour : {new Date(Date.now() - (new Date().getDay() === 0 ? 6 : new Date().getDay() - 1) * 24 * 60 * 60 * 1000).toLocaleDateString('fr-FR', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+            <span>Dernière mise à jour&nbsp;: {new Date(Date.now() - (new Date().getDay() === 0 ? 6 : new Date().getDay() - 1) * 24 * 60 * 60 * 1000).toLocaleDateString('fr-FR', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
             <span className="hidden sm:inline">•</span>
-            <span>Lecture de 8 min</span>
+            <span>8 min de lecture</span>
           </div>
         </div>
       </section>
@@ -183,8 +183,8 @@ export default function Home() {
               </div>
             </div>
             <p className="text-gray-700 text-xs leading-tight">
-              <span className="font-bold text-gray-900 mr-1">Note de l'Éditeur :</span>
-              Cet article contient des liens d'affiliation. Nous pouvons percevoir une commission si vous achetez via ces liens, sans frais supplémentaires pour vous. Nous ne recommandons que des produits que nous avons minutieusement étudiés et testés.
+              <span className="font-bold text-gray-900 mr-1">Note de la rédaction&nbsp;:</span>
+              Cet article contient des liens affiliés. Si vous passez commande via l'un d'eux, nous pouvons toucher une commission, sans que cela change quoi que ce soit au prix pour vous. Nous ne recommandons que des produits que nous avons soigneusement étudiés et testés.
             </p>
           </div>
         </div>
@@ -194,10 +194,10 @@ export default function Home() {
       <section className="container max-w-4xl py-8">
         <img 
           src="/PDP.jpg" 
-          alt="L'appareil de bien-être Lem de Nancy sur une table de chevet"
+          alt="L'appareil de bien-être Lem de Hello Nancy sur une table de chevet"
           className="w-full rounded-lg shadow-lg"
         />
-        <p className="text-sm text-gray-500 mt-2 italic">Le Nancy's Lem se pose discrètement sur une table de chevet, la plupart des gens pensent que c'est un citron décoratif. Photo : Hello Nancy</p>
+        <p className="text-sm text-gray-500 mt-2 italic">Posé sur une table de chevet, le Lem passe totalement inaperçu&nbsp;: la plupart des gens y voient un citron décoratif. Photo&nbsp;: Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 mb-4 text-sm text-gray-600">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span><strong className="text-gray-900">{visitorCount.toLocaleString()}</strong> lecteurs consultent actuellement cet article</span>
+              <span><strong className="text-gray-900">{visitorCount.toLocaleString()}</strong> personnes lisent cet article en ce moment</span>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
@@ -217,15 +217,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-2">
               <Truck className="w-6 h-6 text-[#FF1493]" />
-              <p className="font-medium text-gray-900">Livraison Gratuite Mondiale</p>
+              <p className="font-medium text-gray-900">Livraison gratuite partout</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Check className="w-6 h-6 text-[#FF1493]" />
-              <p className="font-medium text-gray-900">Garantie Satisfaction 30 Jours</p>
+              <p className="font-medium text-gray-900">Satisfait ou remboursé sous 30 jours</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Shield className="w-6 h-6 text-[#FF1493]" />
-              <p className="font-medium text-gray-900">Garantie de 12 Mois</p>
+              <p className="font-medium text-gray-900">Garantie 12 mois</p>
             </div>
           </div>
         </div>
@@ -235,145 +235,145 @@ export default function Home() {
       <article className="container max-w-4xl py-12 space-y-8">
         {/* Introduction */}
         <div className="prose prose-lg max-w-none">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Pourquoi Nous En Parlons</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Pourquoi nous en parlons</h2>
           <p className="text-gray-700 leading-relaxed">
-            Lorsque notre équipe éditoriale a entendu parler pour la première fois d'un « appareil de bien-être en forme de citron » qui prenait d'assaut la communauté de la ménopause, nous l'admettons, nous étions sceptiques. Mais après avoir interviewé des dizaines de femmes, consulté des gynécologues et, oui, l'avoir testé nous-mêmes, nous comprenons l'engouement.
+            Quand notre rédaction a entendu parler pour la première fois de cet «&nbsp;appareil de bien-être en forme de citron&nbsp;» qui faisait fureur dans la communauté ménopause, nous étions sceptiques, autant l'avouer. Mais après avoir interrogé des dizaines de femmes, consulté des gynécologues et, oui, l'avoir essayé nous-mêmes, nous comprenons l'engouement.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Ce n'est pas juste une autre tendance bien-être. Cela répond à un véritable problème médical qui touche des millions de femmes mais qui est rarement discuté : l'<strong>atrophie clitoridienne</strong> et la perte de bien-être sexuel pendant la ménopause.
+            Ce n'est pas une énième tendance bien-être. Le Lem répond à un vrai problème médical, qui touche des millions de femmes mais dont on parle rarement&nbsp;: l'<strong>atrophie clitoridienne</strong> et la perte de bien-être sexuel à la ménopause.
           </p>
         </div>
 
         {/* Problem Section */}
         <div className="bg-gray-50 p-8 rounded-xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">La Discussion Dont Personne Ne Nous A Prévenues</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Ce dont personne ne nous avait prévenues</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Nous entendons tout sur les bouffées de chaleur qui nous laissent en sueur dans nos draps en soie à 3 heures du matin. Nous entendons parler du brouillard cérébral qui nous fait chercher nos lunettes alors qu'elles sont sur notre nez.
+            On nous parle de tout&nbsp;: des bouffées de chaleur qui nous laissent en nage entre nos draps à 3 h du matin, du brouillard mental qui nous fait chercher nos lunettes alors qu'on les a sur le nez.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
-            Mais personne ne vous assoit avec un verre de Pinot pour vous chuchoter : « Hé, au fait, si tu ne gardes pas les choses actives en bas, ton clitoris pourrait carrément rétrécir. »
+            Mais personne ne s'assoit avec vous, un verre de pinot à la main, pour vous glisser&nbsp;: «&nbsp;Au fait, si tu ne gardes pas les choses actives là en bas, ton clitoris peut littéralement rétrécir.&nbsp;»
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Cela s'appelle l'<strong>Atrophie Clitoridienne</strong>, et cela fait partie du Syndrome Génito-Urinaire de la Ménopause (SGUM), une condition affectant jusqu'à 50 % des femmes ménopausées, selon la North American Menopause Society.
+            Cela porte un nom&nbsp;: l'<strong>atrophie clitoridienne</strong>. Elle fait partie du syndrome génito-urinaire de la ménopause (SGUM), un trouble qui touche jusqu'à 50&nbsp;% des femmes ménopausées, selon la North American Menopause Society.
           </p>
           
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
-            <h3 className="font-bold text-lg text-gray-900 mb-3">« La Grande Déconnexion »</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3">«&nbsp;La grande déconnexion&nbsp;»</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Pour beaucoup de femmes que nous avons interrogées, ce n'était pas seulement la sécheresse. C'était l'<strong>engourdissement</strong>. Une testeuse a décrit avoir essayé d'utiliser son vieux vibrateur de ses 30 ans : « Au lieu de faire du bien, c'était juste… irritant. Ou engourdi. Comme essayer de chatouiller un cal. »
+              Pour beaucoup des femmes que nous avons interrogées, le problème n'était pas seulement la sécheresse. C'était l'<strong>engourdissement</strong>. Une testeuse a raconté avoir ressorti le vieux vibromasseur de ses 30 ans&nbsp;: «&nbsp;Au lieu de faire du bien, c'était juste… irritant. Ou alors je ne sentais rien. Comme essayer de chatouiller une corne sous le pied.&nbsp;»
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Les experts médicaux expliquent que les vibrateurs traditionnels fonctionnent par friction et impact. Lorsque les tissus s'amincissent en raison d'un faible taux d'œstrogènes, la vibration directe peut en fait <em>désensibiliser davantage les nerfs</em>, conduisant à cette sensation d'« engourdissement ».
+              Les médecins l'expliquent&nbsp;: le vibromasseur classique agit par friction et par à-coups. Quand les tissus s'amincissent à cause de la chute des œstrogènes, la vibration directe peut au contraire <em>désensibiliser encore plus les terminaisons nerveuses</em>, d'où cette sensation d'«&nbsp;engourdissement&nbsp;».
             </p>
           </div>
 
           <div className="bg-gradient-to-r from-[#FFE14D]/30 to-[#FF1493]/30 p-6 rounded-lg">
-            <p className="text-2xl font-bold text-gray-900 mb-2 italic">« Arrêtez de vibrer. Commencez à aspirer. »</p>
-            <p className="text-gray-700">— Spécialistes du Plancher Pelvien</p>
+            <p className="text-2xl font-bold text-gray-900 mb-2 italic">«&nbsp;Arrêtez de vibrer. Passez à la succion.&nbsp;»</p>
+            <p className="text-gray-700">Les spécialistes du plancher pelvien</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            Les gynécologues spécialisés dans les soins de la ménopause expliquent : « Lorsque les œstrogènes chutent, le flux sanguin vers la région pelvienne diminue. Cela conduit à un amincissement des tissus, une perte d'élasticité et une sensation réduite. La communauté médicale appelle cela le principe "l'utiliser ou le perdre" : vous avez besoin d'un flux sanguin constant pour maintenir la santé des tissus. »
+            Les gynécologues spécialistes de la ménopause l'expliquent&nbsp;: «&nbsp;Quand les œstrogènes chutent, l'afflux sanguin vers la zone pelvienne diminue. Les tissus s'amincissent, perdent en élasticité et en sensibilité. On parle du principe du tout ou rien&nbsp;: sans un afflux de sang régulier, impossible de garder ces tissus en bonne santé.&nbsp;»
           </p>
         </div>
 
         {/* Product Introduction */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Entrez : Le Nancy's Lem</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Et voici le Lem de Hello Nancy</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            C'est là qu'intervient ce petit appareil jaune. Le Nancy's Lem n'est pas commercialisé comme un sextoy, mais comme un appareil de bien-être. Et après nos recherches, nous comprenons pourquoi.
+            C'est là qu'entre en scène ce petit appareil jaune. Le Lem n'est pas présenté comme un sextoy, mais comme un appareil de bien-être. Et après nos recherches, on comprend pourquoi.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Contrairement aux vibrateurs traditionnels qui reposent sur la friction (ce qui peut irriter les tissus ménopausiques amincis), le Lem utilise ce qu'on appelle la <strong>Technologie à Pulsations d'Air</strong>. Pensez-y comme la différence entre frotter du papier de verre sur votre peau et utiliser un massage doux par aspiration.
+            Contrairement au vibromasseur classique, qui repose sur la friction (de quoi irriter des tissus déjà fragilisés par la ménopause), le Lem mise sur la <strong>technologie à air pulsé</strong>. Imaginez la différence entre du papier de verre passé sur la peau et un massage tout en douceur par succion.
           </p>
         </div>
 
         {/* Science Section */}
         <div className="bg-gradient-to-br from-[#FFE14D]/20 to-[#FF1493]/10 p-8 rounded-xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">La Science : Pourquoi la Technologie à Pulsations d'Air Fonctionne</h2>
-          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La science&nbsp;: pourquoi l'air pulsé fonctionne</h2>
+
           <div className="space-y-4 max-w-2xl mx-auto mb-6">
             <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded">
-              <p className="font-semibold text-red-800 mb-2">❌ Vibrateurs Traditionnels :</p>
-              <p className="text-red-700 text-sm">Reposent sur la friction de surface qui peut irriter les tissus sensibles et amincis. Peuvent causer des engourdissements ou des micro-déchirures.</p>
+              <p className="font-semibold text-red-800 mb-2">❌ Le vibromasseur classique&nbsp;:</p>
+              <p className="text-red-700 text-sm">Il agit par friction en surface, ce qui peut irriter des tissus sensibles et amincis, et provoquer engourdissement ou microlésions.</p>
             </div>
             <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded">
-              <p className="font-semibold text-green-800 mb-2">✓ Technologie à Pulsations d'Air :</p>
-              <p className="text-green-700 text-sm">Crée des ondes d'aspiration douces sans contact direct. Attire le sang riche en oxygène dans les tissus, favorisant la santé et la sensation.</p>
+              <p className="font-semibold text-green-800 mb-2">✓ La technologie à air pulsé&nbsp;:</p>
+              <p className="text-green-700 text-sm">Elle crée de douces ondes de succion sans contact direct. Elle attire dans les tissus un sang riche en oxygène, pour préserver leur santé et raviver les sensations.</p>
             </div>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Voici comment cela fonctionne : Le Lem crée un joint doux autour du clitoris et utilise des ondes de pression d'air pour le stimuler, imitant la sensation du sexe oral, mais de manière constante et inlassable. Comme il n'y a pas de frottement, il n'y a aucune irritation.
+            Concrètement&nbsp;: le Lem forme un léger joint autour du clitoris et le stimule par ondes de pression d'air, imitant la sensation du sexe oral, mais sans relâche et toujours à la même intensité. Aucun frottement, donc aucune irritation.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Mais la vraie magie réside dans la physique : cette douce aspiration crée un effet de vide, attirant physiquement le sang profond et riche en oxygène dans les tissus. Cela réveille des nerfs qui étaient dormants depuis des années.
+            Mais toute la magie tient à la physique&nbsp;: cette douce succion crée un effet de vide qui attire en profondeur un sang riche en oxygène jusque dans les tissus. De quoi réveiller des terminaisons nerveuses endormies depuis des années.
           </p>
 
           <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
             <p className="text-lg italic text-gray-900 mb-2">
-              « On a l'impression que ça tire l'orgasme vers l'extérieur… ça fait durer les pulsations beaucoup plus longtemps. »
+              «&nbsp;On a l'impression que ça aspire l'orgasme vers l'extérieur… et que les vagues de plaisir durent bien plus longtemps.&nbsp;»
             </p>
-            <p className="font-semibold text-gray-700">— Alisha, Testeuse Bêta (avis client vérifié)</p>
+            <p className="font-semibold text-gray-700">Alisha, testeuse de la première heure (avis client vérifié)</p>
           </div>
         </div>
 
         {/* Comparison Table */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Comment Il Se Compare : Notre Comparatif</h2>
-          <p className="text-center text-gray-600 mb-8">Nous avons comparé le Lem aux solutions traditionnelles pour la santé des tissus ménopausiques</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Notre comparatif&nbsp;: où se situe le Lem</h2>
+          <p className="text-center text-gray-600 mb-8">Nous avons comparé le Lem aux solutions classiques pour la santé des tissus à la ménopause.</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-300 p-4 text-left font-bold">Fonctionnalité</th>
-                  <th className="border border-gray-300 p-4 text-center bg-[#FFE14D]/30 font-bold">Nancy's Lem</th>
-                  <th className="border border-gray-300 p-4 text-center font-bold">Vibrateur Traditionnel</th>
-                  <th className="border border-gray-300 p-4 text-center font-bold">Crème aux Œstrogènes</th>
+                  <th className="border border-gray-300 p-4 text-left font-bold">Critère</th>
+                  <th className="border border-gray-300 p-4 text-center bg-[#FFE14D]/30 font-bold">Le Lem</th>
+                  <th className="border border-gray-300 p-4 text-center font-bold">Vibromasseur classique</th>
+                  <th className="border border-gray-300 p-4 text-center font-bold">Crème aux œstrogènes</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Convient aux Tissus Sensibles</td>
+                  <td className="border border-gray-300 p-4 font-medium">Adapté aux tissus sensibles</td>
                   <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Oui</td>
-                  <td className="border border-gray-300 p-4 text-center">❌ Peut irriter</td>
+                  <td className="border border-gray-300 p-4 text-center">❌ Risque d'irritation</td>
                   <td className="border border-gray-300 p-4 text-center">⚠️ Résultats lents</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Augmente le Flux Sanguin</td>
-                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Tissus profonds</td>
-                  <td className="border border-gray-300 p-4 text-center">⚠️ Surface seulement</td>
-                  <td className="border border-gray-300 p-4 text-center">✅ Graduel</td>
+                  <td className="border border-gray-300 p-4 font-medium">Stimule l'afflux sanguin</td>
+                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Jusqu'en profondeur</td>
+                  <td className="border border-gray-300 p-4 text-center">⚠️ En surface seulement</td>
+                  <td className="border border-gray-300 p-4 text-center">✅ Progressivement</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Pas de Friction/Irritation</td>
-                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Zéro contact</td>
-                  <td className="border border-gray-300 p-4 text-center">❌ Cause de la friction</td>
+                  <td className="border border-gray-300 p-4 font-medium">Sans friction ni irritation</td>
+                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Sans contact</td>
+                  <td className="border border-gray-300 p-4 text-center">❌ Provoque des frottements</td>
                   <td className="border border-gray-300 p-4 text-center">✅ Oui</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Plaisir Immédiat</td>
+                  <td className="border border-gray-300 p-4 font-medium">Plaisir immédiat</td>
                   <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Instantané</td>
                   <td className="border border-gray-300 p-4 text-center">⚠️ Variable</td>
-                  <td className="border border-gray-300 p-4 text-center">❌ Pas de plaisir</td>
+                  <td className="border border-gray-300 p-4 text-center">❌ Aucun plaisir</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Design Discret</td>
-                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Ressemble à un citron</td>
-                  <td className="border border-gray-300 p-4 text-center">❌ Évident</td>
+                  <td className="border border-gray-300 p-4 font-medium">Design discret</td>
+                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ On dirait un citron</td>
+                  <td className="border border-gray-300 p-4 text-center">❌ Sans équivoque</td>
                   <td className="border border-gray-300 p-4 text-center">✅ Oui</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-4 font-medium">Recommandé par les Médecins</td>
-                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Pour le flux sanguin</td>
+                  <td className="border border-gray-300 p-4 font-medium">Recommandé par les médecins</td>
+                  <td className="border border-gray-300 p-4 text-center bg-[#FFE14D]/10">✅ Pour l'afflux sanguin</td>
                   <td className="border border-gray-300 p-4 text-center">⚠️ Parfois</td>
                   <td className="border border-gray-300 p-4 text-center">✅ Oui</td>
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Prix</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">73,95 € (unique)</td>
-                  <td className="border border-gray-300 p-4 text-center">50-150 €</td>
-                  <td className="border border-gray-300 p-4 text-center">30-50 €/mois</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">73,95 € (une seule fois)</td>
+                  <td className="border border-gray-300 p-4 text-center">50 à 150 €</td>
+                  <td className="border border-gray-300 p-4 text-center">30 à 50 €/mois</td>
                 </tr>
               </tbody>
             </table>
@@ -382,44 +382,44 @@ export default function Home() {
 
         {/* Design Features */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">La Philosophie de Design "Anti-Honte"</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Un design pensé pour en finir avec la gêne</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Une chose qui a frappé notre équipe éditoriale lors des tests : le design est <em>intentionnellement</em> discret. Il est jaune vif, tient dans la paume de la main et ressemble vraiment à un citron décoratif.
+            Une chose nous a frappées pendant les tests&nbsp;: la discrétion du Lem est <em>voulue</em>. Jaune vif, il tient dans la paume de la main et ressemble vraiment à un citron décoratif.
           </p>
           
           <div className="bg-[#FFE14D]/20 p-6 rounded-xl mb-6">
-            <h3 className="font-bold text-lg text-gray-900 mb-3">Le « test de la table de chevet »</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3">Le «&nbsp;test de la table de chevet&nbsp;»</h3>
             
             {/* Discretion Illustration */}
             <div className="max-w-md mx-auto mb-6">
               <img 
                 src="/discretion_illustration.png" 
-                alt="L'appareil Lem posé discrètement sur une table de chevet"
+                alt="Le Lem posé discrètement sur une table de chevet"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-3">
-              Nous avons toutes ce tiroir. Le <em>tiroir de la honte</em>. Où nous cachons les appareils en plastique phalliques et disgracieux sous de vieilles chaussettes.
+              Nous avons toutes ce tiroir. Le <em>tiroir de la honte</em>. Celui où l'on planque, sous de vieilles chaussettes, ces appareils en plastique phalliques et peu ragoûtants.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
-              L'une de nos testeuses a partagé cette histoire : « J'ai laissé mon Lem sur le comptoir de ma salle de bain par accident quand ma belle-mère est venue. Elle l'a ramassé et a dit : "Oh, c'est un de ces nouveaux gommages soniques pour le visage ? C'est si doux !" »
+              L'une de nos testeuses nous a raconté&nbsp;: «&nbsp;J'avais oublié mon Lem sur le plan de la salle de bains le jour où ma belle-mère est passée. Elle l'a pris dans la main et m'a dit&nbsp;: “Oh, c'est un de ces nouveaux appareils soniques pour le visage&nbsp;? Comme c'est doux&nbsp;!”&nbsp;»
             </p>
             <p className="text-gray-700 leading-relaxed font-semibold">
-              Il passe le test de la table de chevet. Il ressemble à une technologie de soins personnels haut de gamme, pas à un jouet sexuel. Parce que c'est exactement ce que c'est.
+              Il passe le test de la table de chevet haut la main. Il a tout d'un appareil de soin haut de gamme, rien d'un sextoy. Parce que c'est précisément ce qu'il est.
             </p>
           </div>
 
           <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg mb-6">
-            <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Avertissement sur les contrefaçons bon marché</h3>
+            <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Attention aux contrefaçons bon marché</h3>
             <p className="text-red-800 leading-relaxed mb-3">
-              Après la publication de notre premier avis, des lectrices ont demandé pourquoi elles ne devraient pas acheter la version à 20 € sur Amazon. Voici ce que disent les experts médicaux.
+              Après la publication de notre premier test, des lectrices nous ont demandé pourquoi ne pas se rabattre sur la version à 20 € qu'on trouve sur Amazon. Voici la réponse des médecins.
             </p>
             <p className="text-red-800 leading-relaxed font-semibold">
-              « Les jouets bon marché utilisent des matériaux poreux en gelée/TPE », a-t-elle averti. « Les bactéries microscopiques sont piégées dans les pores, ce qui est un risque énorme pour les femmes ménopausées qui sont déjà sujettes aux infections urinaires. »
+              «&nbsp;Les jouets bas de gamme sont faits de matériaux poreux, en gel ou en TPE&nbsp;», prévient-elle. «&nbsp;Des bactéries microscopiques se logent dans les pores&nbsp;: un vrai danger pour les femmes ménopausées, déjà sujettes aux infections urinaires.&nbsp;»
             </p>
             <p className="text-red-900 font-bold mt-3">
-              Le Hello Nancy Lem est 100 % silicone de qualité médicale, non poreux. Ne risquez pas votre santé pour économiser 20 €.
+              Le Lem de Hello Nancy est en silicone 100&nbsp;% de qualité médicale, non poreux. Ne jouez pas avec votre santé pour économiser 20 €.
             </p>
           </div>
 
@@ -427,9 +427,9 @@ export default function Home() {
             <Card className="border-2 border-[#FFE14D]">
               <CardContent className="p-6 text-center space-y-3">
                 <div className="text-4xl">🤫</div>
-                <h3 className="font-bold text-lg text-gray-900">Silencieux comme un murmure</h3>
+                <h3 className="font-bold text-lg text-gray-900">Discret comme un murmure</h3>
                 <p className="text-gray-600 text-sm">
-                  Moteur ultra-silencieux pour une discrétion totale
+                  Un moteur ultra-silencieux pour une discrétion totale
                 </p>
               </CardContent>
             </Card>
@@ -449,7 +449,7 @@ export default function Home() {
                 <div className="text-4xl">🏥</div>
                 <h3 className="font-bold text-lg text-gray-900">Silicone de qualité médicale</h3>
                 <p className="text-gray-600 text-sm">
-                  Sûr pour le corps, non poreux, facile à nettoyer
+                  Sans danger pour le corps, non poreux, facile à nettoyer
                 </p>
               </CardContent>
             </Card>
@@ -457,62 +457,62 @@ export default function Home() {
             <Card className="border-2 border-[#FF1493]">
               <CardContent className="p-6 text-center space-y-3">
                 <div className="text-4xl">⚡</div>
-                <h3 className="font-bold text-lg text-gray-900">Chargement magnétique</h3>
+                <h3 className="font-bold text-lg text-gray-900">Charge magnétique</h3>
                 <p className="text-gray-600 text-sm">
-                  120 minutes par charge
+                  120 minutes d'autonomie par charge
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Galerie de produits</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">La galerie produit</h3>
             <ImageGallery images={galleryImages} />
           </div>
         </div>
 
         {/* Unboxing Experience Section */}
         <div className="bg-gradient-to-r from-[#FFE14D]/20 to-white p-8 rounded-xl my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">L'Expérience de Déballage : Les Premières Impressions Comptent</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le déballage&nbsp;: la première impression compte</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <img 
-                src="/PDP-5.jpg" 
-                alt="L'expérience de déballage du Lem"
+              <img
+                src="/PDP-5.jpg"
+                alt="Le déballage du Lem"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                L'une des premières choses que nos testeuses ont remarquées ? L'emballage est <em>élégant</em>. Pas de couleurs criardes, pas d'images embarrassantes. La boîte est d'un blanc minimaliste avec de subtils accents dorés, on pourrait facilement la confondre avec un produit de soin de luxe.
+                La première chose qui a marqué nos testeuses&nbsp;? L'emballage est <em>élégant</em>. Pas de couleurs criardes, pas d'images gênantes. Une boîte d'un blanc épuré, rehaussée de discrètes touches dorées, qu'on confondrait sans peine avec un soin de luxe.
               </p>
               <div className="bg-white p-6 rounded-lg border-2 border-[#FFE14D]">
-                <h3 className="font-bold text-lg text-gray-900 mb-3">Ce qu'il y a dans la boîte :</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Ce que contient la boîte&nbsp;:</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>L'appareil Lem (jaune vif, taille paume)</span>
+                    <span>Le Lem (jaune vif, tient dans la paume)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Câble de chargement USB magnétique</span>
+                    <span>Un câble de charge USB magnétique</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Pochette de rangement en velours doux (parfaite pour voyager)</span>
+                    <span>Une pochette de rangement en velours tout doux (idéale en voyage)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>« Manuel d'Amour de Soi » avec conseils d'utilisation et de bien-être</span>
+                    <span>Un «&nbsp;guide du plaisir solo&nbsp;» rempli de conseils d'utilisation et de bien-être</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Guide de démarrage rapide avec instructions illustrées</span>
+                    <span>Un guide de prise en main, avec instructions illustrées</span>
                   </li>
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                « Quand j'ai ouvert la boîte, j'ai été vraiment surprise par la qualité <strong>haut de gamme</strong> de l'ensemble. Ça ne ressemblait pas à un "sextoy" : ça ressemblait à un investissement bien-être. » — Utilisatrice Test, 54 ans
+                «&nbsp;En ouvrant la boîte, j'ai vraiment été surprise par la qualité <strong>haut de gamme</strong> de l'ensemble. On était loin du sextoy&nbsp;: on aurait dit un vrai investissement bien-être.&nbsp;» Testeuse, 54 ans
               </p>
             </div>
           </div>
@@ -520,13 +520,13 @@ export default function Home() {
 
         {/* Clitoral Stimulation Education Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Parlons Anatomie : Pourquoi la Stimulation Clitoridienne Compte</h2>
-          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Parlons anatomie&nbsp;: pourquoi la stimulation clitoridienne compte</h2>
+
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
-            <img 
-              src="/anatomy_FR-FR.png" 
-              alt="Schéma en coupe de l'anatomie clitoridienne"
+            <img
+              src="/anatomy_FR-FR.png"
+              alt="Schéma en coupe de l'anatomie du clitoris"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -537,63 +537,63 @@ export default function Home() {
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="font-bold text-xl text-gray-900 mb-2">La Science du Plaisir</h3>
+                <h3 className="font-bold text-xl text-gray-900 mb-2">La science du plaisir</h3>
                 <p className="text-gray-600 text-sm">Ce que chaque femme devrait savoir sur son corps</p>
               </div>
             </div>
             
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Voici quelque chose qu'on n'enseigne pas en cours de santé : le clitoris possède environ <strong>8 000 terminaisons nerveuses</strong>, plus que toute autre partie du corps humain, masculin ou féminin. Pour le contexte, le pénis en a environ 4 000.
+                Voilà ce qu'on n'apprend pas en cours de SVT&nbsp;: le clitoris compte environ <strong>8 000 terminaisons nerveuses</strong>, plus que toute autre partie du corps humain, masculin ou féminin. À titre de comparaison, le pénis en compte environ 4 000.
               </p>
               <p>
-                Mais voici le hic : <strong>75 % des femmes ne peuvent pas atteindre l'orgasme par la seule pénétration</strong>, selon une recherche publiée dans le Journal of Sex & Marital Therapy. Le clitoris est la clé.
+                Mais voici le hic&nbsp;: <strong>75&nbsp;% des femmes n'atteignent pas l'orgasme par la seule pénétration</strong>, selon une étude parue dans le Journal of Sex & Marital Therapy. Le clitoris, voilà la clé.
               </p>
               
               <div className="bg-white p-6 rounded-lg my-6">
-                <h4 className="font-bold text-lg text-gray-900 mb-4">Ce Qui Se Passe Pendant la Ménopause :</h4>
-                
+                <h4 className="font-bold text-lg text-gray-900 mb-4">Ce qui se passe à la ménopause&nbsp;:</h4>
+
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
-                  <img 
-                    src="/bloodflow_FR-FR.png" 
-                    alt="Comparaison du flux sanguin avant et après la ménopause"
+                  <img
+                    src="/bloodflow_FR-FR.png"
+                    alt="Comparaison de l'afflux sanguin avant et après la ménopause"
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <p className="font-semibold text-[#FF1493]">❌ Le Problème :</p>
+                    <p className="font-semibold text-[#FF1493]">❌ Le problème&nbsp;:</p>
                     <ul className="text-sm space-y-1 text-gray-600">
-                      <li>• Les niveaux d'œstrogènes chutent de 90 %</li>
-                      <li>• Le flux sanguin vers la zone pelvienne diminue</li>
-                      <li>• Le tissu clitoridien peut rétrécir de 20 à 30 %</li>
-                      <li>• La sensibilité nerveuse diminue</li>
-                      <li>• La lubrification naturelle diminue</li>
+                      <li>• Le taux d'œstrogènes chute de 90&nbsp;%</li>
+                      <li>• L'afflux sanguin vers la zone pelvienne diminue</li>
+                      <li>• Le tissu clitoridien peut rétrécir de 20 à 30&nbsp;%</li>
+                      <li>• La sensibilité nerveuse baisse</li>
+                      <li>• La lubrification naturelle se raréfie</li>
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <p className="font-semibold text-green-600">✓ La Solution :</p>
+                    <p className="font-semibold text-green-600">✓ La solution&nbsp;:</p>
                     <ul className="text-sm space-y-1 text-gray-600">
-                      <li>• La stimulation régulière maintient le flux sanguin</li>
-                      <li>• Garde les voies nerveuses actives</li>
-                      <li>• Prévient l'atrophie tissulaire</li>
-                      <li>• Maintient la sensibilité</li>
-                      <li>• Favorise la lubrification naturelle</li>
+                      <li>• Une stimulation régulière entretient l'afflux sanguin</li>
+                      <li>• Elle garde les circuits nerveux actifs</li>
+                      <li>• Elle prévient l'atrophie des tissus</li>
+                      <li>• Elle préserve la sensibilité</li>
+                      <li>• Elle favorise la lubrification naturelle</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <p>
-                Les gynécologues le disent sans détour : « Pensez-y comme de l'exercice pour votre plancher pelvien. Si vous n'utilisez pas ces muscles et ne maintenez pas le flux sanguin, ils s'atrophient. Le même principe s'applique au tissu clitoridien. »
+                Les gynécologues le disent sans détour&nbsp;: «&nbsp;Voyez ça comme de la gym pour votre plancher pelvien. Si vous ne faites pas travailler ces muscles et que l'afflux sanguin se tarit, ils s'atrophient. C'est exactement la même chose pour le tissu clitoridien.&nbsp;»
               </p>
               
               <div className="bg-[#FFE14D]/30 p-6 rounded-lg border-l-4 border-[#FFE14D]">
-                <p className="font-bold text-gray-900 mb-2">💡 Le Résultat :</p>
+                <p className="font-bold text-gray-900 mb-2">💡 En résumé&nbsp;:</p>
                 <p className="text-gray-700">
-                  La stimulation clitoridienne régulière n'est pas seulement une question de plaisir (bien que ce soit un bonus agréable). Il s'agit de maintenir la santé des tissus, de préserver la fonction nerveuse et de prévenir les changements irréversibles qui viennent avec la négligence. C'est de la <em>santé préventive</em>.
+                  La stimulation clitoridienne régulière, ce n'est pas qu'une histoire de plaisir (même si c'est un agréable bonus). C'est aussi entretenir la santé des tissus, préserver la fonction nerveuse et éviter les dégâts irréversibles que laisse le manque d'attention. Bref, de la <em>prévention</em>.
                 </p>
               </div>
             </div>
@@ -602,22 +602,22 @@ export default function Home() {
 
         {/* Partner Use Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">"Mais Qu'en Est-il de Mon Partenaire ?" Nous Avons Aussi Posé la Question</h2>
-          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">«&nbsp;Et mon partenaire dans tout ça&nbsp;?&nbsp;» Nous avons aussi posé la question</h2>
+
           <div className="bg-gradient-to-r from-[#FFE14D]/20 to-[#FF1493]/20 p-8 rounded-xl mb-8">
-            <h3 className="font-bold text-2xl text-gray-900 mb-4">Le "Miracle de 3 Minutes" (Et Pourquoi les Partenaires l'Adorent)</h3>
+            <h3 className="font-bold text-2xl text-gray-900 mb-4">Le «&nbsp;miracle des 3 minutes&nbsp;» (et pourquoi les partenaires adorent)</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Soyons honnêtes : pour beaucoup de femmes de plus de 50 ans, il peut falloir plus de 20 minutes (et beaucoup de gymnastique mentale) pour approcher de l'orgasme. Avec le Lem ? <strong className="text-[#FF1493]">Trois minutes.</strong>
+              Soyons honnêtes&nbsp;: pour beaucoup de femmes de plus de 50 ans, il faut parfois plus de 20 minutes (et pas mal de concentration) pour approcher de l'orgasme. Avec le Lem&nbsp;? <strong className="text-[#FF1493]">Trois minutes.</strong>
             </p>
             <div className="bg-white p-6 rounded-lg">
               <p className="text-lg text-gray-900 mb-3">
-                <strong>La plus grande objection des femmes :</strong> « Mon partenaire se sentira-t-il remplacé ? »
+                <strong>La crainte qui revient le plus souvent&nbsp;:</strong> «&nbsp;Est-ce que mon partenaire va se sentir remplacé&nbsp;?&nbsp;»
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>Absolument pas.</strong> Le Lem est minuscule. De nombreux couples l'utilisent <em>pendant</em> les rapports. Il agit comme un "pont", assurant que vous êtes pleinement excitée et naturellement lubrifiée, enlevant la pression de "performance" sur votre partenaire.
+                <strong>Absolument pas.</strong> Le Lem est minuscule. De nombreux couples l'utilisent <em>pendant</em> les rapports. Il joue le rôle de «&nbsp;tremplin&nbsp;»&nbsp;: il vous assure d'être pleinement excitée et naturellement lubrifiée, et soulage votre partenaire de toute pression de «&nbsp;performance&nbsp;».
               </p>
               <p className="text-gray-700 leading-relaxed italic">
-                Une testeuse nous a dit : « Ça a transformé notre chambre d'un lieu d'anxiété en un terrain de jeu. »
+                Une testeuse nous a confié&nbsp;: «&nbsp;Notre chambre est passée d'un lieu d'angoisse à un véritable terrain de jeu.&nbsp;»
               </p>
             </div>
           </div>
@@ -625,56 +625,56 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                L'une des questions les plus courantes que nous avons reçues lors de nos recherches : <em>« Mon partenaire se sentira-t-il menacé par ça ? »</em>
+                L'une des questions qui revenaient le plus souvent au fil de nos recherches&nbsp;: <em>«&nbsp;Est-ce que mon partenaire va se sentir menacé&nbsp;?&nbsp;»</em>
               </p>
               <p>
-                Voici ce que nous avons trouvé : <strong>Le Lem n'est pas un remplacement : c'est une amélioration.</strong> De nombreux couples que nous avons interviewés ont rapporté que l'intégration du Lem dans leur intimité a en fait <em>amélioré</em> leur connexion.
+                Voici ce que nous avons constaté&nbsp;: <strong>le Lem ne remplace rien, il enrichit.</strong> De nombreux couples interrogés nous ont raconté qu'inviter le Lem dans leur intimité avait en réalité <em>renforcé</em> leur complicité.
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  « Mon mari était curieux, pas menacé. Maintenant, il l'utilise sur moi pendant les préliminaires. Ça lui enlève la pression de "performer" et j'obtiens exactement ce dont j'ai besoin. Tout le monde y gagne. »
+                  «&nbsp;Mon mari était curieux, pas menacé. Aujourd'hui, c'est lui qui l'utilise sur moi pendant les préliminaires. Ça lui retire toute la pression de la “performance”, et moi, j'ai exactement ce dont j'ai besoin. On y gagne tous les deux.&nbsp;»
                 </p>
-                <p className="font-semibold text-gray-700">— Valeria, 55 ans, Mariée depuis 28 ans</p>
+                <p className="font-semibold text-gray-700">Valeria, 55 ans, mariée depuis 28 ans</p>
               </div>
               <p>
-                La taille compacte signifie qu'il est facile à intégrer pendant les activités en couple sans être encombrant. Et comme il est mains libres une fois positionné, les deux partenaires peuvent se concentrer l'un sur l'autre.
+                Grâce à sa taille compacte, il se glisse facilement dans les ébats sans jamais gêner. Et comme il reste en place tout seul, mains libres, les deux partenaires peuvent se concentrer l'un sur l'autre.
               </p>
             </div>
             <div className="bg-gradient-to-br from-[#FF1493]/10 to-[#FFE14D]/10 p-8 rounded-xl">
-              <h3 className="font-bold text-xl text-gray-900 mb-4">Façons dont les Couples Utilisent Lem :</h3>
+              <h3 className="font-bold text-xl text-gray-900 mb-4">Comment les couples utilisent le Lem&nbsp;:</h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
                   <div>
-                    <p className="font-semibold text-gray-900">Pendant les Préliminaires</p>
-                    <p className="text-sm text-gray-600">Le partenaire le maintient en place pendant les baisers et les caresses</p>
+                    <p className="font-semibold text-gray-900">Pendant les préliminaires</p>
+                    <p className="text-sm text-gray-600">Le partenaire le maintient en place au fil des baisers et des caresses</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
                   <div>
-                    <p className="font-semibold text-gray-900">Pendant les Rapports</p>
-                    <p className="text-sm text-gray-600">Positionné pour une stimulation clitoridienne et pénétrative simultanée</p>
+                    <p className="font-semibold text-gray-900">Pendant les rapports</p>
+                    <p className="text-sm text-gray-600">Bien placé, pour une stimulation à la fois clitoridienne et pénétrative</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
                   <div>
-                    <p className="font-semibold text-gray-900">Solo avec le partenaire qui regarde</p>
-                    <p className="text-sm text-gray-600">Renforce l'intimité et aide les partenaires à apprendre ce qui fonctionne</p>
+                    <p className="font-semibold text-gray-900">En solo, sous le regard du partenaire</p>
+                    <p className="text-sm text-gray-600">De quoi renforcer la complicité et l'aider à comprendre ce qui vous fait du bien</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">4</div>
                   <div>
-                    <p className="font-semibold text-gray-900">"Entretien" entre les sessions</p>
-                    <p className="text-sm text-gray-600">L'utilisation en solo maintient les tissus en bonne santé lorsque les rapports sexuels avec partenaire ne sont pas fréquents</p>
+                    <p className="font-semibold text-gray-900">«&nbsp;Entretien&nbsp;» entre deux fois</p>
+                    <p className="text-sm text-gray-600">En solo, il garde les tissus en bonne santé quand les rapports à deux se font rares</p>
                   </div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-white rounded-lg">
                 <p className="text-sm text-gray-700">
-                  <strong>Conseil Pro :</strong> La communication est la clé. Présentez-le comme un outil de bien-être qui profite à <em>vous deux</em> en réduisant la pression et en augmentant le plaisir.
+                  <strong>Le bon réflexe&nbsp;:</strong> tout est dans le dialogue. Présentez-le comme un outil de bien-être qui profite à <em>vous deux</em>, en allégeant la pression et en décuplant le plaisir.
                 </p>
               </div>
             </div>
@@ -683,8 +683,8 @@ export default function Home() {
 
         {/* Enhanced Risk Reversal Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Toutes les Raisons d'Essayer, Aucune Raison de S'inquiéter</h2>
-          <p className="text-center text-xl text-gray-600 mb-8">Nous avons enquêté sur les garanties de Hello Nancy. Voici ce qu'elles signifient vraiment.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Toutes les raisons d'essayer, aucune de s'inquiéter</h2>
+          <p className="text-center text-xl text-gray-600 mb-8">Nous avons passé au crible les garanties de Hello Nancy. Voici ce qu'elles veulent vraiment dire.</p>
           
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="border-2 border-green-200 bg-green-50">
@@ -692,12 +692,12 @@ export default function Home() {
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto">
                   <Shield className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg text-center text-gray-900">Garantie "Plaisir" de 30 Jours</h3>
+                <h3 className="font-bold text-lg text-center text-gray-900">Satisfaite ou remboursée sous 30 jours</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Pas satisfaite ? Obtenez un <strong>remboursement complet</strong>, aucun retour requis. Ils vous font confiance pour être honnête. C'est dire à quel point ils sont confiants.
+                  Pas convaincue&nbsp;? Vous êtes <strong>intégralement remboursée</strong>, sans même avoir à renvoyer l'appareil. La marque vous fait confiance&nbsp;: difficile d'être plus sûr de son produit.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Traduction : Zéro risque financier. Essayez-le pendant un mois.
+                  En clair&nbsp;: aucun risque financier. Essayez-le un mois.
                 </p>
               </CardContent>
             </Card>
@@ -707,12 +707,12 @@ export default function Home() {
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto">
                   <Package className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg text-center text-gray-900">Garantie de 12 Mois</h3>
+                <h3 className="font-bold text-lg text-center text-gray-900">Garantie de 12 mois</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Si quelque chose ne va pas avec l'appareil la première année, ils le remplacent. Gratuitement. Sans poser de questions.
+                  Le moindre souci avec l'appareil pendant la première année&nbsp;? La marque le remplace. Gratuitement. Sans poser de questions.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Traduction : Ce n'est pas un gadget jetable. C'est conçu pour durer.
+                  En clair&nbsp;: ce n'est pas un gadget jetable. C'est fait pour durer.
                 </p>
               </CardContent>
             </Card>
@@ -722,42 +722,42 @@ export default function Home() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto">
                   <Heart className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg text-center text-gray-900">Support à Vie</h3>
+                <h3 className="font-bold text-lg text-center text-gray-900">Une assistance à vie</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Des questions sur l'utilisation ? Des inquiétudes sur le nettoyage ? Leur équipe de service client répond en moins de 24 heures.
+                  Une question sur l'utilisation&nbsp;? Un doute sur le nettoyage&nbsp;? Le service client répond en moins de 24 heures.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
-                  Traduction : Vous n'achetez pas un produit. Vous rejoignez une communauté.
+                  En clair&nbsp;: vous n'achetez pas un produit, vous rejoignez une communauté.
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="mt-8 max-w-3xl mx-auto bg-gradient-to-r from-[#FFE14D]/30 to-[#FF1493]/30 p-8 rounded-xl">
-            <h3 className="font-bold text-2xl text-gray-900 mb-4 text-center">La Vraie Question : Qu'avez-vous à Perdre ?</h3>
+            <h3 className="font-bold text-2xl text-gray-900 mb-4 text-center">La vraie question&nbsp;: qu'avez-vous à perdre&nbsp;?</h3>
             <div className="space-y-3 text-gray-700">
               <p className="text-center leading-relaxed">
-                Nous avons couvert la science. Nous vous avons montré les avis. Nous avons expliqué les garanties. À ce stade, le seul risque est de <em>ne pas</em> l'essayer.
+                Nous avons passé en revue la science. Nous vous avons montré les avis. Nous avons décrypté les garanties. À ce stade, le seul vrai risque, c'est de <em>ne pas</em> l'essayer.
               </p>
               <div className="bg-white p-6 rounded-lg">
-                <p className="font-semibold text-center text-lg text-gray-900 mb-3">Faisons le Calcul :</p>
+                <p className="font-semibold text-center text-lg text-gray-900 mb-3">Faisons le calcul&nbsp;:</p>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <p className="font-semibold text-[#FF1493] mb-2">Si Vous L'essayez :</p>
+                    <p className="font-semibold text-[#FF1493] mb-2">Si vous l'essayez&nbsp;:</p>
                     <ul className="space-y-1 text-gray-600">
-                      <li>✓ Pourriez redécouvrir un plaisir que vous pensiez disparu</li>
-                      <li>✓ Pourrait améliorer la santé des tissus et prévenir l'atrophie</li>
-                      <li>✓ Pourriez mieux dormir (les orgasmes libèrent de l'ocytocine)</li>
-                      <li>✓ Pire cas : Récupérez vos 73,95 €</li>
+                      <li>✓ Vous pourriez redécouvrir un plaisir que vous croyiez perdu</li>
+                      <li>✓ Vous pourriez préserver la santé des tissus et prévenir l'atrophie</li>
+                      <li>✓ Vous pourriez mieux dormir (l'orgasme libère de l'ocytocine)</li>
+                      <li>✓ Au pire&nbsp;: vous récupérez vos 73,95 €</li>
                     </ul>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-500 mb-2">Si Vous Ne Le Faites Pas :</p>
+                    <p className="font-semibold text-gray-500 mb-2">Si vous laissez passer&nbsp;:</p>
                     <ul className="space-y-1 text-gray-600">
-                      <li>• L'atrophie des tissus continue</li>
-                      <li>• La sensibilité nerveuse continue de diminuer</li>
-                      <li>• Le bien-être sexuel reste une lutte</li>
-                      <li>• Vous vous demanderez toujours "et si ?"</li>
+                      <li>• L'atrophie des tissus se poursuit</li>
+                      <li>• La sensibilité nerveuse continue de baisser</li>
+                      <li>• Le bien-être sexuel reste un combat</li>
+                      <li>• Vous vous demanderez toujours «&nbsp;et si&nbsp;?&nbsp;»</li>
                     </ul>
                   </div>
                 </div>
@@ -768,9 +768,9 @@ export default function Home() {
 
         {/* Credibility Section */}
         <div className="my-12 bg-gray-50 p-8 rounded-xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Pourquoi Hello Nancy a Notre Confiance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Pourquoi nous faisons confiance à Hello Nancy</h2>
           <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-            Nous ne recommandons pas les produits à la légère. Voici pourquoi Hello Nancy a passé nos standards éditoriaux.
+            Nous ne recommandons pas un produit à la légère. Voici pourquoi Hello Nancy a passé nos exigences éditoriales.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
@@ -779,33 +779,33 @@ export default function Home() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Primé</h3>
-              <p className="text-sm text-gray-600">Prix de la Technologie Bien-être Féminin 2025 de l'Institut International du Bien-être</p>
+              <p className="text-sm text-gray-600">Prix 2025 de la technologie bien-être féminin, décerné par l'Institut international du bien-être</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Star className="w-8 h-8 text-gray-900" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Avis Vérifiés</h3>
-              <p className="text-sm text-gray-600">Moyenne de 4,7★ sur 14 907 acheteurs vérifiés (pas de faux avis)</p>
+              <h3 className="font-bold text-gray-900 mb-2">Avis vérifiés</h3>
+              <p className="text-sm text-gray-600">4,7★ de moyenne sur 14 907 acheteuses vérifiées (aucun faux avis)</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">1M+ Vendus</h3>
-              <p className="text-sm text-gray-600">Plus de 1 000 000 unités vendues dans le monde depuis le lancement en 2023</p>
+              <h3 className="font-bold text-gray-900 mb-2">Plus d'1M vendus</h3>
+              <p className="text-sm text-gray-600">Plus de 1 000 000 d'exemplaires écoulés dans le monde depuis son lancement en 2023</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Shield className="w-8 h-8 text-gray-900" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Qualité Médicale</h3>
-              <p className="text-sm text-gray-600">Silicone de qualité médicale, tests de sécurité rigoureux</p>
+              <h3 className="font-bold text-gray-900 mb-2">Qualité médicale</h3>
+              <p className="text-sm text-gray-600">Silicone de qualité médicale, soumis à des tests de sécurité rigoureux</p>
             </div>
           </div>
 
           <div className="bg-white p-6 rounded-lg max-w-3xl mx-auto">
-            <h3 className="font-bold text-lg text-gray-900 mb-3 text-center">Vu Dans :</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3 text-center">Ils en ont parlé&nbsp;:</h3>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               <img src="/timeout_logo.webp" alt="Time Out" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
               <img src="/tatler_logo.webp" alt="Tatler" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
@@ -823,7 +823,7 @@ export default function Home() {
       <section className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Ce Que Disent les Acheteurs Vérifiés
+            Ce qu'en disent les acheteuses vérifiées
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,7 sur 5 (14 907 avis vérifiés)</p>
 
@@ -835,12 +835,12 @@ export default function Home() {
                     <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
                   ))}
                 </div>
-                <p className="font-bold text-gray-900">"Mieux Que la Crème aux Œstrogènes"</p>
+                <p className="font-bold text-gray-900">«&nbsp;Mieux que la crème aux œstrogènes&nbsp;»</p>
                 <p className="text-gray-700 italic">
-                  « Je n'ai pas acheté ça pour le "fun", je l'ai acheté parce que mon médecin a dit que j'avais besoin de flux sanguin. Mais wow. La libération m'aide à dormir toute la nuit sans me réveiller en sueur. C'est ma nouvelle vitamine. »
+                  «&nbsp;Je ne l'ai pas acheté pour m'amuser, mais parce que mon médecin m'avait dit qu'il me fallait relancer l'afflux sanguin. Eh bien&nbsp;: waouh. Le relâchement m'aide à dormir d'une traite, sans me réveiller en sueur. C'est ma nouvelle dose de vitamines.&nbsp;»
                 </p>
-                <p className="font-semibold text-gray-900">- Sarah J., 58 ans</p>
-                <p className="text-xs text-gray-500">✓ Achat Vérifié</p>
+                <p className="font-semibold text-gray-900">Sarah J., 58 ans</p>
+                <p className="text-xs text-gray-500">✓ Achat vérifié</p>
               </CardContent>
             </Card>
 
@@ -851,12 +851,12 @@ export default function Home() {
                     <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
                   ))}
                 </div>
-                <p className="font-bold text-gray-900">"A Réveillé Mon Corps"</p>
+                <p className="font-bold text-gray-900">«&nbsp;Il a réveillé mon corps&nbsp;»</p>
                 <p className="text-gray-700 italic">
-                  « J'avais essayé le Lelo Sona avant mais c'était trop fort pour moi. Le Lem est assez doux pour ma sensibilité mais assez profond pour vraiment fonctionner. 10/10. »
+                  «&nbsp;J'avais déjà essayé le Lelo Sona, mais c'était trop fort pour moi. Le Lem est assez doux pour ma sensibilité, et assez puissant pour vraiment faire effet. 10/10.&nbsp;»
                 </p>
-                <p className="font-semibold text-gray-900">- Carly, Acheteuse Vérifiée</p>
-                <p className="text-xs text-gray-500">✓ Achat Vérifié</p>
+                <p className="font-semibold text-gray-900">Carly, acheteuse vérifiée</p>
+                <p className="text-xs text-gray-500">✓ Achat vérifié</p>
               </CardContent>
             </Card>
 
@@ -867,12 +867,12 @@ export default function Home() {
                     <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
                   ))}
                 </div>
-                <p className="font-bold text-gray-900">"Je suis accro"</p>
+                <p className="font-bold text-gray-900">«&nbsp;Je suis accro&nbsp;»</p>
                 <p className="text-gray-700 italic">
-                  « Je suis accro. Le Lem aspire et tire de la manière la plus folle. Quand vous jouissez, on a l'impression qu'il extrait l'orgasme et fait durer les pulsations beaucoup plus longtemps. Tellemeeeent bon ! »
+                  «&nbsp;Je suis accro. Le Lem aspire et tire d'une façon complètement folle. Au moment de jouir, on a l'impression qu'il aspire l'orgasme et fait durer les vagues de plaisir bien plus longtemps. Trooop boooon&nbsp;!&nbsp;»
                 </p>
-                <p className="font-semibold text-gray-900">- Alisha, Testeuse Bêta</p>
-                <p className="text-xs text-gray-500">✓ Achat Vérifié</p>
+                <p className="font-semibold text-gray-900">Alisha, testeuse de la première heure</p>
+                <p className="text-xs text-gray-500">✓ Achat vérifié</p>
               </CardContent>
             </Card>
 
@@ -883,12 +883,12 @@ export default function Home() {
                     <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
                   ))}
                 </div>
-                <p className="font-bold text-gray-900">"Change la Donne"</p>
+                <p className="font-bold text-gray-900">«&nbsp;Ça change tout&nbsp;»</p>
                 <p className="text-gray-700 italic">
-                  « En tant que personne qui valorise la discrétion dans les produits intimes, il ne pourrait y avoir de choix plus parfait. La fonction d'aspiration ne ressemble à rien de ce que j'ai essayé auparavant. »
+                  «&nbsp;Moi qui tiens à la discrétion pour les produits intimes, je ne pouvais pas mieux tomber. La succion ne ressemble à rien de ce que j'avais essayé jusqu'ici.&nbsp;»
                 </p>
-                <p className="font-semibold text-gray-900">- Maxine, Acheteuse Vérifiée</p>
-                <p className="text-xs text-gray-500">✓ Achat Vérifié</p>
+                <p className="font-semibold text-gray-900">Maxine, acheteuse vérifiée</p>
+                <p className="text-xs text-gray-500">✓ Achat vérifié</p>
               </CardContent>
             </Card>
           </div>
@@ -900,95 +900,95 @@ export default function Home() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto mb-8">
             <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-4">
-              Notre Verdict : Vaut l'Investissement
+              Notre verdict&nbsp;: il vaut l'investissement
             </h2>
             <p className="text-center text-xl text-gray-600">
-              Après des tests et des recherches approfondis, notre équipe éditoriale recommande vivement le Nancy's Lem aux femmes subissant des changements tissulaires liés à la ménopause.
+              Après des tests et des recherches approfondis, notre rédaction recommande chaudement le Lem aux femmes confrontées aux changements tissulaires de la ménopause.
             </p>
           </div>
 
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">ÉCONOMISEZ 55 €</p>
+                <p className="font-bold">55 € D'ÉCONOMIE</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
                   <div className="inline-block bg-[#FFE14D] text-black px-6 py-3 rounded-full text-sm font-bold mb-4">
-                    ⚡ OFFRE LECTEUR À DURÉE LIMITÉE ⚡
+                    ⚡ OFFRE LECTRICES, DURÉE LIMITÉE ⚡
                   </div>
                   {showTimer && (
                     <div className="flex items-center justify-center gap-2 bg-red-500 text-white px-6 py-3 rounded-lg mb-4 animate-pulse">
                       <Clock className="w-5 h-5" />
-                      <span className="font-bold">L'offre expire dans :</span>
+                      <span className="font-bold">L'offre expire dans&nbsp;:</span>
                       <span className="font-mono text-2xl font-bold">{formatTime(timeLeft)}</span>
                     </div>
                   )}
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Masseur Clitoridien Nancy's Lem</h3>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Lem, le stimulateur clitoridien de Hello Nancy</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
                     <span className="text-6xl font-bold text-[#FF1493]">73,95 €</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">128,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">Économisez 55 € (43% de réduction)</span>
+                      <span className="text-sm text-green-600 font-bold">55 € d'économie (-43&nbsp;%)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Juste 0,20 €/jour</strong> sur un an d'utilisation
+                      <strong className="text-2xl text-[#FF1493]">À peine 0,20 €/jour</strong> sur un an d'utilisation
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
-                      Moins que votre café quotidien. Dure des années.
+                      Moins que votre café du matin. Et il vous suivra des années.
                     </p>
                   </div>
                   <div className="bg-[#FFE14D]/30 p-4 rounded-lg mb-4">
-                    <p className="text-gray-900 font-semibold">💡 CONSEIL LECTEUR : Utilisez le code <span className="font-bold text-[#FF1493]">TIFFANY</span> ou <span className="font-bold text-[#FF1493]">ISABELLA</span> à la caisse pour une surprise supplémentaire !</p>
+                    <p className="text-gray-900 font-semibold">💡 NOTRE ASTUCE&nbsp;: saisissez le code <span className="font-bold text-[#FF1493]">TIFFANY</span> ou <span className="font-bold text-[#FF1493]">ISABELLA</span> au paiement pour une petite surprise en plus&nbsp;!</p>
                   </div>
                 </div>
 
                 <div className="space-y-3 border-t border-b border-gray-200 py-6">
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Masseur Clitoridien Lem (jaune vif)</span>
+                    <span className="text-gray-700">Le Lem, stimulateur clitoridien (jaune vif)</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Manuel d'amour de soi & guide d'utilisation</span>
+                    <span className="text-gray-700">Le guide du plaisir solo et le mode d'emploi</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Câble de chargement magnétique</span>
+                    <span className="text-gray-700">Le câble de charge magnétique</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Pochette de voyage en velours</span>
+                    <span className="text-gray-700">La pochette de voyage en velours</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Livraison mondiale gratuite</span>
+                    <span className="text-gray-700">La livraison gratuite partout dans le monde</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700 font-bold">Garantie "Plaisir" de 30 jours</span>
+                    <span className="text-gray-700 font-bold">Satisfaite ou remboursée sous 30 jours</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0" />
-                    <span className="text-gray-700">Garantie de 12 mois</span>
+                    <span className="text-gray-700">La garantie de 12 mois</span>
                   </div>
                 </div>
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Acheter Maintenant - 73,95 € (Économisez 55 €)
+                    Je commande le mien - 73,95 € (55 € d'économie)
                   </Button>
                 </a>
 
                 <div className="bg-green-50 border-2 border-green-200 p-4 rounded-lg">
                   <p className="text-center text-green-800 font-semibold flex items-center justify-center gap-2">
                     <Shield className="w-5 h-5" />
-                    Garantie sans risque
+                    Sans aucun risque
                   </p>
                   <p className="text-center text-sm text-green-700 mt-2">
-                    Garantie de remboursement de 30 jours. Si vous ne l'aimez pas, obtenez un remboursement complet, <strong>aucun retour nécessaire</strong>.
+                    Satisfaite ou remboursée sous 30 jours. S'il ne vous convient pas, vous êtes intégralement remboursée, <strong>sans même avoir à le renvoyer</strong>.
                   </p>
                 </div>
 
@@ -999,7 +999,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center gap-1">
                     <Truck className="w-5 h-5 text-[#FF1493]" />
-                    <span>Expédié en 24h</span>
+                    <span>Expédié sous 24 h</span>
                   </div>
                   <div className="flex flex-col items-center gap-1">
                     <Shield className="w-5 h-5 text-[#FF1493]" />
@@ -1016,48 +1016,48 @@ export default function Home() {
       <section className="bg-gradient-to-br from-[#FFE14D]/10 via-white to-[#FF1493]/10 py-16 md:py-24">
         <div className="container max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Le Lem Est-il Fait Pour Vous ?
+            Le Lem est-il fait pour vous&nbsp;?
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">
-            Des milliers de femmes de plus de 50 ans disent "oui". Voyez si vous vous reconnaissez dans l'un de ces points :
+            Des milliers de femmes de plus de 50 ans disent oui. Voyez si vous vous reconnaissez dans l'un de ces points&nbsp;:
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="border-2 border-[#FFE14D] bg-white hover:shadow-xl transition-shadow">
               <CardContent className="p-8 space-y-4">
-                <h3 className="font-bold text-xl text-gray-900 mb-4">🌸 Le Lem est pour vous si vous :</h3>
+                <h3 className="font-bold text-xl text-gray-900 mb-4">🌸 Le Lem est fait pour vous si&nbsp;:</h3>
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Luttez contre la sécheresse vaginale ou les rapports douloureux</span>
+                    <span>Vous composez avec la sécheresse vaginale ou des rapports douloureux</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Ressentez une sensation réduite ou une difficulté à atteindre l'orgasme</span>
+                    <span>Vous ressentez moins de sensations ou peinez à atteindre l'orgasme</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Faites face à une atrophie clitoridienne ou un amincissement des tissus</span>
+                    <span>Vous faites face à une atrophie clitoridienne ou à un amincissement des tissus</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Trouvez les vibrateurs traditionnels trop durs ou irritants</span>
+                    <span>Vous trouvez le vibromasseur classique trop fort ou irritant</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Voulez maintenir la santé des tissus en vieillissant</span>
+                    <span>Vous voulez préserver la santé de vos tissus en avançant en âge</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Cherchez un appareil de bien-être discret (pas un "jouet" évident)</span>
+                    <span>Vous cherchez un appareil de bien-être discret (rien d'un sextoy affiché)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Évitez ou complétez un traitement hormonal substitutif</span>
+                    <span>Vous évitez le traitement hormonal substitutif, ou souhaitez le compléter</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Êtes prête à récupérer votre bien-être sexuel et votre confiance</span>
+                    <span>Vous êtes prête à retrouver votre bien-être sexuel et votre confiance</span>
                   </div>
                 </div>
               </CardContent>
@@ -1065,35 +1065,35 @@ export default function Home() {
 
             <Card className="border-2 border-[#FF1493] bg-white hover:shadow-xl transition-shadow">
               <CardContent className="p-8 space-y-4">
-                <h3 className="font-bold text-xl text-gray-900 mb-4">💡 Vous aimerez particulièrement le Lem si :</h3>
+                <h3 className="font-bold text-xl text-gray-900 mb-4">💡 Vous l'adorerez tout particulièrement si&nbsp;:</h3>
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous privilégiez le <strong>bien-être fondé sur la science</strong> aux gadgets</span>
+                    <span>Vous préférez le <strong>bien-être fondé sur la science</strong> aux gadgets</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous voulez des <strong>soins préventifs</strong>, pas juste une gestion des symptômes</span>
+                    <span>Vous misez sur la <strong>prévention</strong>, pas seulement sur la gestion des symptômes</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous en avez assez des produits qui <strong>ne fonctionnent pas pour les corps matures</strong></span>
+                    <span>Vous en avez assez des produits <strong>inadaptés aux corps qui changent</strong></span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous appréciez un <strong>design réfléchi</strong> qui respecte votre vie privée</span>
+                    <span>Vous appréciez un <strong>design soigné</strong> qui respecte votre intimité</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous êtes prête à <strong>investir en vous-même</strong> (juste 0,20 €/jour sur un an !)</span>
+                    <span>Vous êtes prête à <strong>investir sur vous</strong> (à peine 0,20 €/jour sur un an&nbsp;!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous voulez des <strong>résultats sans effets secondaires</strong> ni ordonnances</span>
+                    <span>Vous voulez des <strong>résultats sans effets indésirables</strong> ni ordonnance</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Vous avez fini d'accepter que <strong>« c'est juste comme ça maintenant »</strong></span>
+                    <span>Vous refusez de vous résigner à un «&nbsp;<strong>c'est comme ça, désormais</strong>&nbsp;»</span>
                   </div>
                 </div>
               </CardContent>
@@ -1103,7 +1103,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <div className="bg-[#FFE14D]/30 p-6 rounded-xl max-w-2xl mx-auto">
               <p className="text-lg text-gray-900 mb-4">
-                <strong>Si vous avez coché ne serait-ce que 3 de ces cases,</strong> le Lem a été conçu spécifiquement pour vous.
+                <strong>Si vous avez coché ne serait-ce que 3 de ces cases,</strong> le Lem a été pensé pour vous.
               </p>
               <a 
                 href="https://hellonancy.com/products/lem" 
@@ -1123,7 +1123,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-[#FF1493] hover:bg-[#E01280] text-white px-12 py-6 text-lg">
-                  Oui, C'est Moi - Acheter Maintenant
+                  Oui, c'est moi - je commande
                 </Button>
               </a>
             </div>
@@ -1135,52 +1135,52 @@ export default function Home() {
       <section className="container px-4 py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Vos Questions, Nos Réponses
+            Vos questions, nos réponses
           </h2>
-          <p className="text-center text-gray-600 mb-12">Nous avons posé à Hello Nancy les questions que nos lectrices voulaient savoir</p>
+          <p className="text-center text-gray-600 mb-12">Nous avons posé à Hello Nancy les questions que se posaient nos lectrices.</p>
           
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Est-ce que cela fera mal si je suis sensible ou si j'ai une atrophie ?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Est-ce que ça fait mal si je suis sensible ou si j'ai une atrophie&nbsp;?</h3>
                 <p className="text-gray-700">
-                  Pas du tout. Parce qu'il utilise l'aspiration d'air plutôt que la vibration par contact direct, il évite la friction qui cause la douleur. Vous pouvez commencer par le plus bas des 12 réglages et augmenter doucement. Il est conçu spécifiquement pour être doux sur les tissus délicats.
+                  Pas du tout. Comme il fonctionne par succion plutôt que par vibration au contact direct, il évite la friction responsable de la douleur. Vous pouvez démarrer au plus bas des 12 réglages, puis monter en douceur. Il est justement conçu pour respecter les tissus délicats.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">L'emballage est-il gênant ?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">L'emballage est-il gênant&nbsp;?</h3>
                 <p className="text-gray-700">
-                  Zéro pour cent. Ils expédient dans des boîtes brunes simples sans logos. L'adresse de retour indique simplement « Care & Bloom Ltd. » Discrétion totale garantie.
+                  Pas le moins du monde. L'envoi se fait dans un simple carton brun, sans aucun logo. L'adresse de l'expéditeur indique seulement «&nbsp;Care & Bloom Ltd.&nbsp;». Discrétion totale, garantie.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Et si je ne l'aime pas ?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Et s'il ne me convient pas&nbsp;?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy offre une garantie de satisfaction de 30 jours. Si vous ne l'aimez pas, ils offrent un remboursement de courtoisie unique, <strong>aucun retour nécessaire</strong>. Ils vous font confiance pour trouver ce qui fonctionne pour votre corps.
+                  Hello Nancy applique une garantie satisfait ou remboursé de 30 jours. S'il ne vous convient pas, la marque vous rembourse une fois, à titre commercial, <strong>sans même avoir à le renvoyer</strong>. Elle vous fait confiance pour trouver ce qui convient à votre corps.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Puis-je l'utiliser sous la douche ou dans le bain ?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Puis-je l'utiliser sous la douche ou dans le bain&nbsp;?</h3>
                 <p className="text-gray-700">
-                  Oui ! Il est certifié étanche IPX7, ce qui signifie qu'il est entièrement submersible. De nombreuses utilisatrices trouvent que l'eau chaude améliore la relaxation et les sensations.
+                  Oui&nbsp;! Il est certifié étanche IPX7, c'est-à-dire totalement immergeable. Beaucoup d'utilisatrices trouvent que l'eau chaude favorise la détente et décuple les sensations.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Est-il bruyant ?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Fait-il du bruit&nbsp;?</h3>
                 <p className="text-gray-700">
-                  Silencieux comme un murmure. Le moteur ultra-silencieux assure une discrétion totale : vous pouvez l'utiliser sans craindre que quelqu'un l'entende, même dans la pièce voisine.
+                  Discret comme un murmure. Son moteur ultra-silencieux garantit une discrétion totale&nbsp;: vous pouvez l'utiliser sans craindre qu'on vous entende, même dans la pièce d'à côté.
                 </p>
               </CardContent>
             </Card>
@@ -1193,20 +1193,20 @@ export default function Home() {
         <div className="container max-w-4xl px-4">
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-              Notre Verdict Final
+              Notre verdict final
             </h2>
             <div className="text-white text-lg leading-relaxed space-y-4">
               <p>
-                Après des semaines de recherche, de consultations d'experts et d'entretiens avec des utilisatrices, notre équipe éditoriale estime que le Nancy's Lem répond à un véritable besoin médical qui a été négligé trop longtemps.
+                Après des semaines de recherche, des consultations d'experts et des entretiens avec des utilisatrices, notre rédaction est convaincue que le Lem répond à un vrai besoin médical, négligé depuis bien trop longtemps.
               </p>
               <p>
-                Il ne s'agit pas de vanité ou d'indulgence : il s'agit de maintenir la santé des tissus, d'améliorer la qualité du sommeil et de récupérer une partie de vous-même que la ménopause essaie de vous enlever.
+                Il n'est pas question de coquetterie ni de petit plaisir&nbsp;: il s'agit de préserver la santé des tissus, de mieux dormir et de retrouver une part de vous-même que la ménopause tente de vous reprendre.
               </p>
               <p className="text-xl font-bold">
-                Si vous ressentez les symptômes du SGUM, si vous luttez avec des solutions traditionnelles ou si vous voulez simplement maintenir votre bien-être sexuel en vieillissant, le Lem mérite une considération sérieuse.
+                Si vous ressentez les symptômes du SGUM, si les solutions classiques vous laissent sur votre faim ou si vous voulez simplement préserver votre bien-être sexuel en avançant en âge, le Lem mérite vraiment qu'on s'y attarde.
               </p>
               <p className="text-sm italic">
-                — Jessica Martinez, Rédactrice en Chef Bien-être
+                Jessica Martinez, rédactrice en chef bien-être
               </p>
             </div>
             <div className="text-center pt-6">
@@ -1228,10 +1228,10 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Acheter Nancy's Lem - 73,95 €
+                Je commande le Lem - 73,95 €
               </Button>
               </a>
-              <p className="text-white/90 text-sm mt-4">✓ Garantie 30 jours ✓ Livraison gratuite ✓ Emballage discret</p>
+              <p className="text-white/90 text-sm mt-4">✓ Satisfait ou remboursé sous 30 jours ✓ Livraison gratuite ✓ Emballage discret</p>
             </div>
           </div>
         </div>
@@ -1242,50 +1242,50 @@ export default function Home() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-800 p-6 rounded-lg mb-8">
-              <h3 className="font-bold text-lg mb-3">Divulgation d'Affiliation</h3>
+              <h3 className="font-bold text-lg mb-3">Transparence sur l'affiliation</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Wellness Insider est soutenu par ses lecteurs. Lorsque vous achetez via des liens sur notre site, nous pouvons gagner une commission d'affiliation sans frais supplémentaires pour vous. Cela nous aide à continuer à fournir du contenu gratuit et fondé sur la recherche. Nous ne recommandons que des produits que notre équipe éditoriale a minutieusement examinés et croit bénéfiques pour nos lecteurs. Toutes les opinions exprimées sont les nôtres et ne sont pas influencées par une compensation.
+                Wellness Insider vit grâce à ses lectrices. Lorsque vous achetez via les liens présents sur notre site, nous pouvons toucher une commission d'affiliation, sans que cela change quoi que ce soit au prix pour vous. C'est ce qui nous permet de continuer à proposer des contenus gratuits, fondés sur la recherche. Nous ne recommandons que des produits que notre rédaction a soigneusement examinés et qu'elle juge réellement bénéfiques pour vous. Tous les avis exprimés sont les nôtres et ne sont influencés par aucune contrepartie.
               </p>
             </div>
 
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="font-bold text-lg mb-4">À Propos de Nous</h3>
+                <h3 className="font-bold text-lg mb-4">À propos de nous</h3>
                 <p className="text-gray-400 text-sm">
-                  Wellness Insider fournit un journalisme de santé et de bien-être fondé sur des preuves pour les femmes modernes.
+                  Wellness Insider propose un journalisme de santé et de bien-être fondé sur les faits, pensé pour les femmes d'aujourd'hui.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-4">Catégories</h3>
+                <h3 className="font-bold text-lg mb-4">Rubriques</h3>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>Santé</li>
                   <li>Bien-être</li>
-                  <li>Sexe & Relations</li>
-                  <li>Avis Produits</li>
+                  <li>Sexe & couple</li>
+                  <li>Tests produits</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-4">À Propos de Nancy's Lem</h3>
+                <h3 className="font-bold text-lg mb-4">À propos du Lem</h3>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li>Détails du Produit</li>
-                  <li>Avis Clients</li>
-                  <li>Expédition & Retours</li>
-                  <li>Contact : care@hellonancy.com</li>
+                  <li>Fiche produit</li>
+                  <li>Avis clients</li>
+                  <li>Livraison & retours</li>
+                  <li>Contact&nbsp;: care@hellonancy.com</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-4">Confiance & Sécurité</h3>
+                <h3 className="font-bold text-lg mb-4">Confiance & sécurité</h3>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>✓ Matériaux de qualité médicale</li>
                   <li>✓ Expédition discrète</li>
-                  <li>✓ Garantie 30 jours</li>
+                  <li>✓ Satisfait ou remboursé sous 30 jours</li>
                   <li>✓ Garantie 12 mois</li>
                 </ul>
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-              <p>© 2025 Wellness Insider. Tous droits réservés. Le contenu éditorial est indépendant et objectif.</p>
-              <p className="mt-2">Produit présenté : Nancy's Lem par Hello Nancy • Gagnant du Prix de la Technologie Bien-être Féminin 2025</p>
+              <p>© 2025 Wellness Insider. Tous droits réservés. Notre contenu éditorial est indépendant et impartial.</p>
+              <p className="mt-2">Produit présenté&nbsp;: le Lem de Hello Nancy • Lauréat du Prix 2025 de la technologie bien-être féminin</p>
             </div>
           </div>
         </div>

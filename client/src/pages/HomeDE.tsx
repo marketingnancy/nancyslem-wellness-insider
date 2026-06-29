@@ -88,7 +88,7 @@ export default function Home() {
               className="h-8 md:h-10"
             />
             <div className="text-right">
-              <p className="text-xs text-gray-500 font-medium">Vertrauenswürdige Frauengesundheit</p>
+              <p className="text-xs text-gray-500 font-medium">Frauengesundheit, der du vertrauen kannst</p>
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 mb-4 text-sm text-gray-600">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span><strong className="text-gray-900">{visitorCount.toLocaleString()}</strong> Leser sehen sich diesen Artikel gerade an</span>
+              <span><strong className="text-gray-900">{visitorCount.toLocaleString()}</strong> Leserinnen lesen diesen Artikel gerade</span>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
@@ -248,7 +248,7 @@ export default function Home() {
         <div className="bg-gray-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Das Gespräch, vor dem uns niemand gewarnt hat</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Wir hören alles über die Hitzewallungen, die uns um 3 Uhr morgens durch unsere Seidenlaken schwitzen lassen. Wir hören über den Gehirnnebel, der uns nach unserer Brille suchen lässt, während sie auf unserer Nase sitzt.
+            Über die Hitzewallungen, die uns um 3 Uhr morgens durch die Seidenlaken schwitzen lassen, reden alle. Über den Gehirnnebel, der uns die Brille suchen lässt, während sie längst auf der Nase sitzt, auch.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
             Aber niemand setzt sich mit einem Glas Pinot zu dir und flüstert: „Hey, übrigens, wenn du da unten nicht aktiv bleibst, kann deine Klitoris tatsächlich schrumpfen.“
@@ -260,7 +260,7 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
             <h3 className="font-bold text-lg text-gray-900 mb-3">„Die große Entfremdung“</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Für viele Frauen, die wir interviewt haben, war es nicht nur die Trockenheit. Es war die <strong>Taubheit</strong>. Eine Testerin beschrieb, wie sie ihren alten Vibrator aus ihren 30ern wieder benutzen wollte: „Statt sich gut anzufühlen, fühlte es sich einfach … irritierend an. Oder taub. Als würde man versuchen, eine Hornhaut zu kitzeln.“
+              Für viele Frauen, die wir interviewt haben, war es nicht nur die Trockenheit. Es war die <strong>Taubheit</strong>. Eine Testerin erzählte, wie sie ihren alten Vibrator aus ihren Dreißigern wieder hervorholen wollte: „Statt sich gut anzufühlen, war es einfach … unangenehm. Oder taub. Als würde man versuchen, eine Hornhaut zu kitzeln.“
             </p>
             <p className="text-gray-700 leading-relaxed">
               Mediziner erklären, dass klassische Vibratoren über Reibung und Druck wirken. Wenn das Gewebe durch niedriges Östrogen dünner wird, kann direkte Vibration die <em>Nerven sogar weiter abstumpfen</em>, was zu genau diesem „tauben“ Gefühl führt.
@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            Gynäkologen, die auf die Menopause spezialisiert sind, erklären: „Wenn das Östrogen sinkt, nimmt die Durchblutung im Beckenbereich ab. Das führt zu dünnerem Gewebe, Elastizitätsverlust und nachlassender Empfindung. In der Medizin nennt man das das ‚Use it or lose it'-Prinzip – du brauchst eine konstante Durchblutung, um das Gewebe gesund zu halten.“
+            Gynäkologen, die auf die Menopause spezialisiert sind, erklären: „Wenn das Östrogen sinkt, nimmt die Durchblutung im Beckenbereich ab. Das führt zu dünnerem Gewebe, Elastizitätsverlust und nachlassender Empfindung. In der Medizin nennt man das das ‚Use it or lose it’-Prinzip – du brauchst eine konstante Durchblutung, um das Gewebe gesund zu halten.“
           </p>
         </div>
 
@@ -403,7 +403,7 @@ export default function Home() {
               Wir alle haben diese eine Schublade. Die <em>Schublade der Schande</em>. In der wir die unansehnlichen, phallischen Plastikgeräte unter alten Socken verstecken.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Eine unserer Testerinnen hat uns das hier erzählt: „Ich hatte meinen Lem aus Versehen auf dem Badezimmerschrank liegen lassen, als meine Schwiegermutter zu Besuch war. Sie hat ihn in die Hand genommen und gesagt: ‚Oh, ist das so ein neuer Schall-Gesichtsreiniger? Der fühlt sich so weich an!'“
+              Eine unserer Testerinnen hat uns das hier erzählt: „Ich hatte meinen Lem aus Versehen auf dem Badezimmerschrank liegen lassen, als meine Schwiegermutter zu Besuch war. Sie hat ihn in die Hand genommen und gesagt: ‚Oh, ist das so ein neuer Schall-Gesichtsreiniger? Der fühlt sich so weich an!’“
             </p>
             <p className="text-gray-700 leading-relaxed font-semibold">
               Er besteht den Nachttisch-Test. Er sieht aus wie hochwertige Self-Care-Technik, nicht wie ein Sextoy. Denn genau das ist er ja auch.
@@ -413,7 +413,7 @@ export default function Home() {
           <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg mb-6">
             <h3 className="font-bold text-lg text-red-900 mb-3">⚠️ Warnung vor billigen Nachahmungen</h3>
             <p className="text-red-800 leading-relaxed mb-3">
-              Nach unserem ersten Testbericht haben Leserinnen gefragt, warum sie nicht einfach die 20-Euro-Version bei Amazon kaufen sollten. Das sagen Mediziner dazu.
+              Nach unserem ersten Testbericht haben Leserinnen gefragt, warum sie nicht einfach die 20-Euro-Version bei Amazon nehmen sollten. Eine Gynäkologin hat uns davon abgeraten.
             </p>
             <p className="text-red-800 leading-relaxed font-semibold">
               „Billige Toys bestehen aus porösem Jelly oder TPE“, warnte sie. „Mikroskopisch kleine Bakterien setzen sich in den Poren fest – ein enormes Risiko gerade für Frauen in den Wechseljahren, die ohnehin anfälliger für Harnwegsinfekte sind.“
@@ -511,7 +511,7 @@ export default function Home() {
                 </ul>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                „Als ich die Box geöffnet habe, war ich echt überrascht, wie <strong>hochwertig</strong> sich alles angefühlt hat. Es hat sich nicht wie ein ‚Sextoy' angefühlt, sondern wie eine Wellness-Investition.“ – Testerin, 54 Jahre
+                „Als ich die Box geöffnet habe, war ich echt überrascht, wie <strong>hochwertig</strong> sich alles angefühlt hat. Es hat sich nicht wie ein ‚Sextoy’ angefühlt, sondern wie eine Wellness-Investition.“ – Testerin, 54 Jahre
               </p>
             </div>
           </div>
@@ -525,7 +525,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto mb-8">
             <img 
               src="/anatomy_DE.png" 
-              alt="Klitoris-Anatomie Querschnittsdiagramm" 
+              alt="Querschnitt der Klitoris-Anatomie"
               className="w-full rounded-xl shadow-2xl"
             />
           </div>
@@ -631,7 +631,7 @@ export default function Home() {
               </p>
               <div className="bg-[#FFE14D]/20 p-6 rounded-lg">
                 <p className="italic text-gray-900 mb-2">
-                  „Mein Mann war neugierig, nicht bedroht. Inzwischen setzt er ihn beim Vorspiel bei mir ein. Ihm nimmt es den Druck, ‚abliefern' zu müssen, und ich bekomme genau das, was ich brauche. Für beide ein Gewinn.“
+                  „Mein Mann war neugierig, nicht bedroht. Inzwischen setzt er ihn beim Vorspiel bei mir ein. Ihm nimmt es den Druck, ‚abliefern’ zu müssen, und ich bekomme genau das, was ich brauche. Für beide ein Gewinn.“
                 </p>
                 <p className="font-semibold text-gray-700">– Valeria, 55, seit 28 Jahren verheiratet</p>
               </div>
@@ -646,21 +646,21 @@ export default function Home() {
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
                   <div>
                     <p className="font-semibold text-gray-900">Während des Vorspiels</p>
-                    <p className="text-sm text-gray-600">Partner hält ihn beim Küssen und Berühren an Ort und Stelle</p>
+                    <p className="text-sm text-gray-600">Dein Partner hält ihn beim Küssen und Streicheln einfach an Ort und Stelle</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
                   <div>
                     <p className="font-semibold text-gray-900">Während des Geschlechtsverkehrs</p>
-                    <p className="text-sm text-gray-600">Positioniert für gleichzeitige klitorale und penetrative Stimulation</p>
+                    <p className="text-sm text-gray-600">So platziert, dass Klitoris und Penetration gleichzeitig stimuliert werden</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-8 h-8 bg-[#FF1493] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
                   <div>
                     <p className="font-semibold text-gray-900">Solo, während der Partner zuschaut</p>
-                    <p className="text-sm text-gray-600">Baut Intimität auf und hilft Partnern zu lernen, was funktioniert</p>
+                    <p className="text-sm text-gray-600">Schafft Nähe – und dein Partner lernt ganz nebenbei, was dir guttut</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -736,7 +736,7 @@ export default function Home() {
             <h3 className="font-bold text-2xl text-gray-900 mb-4 text-center">Die eigentliche Frage: Was hast du zu verlieren?</h3>
             <div className="space-y-3 text-gray-700">
               <p className="text-center leading-relaxed">
-                Wir haben die Wissenschaft erklärt. Wir haben dir die Bewertungen gezeigt. Wir haben die Garantien aufgeschlüsselt. An diesem Punkt ist das einzige Risiko, es <em>nicht</em> zu versuchen.
+                Wir haben dir die Wissenschaft erklärt, die Bewertungen gezeigt und die Garantien aufgeschlüsselt. Das einzige Risiko, das jetzt noch bleibt, ist, es <em>nicht</em> zu versuchen.
               </p>
               <div className="bg-white p-6 rounded-lg">
                 <p className="font-semibold text-center text-lg text-gray-900 mb-3">Rechnen wir mal nach:</p>
@@ -822,7 +822,7 @@ export default function Home() {
       <section className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Was verifizierte Käufer sagen
+            Was verifizierte Käuferinnen sagen
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,7 von 5 (14.907 verifizierte Bewertungen)</p>
 
@@ -836,7 +836,7 @@ export default function Home() {
                 </div>
                 <p className="font-bold text-gray-900">„Besser als Östrogencreme“</p>
                 <p className="text-gray-700 italic">
-                  „Ich habe ihn nicht zum ‚Spaß' gekauft, sondern weil meine Ärztin sagte, ich brauche mehr Durchblutung. Aber wow. Durch die Entspannung schlafe ich endlich durch, ohne schweißgebadet aufzuwachen. Er ist mein neues Vitamin.“
+                  „Ich habe ihn nicht zum ‚Spaß’ gekauft, sondern weil meine Ärztin sagte, ich brauche mehr Durchblutung. Aber wow. Durch die Entspannung schlafe ich endlich durch, ohne schweißgebadet aufzuwachen. Er ist mein neues Vitamin.“
                 </p>
                 <p className="font-semibold text-gray-900">– Sarah J., 58</p>
                 <p className="text-xs text-gray-500">✓ Verifizierter Kauf</p>
@@ -1243,7 +1243,7 @@ export default function Home() {
             <div className="bg-gray-800 p-6 rounded-lg mb-8">
               <h3 className="font-bold text-lg mb-3">Affiliate-Offenlegung</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Wellness Insider wird von Lesern unterstützt. Wenn du über Links auf unserer Website kaufst, verdienen wir möglicherweise eine Affiliate-Provision ohne zusätzliche Kosten für dich. Dies hilft uns, weiterhin kostenlose, forschungsbasierte Inhalte bereitzustellen. Wir empfehlen nur Produkte, die unser Redaktionsteam gründlich geprüft hat und von denen wir glauben, dass sie unseren Lesern zugute kommen. Alle geäußerten Meinungen sind unsere eigenen und werden nicht durch Vergütung beeinflusst.
+                Wellness Insider finanziert sich über seine Leserinnen. Wenn du über Links auf unserer Seite kaufst, erhalten wir unter Umständen eine Affiliate-Provision – ganz ohne Mehrkosten für dich. So können wir weiterhin kostenlose, gründlich recherchierte Inhalte anbieten. Wir empfehlen nur Produkte, die unser Redaktionsteam gründlich geprüft hat und von denen wir überzeugt sind, dass sie unseren Leserinnen wirklich helfen. Alle Meinungen sind unsere eigenen und werden nicht durch Bezahlung beeinflusst.
               </p>
             </div>
 
@@ -1251,7 +1251,7 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-lg mb-4">Über uns</h3>
                 <p className="text-gray-400 text-sm">
-                  Wellness Insider bietet evidenzbasierten Gesundheits- und Wellness-Journalismus für moderne Frauen.
+                  Wellness Insider steht für fundierten Gesundheits- und Wellness-Journalismus für Frauen von heute.
                 </p>
               </div>
               <div>
