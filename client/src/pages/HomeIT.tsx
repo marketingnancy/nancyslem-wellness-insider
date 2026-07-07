@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">€ 77,95</span>
+                  <span className="text-lg font-bold">€ 86,95</span>
                   <span className="text-sm line-through text-white/70">€ 138,95</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">RISPARMIA € 61</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">RISPARMIA € 52</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Prezzo</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">€ 77,95 (una tantum)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">€ 86,95 (una tantum)</td>
                   <td className="border border-gray-300 p-4 text-center">€ 45–135</td>
                   <td className="border border-gray-300 p-4 text-center">€ 28–45 al mese</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function Home() {
                       <li>✓ Potresti riscoprire un piacere che credevi perduto</li>
                       <li>✓ Potresti migliorare la salute dei tessuti e prevenire l'atrofia</li>
                       <li>✓ Potresti dormire meglio (gli orgasmi rilasciano ossitocina)</li>
-                      <li>✓ Nel peggiore dei casi: riavrai i tuoi € 77,95</li>
+                      <li>✓ Nel peggiore dei casi: riavrai i tuoi € 86,95</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">RISPARMIA € 61</p>
+                <p className="font-bold">RISPARMIA € 52</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,10 +926,10 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Stimolatore clitorideo Nancy's Lem</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">€ 77,95</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">€ 86,95</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">€ 138,95</span>
-                      <span className="text-sm text-green-600 font-bold">Risparmia € 61 (44% di sconto)</span>
+                      <span className="text-sm text-green-600 font-bold">Risparmia € 52 (37% di sconto)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
@@ -978,7 +978,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Acquista ora – € 77,95 (Risparmia € 61)
+                    Acquista ora – € 86,95 (Risparmia € 52)
                   </Button>
                 </a>
 
@@ -1228,7 +1228,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Acquista il Nancy's Lem – € 77,95
+                Acquista il Nancy's Lem – € 86,95
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ Garanzia di 30 giorni ✓ Spedizione gratuita ✓ Confezione discreta</p>
