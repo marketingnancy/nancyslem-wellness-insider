@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">883 kr</span>
+                  <span className="text-lg font-bold">999 kr</span>
                   <span className="text-sm line-through text-white/70">1 576 kr</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Spara 693 kr</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Spara 577 kr</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Pris</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">883 kr (engångsköp)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">999 kr (engångsköp)</td>
                   <td className="border border-gray-300 p-4 text-center">500–1 500 kr</td>
                   <td className="border border-gray-300 p-4 text-center">300–500 kr/månad</td>
                 </tr>
@@ -427,7 +427,7 @@ export default function Home() {
             <Card className="border-2 border-[#FFE14D]">
               <CardContent className="p-6 text-center space-y-3">
                 <div className="text-4xl">🤫</div>
-                <h3 className="font-bold text-lg text-gray-900">Viskande tyst</h3>
+                <h3 className="font-bold text-lg text-gray-900">Diskret tyst</h3>
                 <p className="text-gray-600 text-sm">
                   Ultratyst motor för full diskretion
                 </p>
@@ -605,7 +605,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">"Men hur blir det med min partner?" Det frågade vi också</h2>
 
           <div className="bg-gradient-to-r from-[#FFE14D]/20 to-[#FF1493]/20 p-8 rounded-xl mb-8">
-            <h3 className="font-bold text-2xl text-gray-900 mb-4">"Tremminutersmiraklet" (och därför älskar partnern det)</h3>
+            <h3 className="font-bold text-2xl text-gray-900 mb-4">"Tre minuters miraklet" (och därför älskar partnern det)</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               Ärligt talat: för många kvinnor över 50 kan det ta 20 minuter eller mer (och en hel del mental ansträngning) att komma i närheten av klimax. Med Lem? <strong className="text-[#FF1493]">Tre minuter.</strong>
             </p>
@@ -683,7 +683,7 @@ export default function Home() {
 
         {/* Enhanced Risk Reversal Section */}
         <div className="my-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Alla skäl att prova, inga skäl att oroa dig</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Alla skäl att prova, inga skäl att oroa sig</h2>
           <p className="text-center text-xl text-gray-600 mb-8">Vi gick igenom Hello Nancys garantier. Här är vad de faktiskt betyder.</p>
           
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -722,7 +722,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto">
                   <Heart className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-bold text-lg text-center text-gray-900">Support på livstid</h3>
+                <h3 className="font-bold text-lg text-center text-gray-900">Livstidssupport</h3>
                 <p className="text-sm text-gray-700 text-center">
                   Frågor om användningen? Funderingar kring rengöring? Deras kundtjänst svarar inom 24 timmar.
                 </p>
@@ -748,7 +748,7 @@ export default function Home() {
                       <li>✓ Du kan återupptäcka njutning du trodde var borta</li>
                       <li>✓ Du kan förbättra vävnadshälsan och motverka atrofi</li>
                       <li>✓ Du kan sova bättre (orgasmer frigör oxytocin)</li>
-                      <li>✓ I värsta fall får du dina 883 kr tillbaka</li>
+                      <li>✓ I värsta fall får du dina 999 kr tillbaka</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">Spara 693 kr</p>
+                <p className="font-bold">Spara 577 kr</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -925,15 +925,15 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancys Lem klitorisstimulator</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">883 kr</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">999 kr</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">1 576 kr</span>
-                      <span className="text-sm text-green-600 font-bold">Spara 693 kr (44 % rabatt)</span>
+                      <span className="text-sm text-green-600 font-bold">Spara 577 kr (37 % rabatt)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Bara 2,42 kr/dag</strong> sett över ett år
+                      <strong className="text-2xl text-[#FF1493]">Bara 2,74 kr/dag</strong> sett över ett år
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Mindre än din dagliga kaffe. Håller i åratal.
@@ -977,7 +977,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Köp nu – 883 kr (spara 693 kr)
+                    Köp nu – 999 kr (spara 577 kr)
                   </Button>
                 </a>
 
@@ -1084,7 +1084,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Du är beredd att <strong>investera i dig själv</strong> (bara 2,42 kr/dag sett över ett år!)</span>
+                    <span>Du är beredd att <strong>investera i dig själv</strong> (bara 2,74 kr/dag sett över ett år!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1122,7 +1122,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-[#FF1493] hover:bg-[#E01280] text-white px-12 py-6 text-lg">
-                  Ja, det här är jag – handla nu
+                  Ja, det är det – köp nu
                 </Button>
               </a>
             </div>
@@ -1177,7 +1177,7 @@ export default function Home() {
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Hur mycket låter den?</h3>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Hur högljudd är den?</h3>
                 <p className="text-gray-700">
                   Viskande tyst. Den ultratysta motorn ger full diskretion – du kan använda den utan att oroa dig för att någon hör, inte ens i rummet intill.
                 </p>
@@ -1227,7 +1227,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Köp Nancys Lem – 883 kr
+                Köp Nancys Lem – 999 kr
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30 dagars garanti ✓ Fri frakt ✓ Diskret förpackning</p>

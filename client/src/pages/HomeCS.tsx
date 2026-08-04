@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">1 888 Kč</span>
+                  <span className="text-lg font-bold">2 290 Kč</span>
                   <span className="text-sm line-through text-white/70">3 372 Kč</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Ušetři 1 484 Kč</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Ušetři 1 082 Kč</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Cena</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">1 888 Kč (jednorázově)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">2 290 Kč (jednorázově)</td>
                   <td className="border border-gray-300 p-4 text-center">1 200–3 600 Kč</td>
                   <td className="border border-gray-300 p-4 text-center">720–1 200 Kč měsíčně</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function Home() {
                       <li>✓ Možná znovu objevíš slast, o které sis myslela, že je pryč</li>
                       <li>✓ Můžeš zlepšit zdraví tkáně a předejít atrofii</li>
                       <li>✓ Můžeš líp spát (orgasmus uvolňuje oxytocin)</li>
-                      <li>✓ V nejhorším případě: dostaneš zpět svých 1 888 Kč</li>
+                      <li>✓ V nejhorším případě: dostaneš zpět svých 2 290 Kč</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">Ušetři 1 484 Kč</p>
+                <p className="font-bold">Ušetři 1 082 Kč</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,10 +926,10 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem stimulátor klitorisu</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">1 888 Kč</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">2 290 Kč</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">3 372 Kč</span>
-                      <span className="text-sm text-green-600 font-bold">Ušetři 1 484 Kč (sleva 44 %)</span>
+                      <span className="text-sm text-green-600 font-bold">Ušetři 1 082 Kč (sleva 32 %)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
@@ -978,7 +978,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Koupit teď – 1 888 Kč (ušetři 1 484 Kč)
+                    Koupit teď – 2 290 Kč (ušetři 1 082 Kč)
                   </Button>
                 </a>
 
@@ -1228,7 +1228,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Koupit Nancy's Lem – 1 888 Kč
+                Koupit Nancy's Lem – 2 290 Kč
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ záruka 30 dní ✓ doprava zdarma ✓ diskrétní balení</p>

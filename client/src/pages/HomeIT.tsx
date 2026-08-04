@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">€ 86,95</span>
+                  <span className="text-lg font-bold">€ 92,95</span>
                   <span className="text-sm line-through text-white/70">€ 138,95</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">RISPARMIA € 52</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">RISPARMIA € 46</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -237,10 +237,10 @@ export default function Home() {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Perché ne stiamo parlando</h2>
           <p className="text-gray-700 leading-relaxed">
-            Quando la nostra redazione ha sentito parlare per la prima volta di un «dispositivo wellness a forma di limone» che stava conquistando la community della menopausa, lo ammettiamo: eravamo scettiche. Ma dopo aver intervistato decine di donne, consultato dei ginecologi e sì, averlo provato in prima persona, capiamo l'entusiasmo.
+            Quando la nostra redazione ha sentito parlare per la prima volta di un «dispositivo wellness a forma di limone» che stava conquistando la community della menopausa, dobbiamo ammetterlo: eravamo scettiche. Ma dopo aver intervistato decine di donne, consultato dei ginecologi e sì, averlo provato in prima persona, capiamo l'entusiasmo.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Non è l'ennesima moda del benessere. Affronta un problema medico reale che riguarda milioni di donne ma di cui quasi nessuno parla: l'<strong>atrofia clitoridea</strong> e la perdita del benessere sessuale durante la menopausa.
+            Non è l'ennesima moda del benessere. Affronta un problema medico reale che riguarda milioni di donne, ma di cui quasi nessuno parla: l'<strong>atrofia clitoridea</strong> e la perdita del benessere sessuale durante la menopausa.
           </p>
         </div>
 
@@ -248,7 +248,7 @@ export default function Home() {
         <div className="bg-gray-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Il discorso di cui nessuno ci ha avvertite</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Ci raccontano tutto sulle vampate che alle 3 del mattino ci lasciano sudate fra le lenzuola di seta. Ci parlano della nebbia mentale che ci fa cercare gli occhiali mentre li abbiamo sul naso.
+            Ci raccontano tutto sulle vampate che alle 3 del mattino ci lasciano sudate fra le lenzuola di seta. Ci parlano della confusione mentale che ci fa cercare gli occhiali mentre li abbiamo sul naso.
           </p>
           <p className="text-xl font-semibold text-[#FF1493] mb-4">
             Ma nessuno ti fa sedere con un calice di Pinot e ti sussurra: «Ehi, tra l'altro, se non tieni le cose attive là sotto, il clitoride può davvero rimpicciolirsi.»
@@ -260,7 +260,7 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#FF1493] my-6">
             <h3 className="font-bold text-lg text-gray-900 mb-3">«Il grande distacco»</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Per molte donne che abbiamo intervistato non era solo secchezza. Era l'<strong>insensibilità</strong>. Una tester ha raccontato di aver provato a usare il suo vecchio vibratore dei trent'anni: «Invece di farmi sentire bene, era solo… fastidioso. O insensibile. Come provare a fare il solletico a un callo.»
+              Per molte donne che abbiamo intervistato non era solo secchezza. Era l'<strong>insensibilità</strong>. Una tester ha raccontato di aver provato a usare il suo vecchio vibratore dei trent'anni: «Invece di farmi sentire bene, era solo… inadeguato. O insensibile. Come provare a fare il solletico a un ginocchio.»
             </p>
             <p className="text-gray-700 leading-relaxed">
               Gli esperti spiegano che i vibratori tradizionali agiscono per attrito e pressione. Quando i tessuti si assottigliano per via dei bassi livelli di estrogeni, la vibrazione diretta può addirittura <em>desensibilizzare ulteriormente i nervi</em>, portando proprio a quella sensazione di «insensibilità».
@@ -268,7 +268,7 @@ export default function Home() {
           </div>
 
           <div className="bg-gradient-to-r from-[#FFE14D]/30 to-[#FF1493]/30 p-6 rounded-lg">
-            <p className="text-2xl font-bold text-gray-900 mb-2 italic">«Smetti di vibrare. Comincia ad aspirare.»</p>
+            <p className="text-2xl font-bold text-gray-900 mb-2 italic">«Basta vibrazione, sì alla pressione.»</p>
             <p className="text-gray-700">– Specialisti del pavimento pelvico</p>
           </div>
 
@@ -284,7 +284,7 @@ export default function Home() {
             Ed è qui che entra in gioco questo piccolo dispositivo giallo. Il Nancy's Lem non viene presentato come un sex toy, ma come un dispositivo wellness. E dopo la nostra ricerca, capiamo anche perché.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            A differenza dei vibratori tradizionali, che si basano sull'attrito (e possono irritare i tessuti assottigliati dalla menopausa), il Lem usa la cosiddetta <strong>tecnologia a onde di pressione</strong>. Immagina la differenza tra strofinare carta vetrata sulla pelle e lasciarsi avvolgere da un delicato massaggio sottovuoto.
+            A differenza dei vibratori tradizionali, che si basano sull'attrito (e possono irritare i tessuti assottigliati dalla menopausa), il Lem usa la cosiddetta <strong>tecnologia a onde di pressione</strong>. Immagina la differenza tra strofinare carta vetrata sulla pelle e lasciarsi avvolgere da un delicato massaggio.
           </p>
         </div>
 
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Prezzo</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">€ 86,95 (una tantum)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">€ 92,95 (una tantum)</td>
                   <td className="border border-gray-300 p-4 text-center">€ 45–135</td>
                   <td className="border border-gray-300 p-4 text-center">€ 28–45 al mese</td>
                 </tr>
@@ -400,7 +400,7 @@ export default function Home() {
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-3">
-              Tutte abbiamo quel cassetto. Il <em>cassetto della vergogna</em>. Dove nascondiamo, sotto i calzini vecchi, quei dispositivi di plastica antiestetici e fallici.
+              Tutte abbiamo quel cassetto. Un <em>nascondiglio</em>. Dove nascondiamo, sotto i calzini vecchi, quei dispositivi di plastica antiestetici e fallici.
             </p>
             <p className="text-gray-700 leading-relaxed mb-3">
               Una delle nostre tester ci ha raccontato questo episodio: «Avevo dimenticato il Lem sul mobile del bagno proprio mentre era da noi mia suocera. Lo ha preso in mano e ha detto: "Oh, è uno di quei nuovi spazzolini sonici per il viso? Com'è morbido!"»
@@ -748,7 +748,7 @@ export default function Home() {
                       <li>✓ Potresti riscoprire un piacere che credevi perduto</li>
                       <li>✓ Potresti migliorare la salute dei tessuti e prevenire l'atrofia</li>
                       <li>✓ Potresti dormire meglio (gli orgasmi rilasciano ossitocina)</li>
-                      <li>✓ Nel peggiore dei casi: riavrai i tuoi € 86,95</li>
+                      <li>✓ Nel peggiore dei casi: riavrai i tuoi € 92,95</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">RISPARMIA € 52</p>
+                <p className="font-bold">RISPARMIA € 46</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,15 +926,15 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Stimolatore clitorideo Nancy's Lem</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">€ 86,95</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">€ 92,95</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">€ 138,95</span>
-                      <span className="text-sm text-green-600 font-bold">Risparmia € 52 (37% di sconto)</span>
+                      <span className="text-sm text-green-600 font-bold">Risparmia € 46 (33% di sconto)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Solo € 0,21 al giorno</strong> per un anno di utilizzo
+                      <strong className="text-2xl text-[#FF1493]">Solo € 0,25 al giorno</strong> per un anno di utilizzo
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Meno di un cappuccino al giorno. Dura per anni.
@@ -978,7 +978,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Acquista ora – € 86,95 (Risparmia € 52)
+                    Acquista ora – € 92,95 (Risparmia € 46)
                   </Button>
                 </a>
 
@@ -1085,7 +1085,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Sei disposta a <strong>investire su te stessa</strong> (solo € 0,21 al giorno per un anno!)</span>
+                    <span>Sei disposta a <strong>investire su te stessa</strong> (solo € 0,25 al giorno per un anno!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1228,7 +1228,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Acquista il Nancy's Lem – € 86,95
+                Acquista il Nancy's Lem – € 92,95
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ Garanzia di 30 giorni ✓ Spedizione gratuita ✓ Confezione discreta</p>

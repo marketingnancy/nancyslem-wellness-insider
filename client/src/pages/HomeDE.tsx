@@ -99,14 +99,14 @@ export default function Home() {
         <div className="fixed top-14 left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4.7 (14.907 Bewertungen) • 1M+ Verkauft</span>
+              <span className="text-sm font-medium">⭐ 4.7 (14.907 Bewertungen) • 1 Mio.+ Verkauft</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">86,95 €</span>
+                  <span className="text-lg font-bold">92,95 €</span>
                   <span className="text-sm line-through text-white/70">138,95 €</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPARE 52 €</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">SPARE 46 €</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -152,7 +152,7 @@ export default function Home() {
             <span className="bg-gray-100 px-3 py-1 rounded-full">PRODUKTBEWERTUNG</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-            1M+ Orgasmen später: warum Frauen über 50 ihre Vibratoren für diese „Zitrone“ aufgeben
+            1 Mio.+ Orgasmen später: warum Frauen über 50 ihre Vibratoren für diese „Zitrone“ aufgeben
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
             Wir sind der Frage nachgegangen, warum Tausende Frauen über 50 ihre klassischen Vibratoren für dieses „Physiotherapie“-Gerät in Zitronenform aufgeben. Das haben wir herausgefunden.
@@ -304,7 +304,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            So funktioniert es: Der Lem legt sich sanft um die Klitoris und stimuliert sie mit Druckwellen – ein Gefühl wie bei Oralsex, nur gleichmäßig und unermüdlich. Und weil es keine Reibung gibt, gibt es auch keinerlei Reizung.
+            So funktioniert es: Der Lem legt sich sanft um die Klitoris und stimuliert sie mit Druckwellen – ein Gefühl wie bei Oralsex, nur gleichmäßiger und unermüdlicher. Und weil es keine Reibung gibt, gibt es auch keinerlei Reizung.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Die eigentliche Magie steckt aber in der Physik: Dieser sanfte Sog erzeugt einen Vakuumeffekt, der tiefes, sauerstoffreiches Blut ins Gewebe zieht. Er weckt Nerven, die jahrelang geschlafen haben.
@@ -371,7 +371,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Preis</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">86,95 € (einmalig)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">92,95 € (einmalig)</td>
                   <td className="border border-gray-300 p-4 text-center">50–150 €</td>
                   <td className="border border-gray-300 p-4 text-center">30–50 €/Monat</td>
                 </tr>
@@ -747,7 +747,7 @@ export default function Home() {
                       <li>✓ Du entdeckst vielleicht Genuss wieder, den du längst verloren glaubtest</li>
                       <li>✓ Du verbesserst womöglich die Gewebegesundheit und beugst der Atrophie vor</li>
                       <li>✓ Du schläfst vielleicht besser (Orgasmen setzen Oxytocin frei)</li>
-                      <li>✓ Schlimmstenfalls: Du bekommst deine 86,95 € zurück</li>
+                      <li>✓ Schlimmstenfalls: Du bekommst deine 92,95 € zurück</li>
                     </ul>
                   </div>
                   <div>
@@ -791,7 +791,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">1M+ Verkauft</h3>
+              <h3 className="font-bold text-gray-900 mb-2">1 Mio.+ Verkauft</h3>
               <p className="text-sm text-gray-600">Über 1.000.000 Einheiten weltweit seit dem Start im Jahr 2023 verkauft</p>
             </div>
             <div className="text-center">
@@ -908,7 +908,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">SPARE 52 €</p>
+                <p className="font-bold">SPARE 46 €</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -924,16 +924,16 @@ export default function Home() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem Klitoris-Massagegerät</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">86,95 €</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">92,95 €</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">138,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">Spare 52 € (37 % Rabatt)</span>
+                      <span className="text-sm text-green-600 font-bold">Spare 46 € (33 % Rabatt)</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 mb-2">Inkl. MwSt.</p>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Nur 0,21 €/Tag</strong> bei einem Jahr Nutzung
+                      <strong className="text-2xl text-[#FF1493]">Nur 0,25 €/Tag</strong> bei einem Jahr Nutzung
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Weniger als dein täglicher Kaffee. Und hält jahrelang.
@@ -977,7 +977,7 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Jetzt kaufen – 86,95 € (Spare 52 €)
+                    Jetzt kaufen – 92,95 € (Spare 46 €)
                   </Button>
                 </a>
 
@@ -1084,7 +1084,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Du bereit bist, <strong>in dich selbst zu investieren</strong> (nur 0,21 €/Tag bei einem Jahr!)</span>
+                    <span>Du bereit bist, <strong>in dich selbst zu investieren</strong> (nur 0,25 €/Tag bei einem Jahr!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1227,7 +1227,7 @@ export default function Home() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Nancy's Lem kaufen – 86,95 €
+                Nancy's Lem kaufen – 92,95 €
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30-Tage-Garantie ✓ Kostenloser Versand ✓ Diskrete Verpackung</p>
