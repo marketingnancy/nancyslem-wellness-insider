@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* Sticky CTA Bar */}
       {showStickyBar && (
-        <div className="fixed top-14 left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
+        <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
               <span className="text-sm font-medium">⭐ 4,7 (14 907 recenzí) • 1M+ prodaných</span>
