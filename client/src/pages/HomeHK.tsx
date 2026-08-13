@@ -104,9 +104,9 @@ export default function HomeHK() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">HK$712</span>
+                  <span className="text-lg font-bold">HK$699</span>
                   <span className="text-sm line-through text-white/70">HK$1,271</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">慳HK$559</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">慳HK$572</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function HomeHK() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">價錢</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">HK$712（一次過）</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">HK$699（一次過）</td>
                   <td className="border border-gray-300 p-4 text-center">HK$400–1,200</td>
                   <td className="border border-gray-300 p-4 text-center">HK$240–400／月</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function HomeHK() {
                       <li>✓ 可能重新搵返你以為已經冇咗嘅快感</li>
                       <li>✓ 可能改善組織健康、預防萎縮</li>
                       <li>✓ 可能瞓得好啲（高潮會釋放催產素）</li>
-                      <li>✓ 最壞情況：攞返你嗰 HK$712</li>
+                      <li>✓ 最壞情況：攞返你嗰 HK$699</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function HomeHK() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">慳HK$559</p>
+                <p className="font-bold">慳HK$572</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,10 +926,10 @@ export default function HomeHK() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem 陰蒂按摩器</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">HK$712</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">HK$699</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">HK$1,271</span>
-                      <span className="text-sm text-green-600 font-bold">慳HK$559（低至 5.6 折）</span>
+                      <span className="text-sm text-green-600 font-bold">慳HK$572（低至 5.5 折）</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
@@ -978,7 +978,7 @@ export default function HomeHK() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    立即購買 - HK$712（慳HK$559）
+                    立即購買 - HK$699（慳HK$572）
                   </Button>
                 </a>
 
@@ -1228,7 +1228,7 @@ export default function HomeHK() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                立即入手 Nancy's Lem - HK$712
+                立即入手 Nancy's Lem - HK$699
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30 日保證 ✓ 免運費 ✓ 低調包裝</p>

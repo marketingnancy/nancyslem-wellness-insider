@@ -104,9 +104,9 @@ export default function HomeJP() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">¥14,700</span>
+                  <span className="text-lg font-bold">¥13,500</span>
                   <span className="text-sm line-through text-white/70">¥26,300</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">¥11,600 OFF</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">¥12,800 OFF</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function HomeJP() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">価格</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">14,700円（買い切り）</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">13,500円（買い切り）</td>
                   <td className="border border-gray-300 p-4 text-center">5,000〜15,000円</td>
                   <td className="border border-gray-300 p-4 text-center">月々3,000〜5,000円</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function HomeJP() {
                       <li>✓ 失くしたと思っていた心地よさに、もう一度出会えるかも</li>
                       <li>✓ 組織が健やかになり、萎縮を防げるかも</li>
                       <li>✓ よく眠れるようになるかも（オーガズムでオキシトシンが出ます）</li>
-                      <li>✓ もし合わなくても、14,700円は戻ってきます</li>
+                      <li>✓ もし合わなくても、13,500円は戻ってきます</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function HomeJP() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">¥11,600 OFF</p>
+                <p className="font-bold">¥12,800 OFF</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,16 +926,16 @@ export default function HomeJP() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Nancy's Lem クリトリスマッサージャー</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">¥14,700</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">¥13,500</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">¥26,300</span>
-                      <span className="text-sm text-green-600 font-bold">¥11,600 お得（44% OFF）</span>
+                      <span className="text-sm text-green-600 font-bold">¥12,800 お得（44% OFF）</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 mb-2">税込価格</p>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      1年間使うとしたら、<strong className="text-2xl text-[#FF1493]">1日あたり、たったの40円</strong>
+                      1年間使うとしたら、<strong className="text-2xl text-[#FF1493]">1日あたり、たったの37円</strong>
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       毎日のコーヒーより、ずっと手ごろ。しかも、何年も使えます。
@@ -979,7 +979,7 @@ export default function HomeJP() {
 
                 <a href="https://hellonancy.com/en-jp/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    今すぐ購入 ¥14,700（¥11,600 OFF）
+                    今すぐ購入 ¥13,500（¥12,800 OFF）
                   </Button>
                 </a>
 
@@ -1082,7 +1082,7 @@ export default function HomeJP() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span><strong>自分への投資</strong>を、ためらわない（1年で、1日たったの40円）</span>
+                    <span><strong>自分への投資</strong>を、ためらわない（1年で、1日たったの37円）</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1225,7 +1225,7 @@ export default function HomeJP() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Nancy's Lem を購入する ¥14,700
+                Nancy's Lem を購入する ¥13,500
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ 30日間保証 ✓ 送料無料 ✓ 中身のわからない梱包</p>

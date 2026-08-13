@@ -104,9 +104,9 @@ export default function HomePT() {
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold">92,95 €</span>
+                  <span className="text-lg font-bold">93,95 €</span>
                   <span className="text-sm line-through text-white/70">138,95 €</span>
-                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">POUPA 46 €</span>
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">POUPA 45 €</span>
                 </div>
                 {showTimer && (
                   <div className="flex items-center gap-1 text-xs mt-0.5">
@@ -371,7 +371,7 @@ export default function HomePT() {
                 </tr>
                 <tr className="bg-[#FFE14D]/20 font-bold">
                   <td className="border border-gray-300 p-4">Preço</td>
-                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">92,95 € (pagamento único)</td>
+                  <td className="border border-gray-300 p-4 text-center text-[#FF1493]">93,95 € (pagamento único)</td>
                   <td className="border border-gray-300 p-4 text-center">45–135 €</td>
                   <td className="border border-gray-300 p-4 text-center">28–45 € por mês</td>
                 </tr>
@@ -748,7 +748,7 @@ export default function HomePT() {
                       <li>✓ Talvez redescubras um prazer que julgavas perdido</li>
                       <li>✓ Podes melhorar a saúde do tecido e prevenir a atrofia</li>
                       <li>✓ Talvez durmas melhor (os orgasmos libertam oxitocina)</li>
-                      <li>✓ Na pior das hipóteses: recuperas os teus 92,95 €</li>
+                      <li>✓ Na pior das hipóteses: recuperas os teus 93,95 €</li>
                     </ul>
                   </div>
                   <div>
@@ -910,7 +910,7 @@ export default function HomePT() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-4 border-[#FF1493] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 transform rotate-12 translate-x-8 -translate-y-2">
-                <p className="font-bold">POUPA 46 €</p>
+                <p className="font-bold">POUPA 45 €</p>
               </div>
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
@@ -926,15 +926,15 @@ export default function HomePT() {
                   )}
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Sugador de clitóris Nancy's Lem</h3>
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-6xl font-bold text-[#FF1493]">92,95 €</span>
+                    <span className="text-6xl font-bold text-[#FF1493]">93,95 €</span>
                     <div className="text-left">
                       <span className="text-3xl text-gray-400 line-through block">138,95 €</span>
-                      <span className="text-sm text-green-600 font-bold">Poupa 46 € (33 % de desconto)</span>
+                      <span className="text-sm text-green-600 font-bold">Poupa 45 € (32 % de desconto)</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-[#FF1493]/10 to-[#FFE14D]/10 p-4 rounded-lg mb-4">
                     <p className="text-center text-gray-900">
-                      <strong className="text-2xl text-[#FF1493]">Apenas 0,25 € por dia</strong> ao longo de um ano de uso
+                      <strong className="text-2xl text-[#FF1493]">Apenas 0,26 € por dia</strong> ao longo de um ano de uso
                     </p>
                     <p className="text-center text-sm text-gray-600 mt-1">
                       Menos do que o teu café diário. Dura anos.
@@ -978,7 +978,7 @@ export default function HomePT() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Comprar agora - 92,95 € (Poupa 46 €)
+                    Comprar agora - 93,95 € (Poupa 45 €)
                   </Button>
                 </a>
 
@@ -1085,7 +1085,7 @@ export default function HomePT() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
-                    <span>Estás disposta a <strong>investir em ti</strong> (apenas 0,25 € por dia durante um ano!)</span>
+                    <span>Estás disposta a <strong>investir em ti</strong> (apenas 0,26 € por dia durante um ano!)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Heart className="w-5 h-5 text-[#FF1493] flex-shrink-0 mt-0.5" />
@@ -1228,7 +1228,7 @@ export default function HomePT() {
                 }}
               >
                 <Button size="lg" className="bg-white text-[#FF1493] hover:bg-gray-100 text-xl px-12 py-7 shadow-2xl">
-                Comprar o Nancy's Lem - 92,95 €
+                Comprar o Nancy's Lem - 93,95 €
               </Button>
               </a>
               <p className="text-white/90 text-sm mt-4">✓ Garantia de 30 dias ✓ Envio grátis ✓ Embalagem discreta</p>
