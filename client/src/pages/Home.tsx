@@ -523,7 +523,7 @@ export default function Home() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png" 
+              src="/anatomy_EN.png" 
               alt="Clitoral anatomy cross-section diagram" 
               className="w-full rounded-xl shadow-2xl"
             />
@@ -554,7 +554,7 @@ export default function Home() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png" 
+                    src="/bloodflow_EN.png" 
                     alt="Blood flow comparison before and after menopause" 
                     className="w-full rounded-lg shadow-lg"
                   />
