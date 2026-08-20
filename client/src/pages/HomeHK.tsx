@@ -525,7 +525,7 @@ export default function HomeHK() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png"
+              src="/anatomy_EN.png"
               alt="陰蒂結構橫切面示意圖"
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function HomeHK() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png"
+                    src="/bloodflow_EN.png"
                     alt="更年期前後血液循環嘅比較"
                     className="w-full rounded-lg shadow-lg"
                   />

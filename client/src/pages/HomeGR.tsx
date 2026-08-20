@@ -525,7 +525,7 @@ export default function HomeGR() {
           {/* Anatomy Illustration */}
           <div className="max-w-3xl mx-auto mb-8">
             <img
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/pHZgvlGDtaFFllLw.png"
+              src="/anatomy_EN.png"
               alt="Διάγραμμα σε εγκάρσια τομή της ανατομίας της κλειτορίδας"
               className="w-full rounded-xl shadow-2xl"
             />
@@ -556,7 +556,7 @@ export default function HomeGR() {
                 {/* Menopause Before/After Illustration */}
                 <div className="mb-6">
                   <img
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029843654/UZuPatTzzMEqEiGm.png"
+                    src="/bloodflow_EN.png"
                     alt="Σύγκριση της αιμάτωσης πριν και μετά την εμμηνόπαυση"
                     className="w-full rounded-lg shadow-lg"
                   />
