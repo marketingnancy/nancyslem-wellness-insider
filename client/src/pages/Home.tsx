@@ -692,7 +692,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg text-center text-gray-900">30-Day "Pleasure Guarantee"</h3>
                 <p className="text-sm text-gray-700 text-center">
-                  Not happy? Get a <strong>full refund</strong>—no return shipping required. They trust you to be honest. That's how confident they are.
+                  Not loving it? We'll make it right. Enjoy easy exchanges, store credit, or a full refund on unopened products within 30 days. For opened products, our care team will help find a better match — at no extra cost.
                 </p>
                 <p className="text-xs text-center text-gray-600 italic">
                   Translation: Zero financial risk. Try it for a month.
@@ -986,7 +986,7 @@ export default function Home() {
                     Risk-Free Guarantee
                   </p>
                   <p className="text-center text-sm text-green-700 mt-2">
-                    30-day money-back guarantee. If you don't love it, get a full refund—<strong>no return necessary</strong>.
+                    30-day satisfaction guarantee. If it's not for you, we'll make it right.
                   </p>
                 </div>
 
@@ -1160,7 +1160,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">What if I don't like it?</h3>
                 <p className="text-gray-700">
-                  Hello Nancy offers a 30-day Satisfaction Guarantee. If you don't love it, they offer a one-time courtesy refund—<strong>no return necessary</strong>. They trust you to find what works for your body.
+                  Hello Nancy offers a 30-day Satisfaction Guarantee. If you don't love it, we'll make it right with a one-time courtesy resolution. They trust you to find what works for your body.
                 </p>
               </CardContent>
             </Card>
