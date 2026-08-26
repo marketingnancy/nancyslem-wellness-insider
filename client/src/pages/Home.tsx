@@ -327,7 +327,7 @@ export default function Home() {
                   <th className="border border-gray-300 p-4 text-left font-bold">Feature</th>
                   <th className="border border-gray-300 p-4 text-center bg-[#FFE14D]/30 font-bold">Nancy's Lem</th>
                   <th className="border border-gray-300 p-4 text-center font-bold">Traditional Vibrator</th>
-                  <th className="border border-gray-300 p-4 text-center font-bold">Estrogen Cream</th>
+                  <th className="border border-gray-300 p-4 text-center font-bold">Intimate Wellness Cream</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
@@ -833,7 +833,7 @@ export default function Home() {
                     <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
                   ))}
                 </div>
-                <p className="font-bold text-gray-900">"Better Than Estrogen Cream"</p>
+                <p className="font-bold text-gray-900">"Better Than Intimate Wellness Cream"</p>
                 <p className="text-gray-700 italic">
                   "I didn't buy this for 'fun,' I bought it because my doctor said I needed blood flow. But wow. The release helps me sleep through the night without waking up in a sweat. It's my new vitamin."
                 </p>
