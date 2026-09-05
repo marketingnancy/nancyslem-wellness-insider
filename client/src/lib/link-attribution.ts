@@ -185,7 +185,13 @@ function patchAnchor(
   const href = anchor.getAttribute("href");
   if (!href) return;
 
-  const patched = withAttribution(href, params, document.baseURI);
+  let patched = withAttribution(href, params, document.baseURI);
+  // Keep non-Meta attribution while the shared relay owns the encrypted handoff.
+  // Compose the decorators before writing so their observers cannot fight.
+  const bridge = (window as Window & {
+    HelloNancyBridge?: { decorate: (href: string) => string };
+  }).HelloNancyBridge;
+  if (typeof bridge?.decorate === "function") patched = bridge.decorate(patched);
   if (patched !== href) anchor.setAttribute("href", patched);
 }
 
