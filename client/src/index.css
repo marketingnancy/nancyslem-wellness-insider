@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* index.html is scanned for class names; the PostHog snippet's comment word
+   "visible" would otherwise add an unused .visible utility to the bundle. */
+@source not inline("visible");
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
