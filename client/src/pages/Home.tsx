@@ -6,47 +6,20 @@ import { ImageGallery } from "@/components/ImageGallery";
 import { AsSeenIn, ExpertReviews, HeadlineProof, RealReviews, ReviewPullQuote } from "@/components/proof/ProofSections";
 import proof from "@/components/proof/i18n/en";
 import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
+import { useOfferTimer } from "@/lib/offer-timer";
 
 export default function Home() {
   const [showStickyBar, setShowStickyBar] = useState(false);
-  const [showTimer, setShowTimer] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes in seconds
+  const { showTimer, timeLeft } = useOfferTimer();
   useStoreTapFeedback(proof.openingStore);
 
 
-  // Sticky CTA bar and timer on scroll
+  // Sticky CTA bar on scroll (the offer timer lives in useOfferTimer)
   useEffect(() => {
-    const handleScroll = () => {
-      setShowStickyBar(window.scrollY > 800);
-      
-      // Show timer after 50% scroll
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercentage > 50 && !showTimer) {
-        setShowTimer(true);
-      }
-    };
+    const handleScroll = () => setShowStickyBar(window.scrollY > 800);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [showTimer]);
-
-
-
-  // Countdown timer
-  useEffect(() => {
-    if (!showTimer) return;
-    
-    const interval = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 0) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    
-    return () => clearInterval(interval);
-  }, [showTimer]);
+  }, []);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -134,10 +107,6 @@ export default function Home() {
           </div>
         </div>
       )}
-
-
-
-
 
       {/* Article Metadata */}
       <section className="bg-white py-8 md:py-16 border-b border-gray-200">
@@ -797,8 +766,6 @@ export default function Home() {
           </div>
         </div>
       </article>
-
-
 
       <ExpertReviews copy={proof} />
 
