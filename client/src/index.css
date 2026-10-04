@@ -206,3 +206,38 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+/* Store-button tap feedback (see src/lib/store-tap-feedback.ts). The label is
+   drawn by ::after so React's button contents are never rewritten. */
+[data-store-loading] {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+}
+[data-store-loading] > * {
+  visibility: hidden;
+}
+[data-store-loading]::after {
+  content: attr(data-store-loading-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  color: var(--store-loading-color, currentColor);
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  animation: store-loading-pulse 1s ease-in-out infinite;
+}
+@keyframes store-loading-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+/* Keep in-page anchors (#reviews) clear of the sticky header. */
+#reviews {
+  scroll-margin-top: 90px;
+}

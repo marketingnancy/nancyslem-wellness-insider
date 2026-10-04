@@ -4,9 +4,11 @@ import { Button } from "@/components/ui/button";
 
 interface ImageGalleryProps {
   images: { src: string; alt: string }[];
+  /** Store button shown under the enlarged photo. */
+  cta?: { href: string; label: string };
 }
 
-export function ImageGallery({ images }: ImageGalleryProps) {
+export function ImageGallery({ images, cta }: ImageGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const openLightbox = (index: number) => {
@@ -95,6 +97,15 @@ export function ImageGallery({ images }: ImageGalleryProps) {
             <p className="text-white text-center mt-4">
               {selectedIndex + 1} / {images.length}
             </p>
+            {cta && (
+              <div className="flex justify-center mt-4">
+                <a href={cta.href}>
+                  <Button size="lg" className="bg-[#FF1493] hover:bg-[#E01280] text-white font-bold px-8">
+                    {cta.label}
+                  </Button>
+                </a>
+              </div>
+            )}
           </div>
 
           <Button

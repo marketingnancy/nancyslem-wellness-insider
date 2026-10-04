@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Check, Package, Shield, Truck, X, Clock, TrendingUp, Award, Heart, Edit3 } from "lucide-react";
+import { Star, Check, Package, Shield, Truck, X, Clock, TrendingUp, Heart, Edit3 } from "lucide-react";
 import { ImageGallery } from "@/components/ImageGallery";
+import { AsSeenIn, ExpertReviews, HeadlineProof, RealReviews, ReviewPullQuote } from "@/components/proof/ProofSections";
+import proof from "@/components/proof/i18n/pl";
+import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
 
 export default function HomePL() {
   const [showStickyBar, setShowStickyBar] = useState(false);
   const [showTimer, setShowTimer] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes in seconds
+  useStoreTapFeedback(proof.openingStore);
 
-  const [visitorCount, setVisitorCount] = useState(1847);
 
   useEffect(() => { document.documentElement.lang = "pl"; }, []);
 
@@ -29,14 +32,6 @@ export default function HomePL() {
   }, [showTimer]);
 
 
-
-  // Simulate visitor count fluctuation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVisitorCount(prev => prev + Math.floor(Math.random() * 7) - 3); // Random +/- 3
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
 
   // Countdown timer
   useEffect(() => {
@@ -99,7 +94,7 @@ export default function HomePL() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4,8 (19 391 opinii) • ponad 1 mln sprzedanych</span>
+              <span className="text-sm font-medium">⭐ {proof.rating} ({proof.reviewsLabel}) • {proof.soldShort}</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -108,12 +103,15 @@ export default function HomePL() {
                   <span className="text-sm line-through text-white/70">611 zł</span>
                   <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">OSZCZĘDZASZ 212 zł</span>
                 </div>
-                {showTimer && (
-                  <div className="flex items-center gap-1 text-xs mt-0.5">
-                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    <span>Kończy się za {formatTime(timeLeft)}</span>
-                  </div>
-                )}
+                <div className="flex items-center gap-2 text-xs mt-0.5">
+                  <span className="md:hidden font-medium">⭐ {proof.ratingShort}</span>
+                  {showTimer && (
+                    <span className="flex items-center gap-1">
+                      <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                      <span>Kończy się za {formatTime(timeLeft)}</span>
+                    </span>
+                  )}
+                </div>
               </div>
               <a
                 href="https://hellonancy.com/products/lem"
@@ -152,11 +150,12 @@ export default function HomePL() {
             <span className="bg-gray-100 px-3 py-1 rounded-full">RECENZJA PRODUKTU</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-            Ponad milion orgazmów później: dlaczego kobiety po pięćdziesiątce porzucają wibratory na rzecz tej „cytryny”
+            Ponad 1,1 mln orgazmów później: dlaczego kobiety po pięćdziesiątce porzucają wibratory na rzecz tej „cytryny”
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
             Sprawdziłyśmy, dlaczego tysiące kobiet po pięćdziesiątce porzuca klasyczne wibratory na rzecz tego „fizjoterapeutycznego” urządzenia w kształcie cytryny. Oto, co odkryłyśmy.
           </p>
+          <HeadlineProof copy={proof} />
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF1493] to-[#FFE14D]" />
@@ -192,24 +191,19 @@ export default function HomePL() {
 
       {/* Hero Image */}
       <section className="container max-w-4xl py-8">
+        <a href="https://hellonancy.com/products/lem">
         <img
           src="/PDP.jpg"
           alt="Urządzenie do dobrostanu Nancy's Lem na szafce nocnej"
           className="w-full rounded-lg shadow-lg"
         />
+        </a>
         <p className="text-sm text-gray-500 mt-2 italic">Nancy's Lem leży dyskretnie na szafce nocnej – prawie każdy bierze je za dekoracyjną cytrynę. Zdjęcie: Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
       <section className="bg-white py-6 border-y border-gray-200">
         <div className="container max-w-4xl">
-          {/* Live Visitor Count */}
-          <div className="flex items-center justify-center gap-2 mb-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span><strong className="text-gray-900">{visitorCount.toLocaleString('pl-PL')}</strong> czytelniczek właśnie czyta ten artykuł</span>
-            </div>
-          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
             <div className="flex flex-col items-center gap-2">
               <Package className="w-6 h-6 text-[#FF1493]" />
@@ -310,12 +304,7 @@ export default function HomePL() {
             Ale prawdziwa magia tkwi w fizyce: to delikatne zasysanie tworzy efekt podciśnienia, który fizycznie przyciąga do tkanek głęboką, bogatą w tlen krew. Budzi nerwy, które od lat były uśpione.
           </p>
 
-          <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
-            <p className="text-lg italic text-gray-900 mb-2">
-              „To tak, jakby wyciągało orgazm prosto ze środka… pulsowanie trzyma się o wiele dłużej”.
-            </p>
-            <p className="font-semibold text-gray-700">– Alisha, testerka beta (z potwierdzonych opinii klientek)</p>
-          </div>
+          <ReviewPullQuote copy={proof} />
         </div>
 
         {/* Comparison Table */}
@@ -467,7 +456,7 @@ export default function HomePL() {
 
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Galeria produktu</h3>
-            <ImageGallery images={galleryImages} />
+            <ImageGallery images={galleryImages} cta={{ href: "https://hellonancy.com/products/lem", label: proof.galleryCta }} />
           </div>
         </div>
 
@@ -776,10 +765,10 @@ export default function HomePL() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
-                <Award className="w-8 h-8 text-white" />
+                <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Nagradzane</h3>
-              <p className="text-sm text-gray-600">Nagroda 2025 w dziedzinie technologii dla dobrostanu kobiet, przyznana przez International Wellness Institute</p>
+              <h3 className="font-bold text-gray-900 mb-2">{proof.ordersTitle}</h3>
+              <p className="text-sm text-gray-600">{proof.ordersBody}</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -792,8 +781,8 @@ export default function HomePL() {
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Ponad 1 mln sprzedanych</h3>
-              <p className="text-sm text-gray-600">Ponad 1 000 000 sztuk sprzedanych na całym świecie od premiery w 2023 roku</p>
+              <h3 className="font-bold text-gray-900 mb-2">{proof.soldTitle}</h3>
+              <p className="text-sm text-gray-600">{proof.soldBody}</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -804,94 +793,26 @@ export default function HomePL() {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg max-w-3xl mx-auto">
+          <div className="bg-white p-6 rounded-lg max-w-4xl mx-auto">
             <h3 className="font-bold text-lg text-gray-900 mb-3 text-center">Pisali o nas:</h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <img src="/timeout_logo.webp" alt="Time Out" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/tatler_logo.webp" alt="Tatler" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/sarasense_logo.webp" alt="Sarasense" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/zenify_logo.webp" alt="Zenify" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/vocal_logo.webp" alt="Vocal" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-            </div>
+            <AsSeenIn />
           </div>
         </div>
       </article>
 
 
 
+      <ExpertReviews copy={proof} />
+
       {/* Written Reviews */}
-      <section className="container py-16 md:py-24">
+      <section id="reviews" className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Co mówią zweryfikowane kupujące
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,8 na 5 (19 391 zweryfikowanych opinii)</p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">„Lepsze niż krem estrogenowy”</p>
-                <p className="text-gray-700 italic">
-                  „Nie kupiłam go «dla zabawy», kupiłam, bo lekarka powiedziała, że potrzebuję ukrwienia. Ale rany. To odprężenie pomaga mi przespać całą noc i nie budzić się zlaną potem. To moja nowa witamina”.
-                </p>
-                <p className="font-semibold text-gray-900">– Sarah J., 58 lat</p>
-                <p className="text-xs text-gray-500">✓ Zakup potwierdzony</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FF1493]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">„Obudziło moje ciało”</p>
-                <p className="text-gray-700 italic">
-                  „Wcześniej próbowałam Lelo Sona, ale było dla mnie za mocne. Lem jest na tyle delikatny, żeby pasował do mojej wrażliwości, a jednocześnie na tyle intensywny, żeby naprawdę działać. 10/10”.
-                </p>
-                <p className="font-semibold text-gray-900">– Carly, zweryfikowana kupująca</p>
-                <p className="text-xs text-gray-500">✓ Zakup potwierdzony</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">„Nie mogę się oderwać”</p>
-                <p className="text-gray-700 italic">
-                  „Nie mogę się oderwać. Lem zasysa i przyciąga w najszaleńszy sposób. Kiedy szczytujesz, to tak, jakby wyciągało orgazm prosto ze środka i trzymało pulsowanie o wiele dłużej. Mega dobre!”.
-                </p>
-                <p className="font-semibold text-gray-900">– Alisha, testerka beta</p>
-                <p className="text-xs text-gray-500">✓ Zakup potwierdzony</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FF1493]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">„Zmieniło wszystko”</p>
-                <p className="text-gray-700 italic">
-                  „Jako ktoś, kto ceni dyskrecję w produktach intymnych, nie mogłam trafić lepiej. Funkcja zasysania nie przypomina niczego, czego próbowałam wcześniej”.
-                </p>
-                <p className="font-semibold text-gray-900">– Maxine, zweryfikowana kupująca</p>
-                <p className="text-xs text-gray-500">✓ Zakup potwierdzony</p>
-              </CardContent>
-            </Card>
-          </div>
+          <RealReviews copy={proof} pageLang="pl" />
         </div>
       </section>
 
@@ -1285,7 +1206,7 @@ export default function HomePL() {
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
               <p>© 2025 Wellness Insider. Wszelkie prawa zastrzeżone. Treści redakcyjne są niezależne i obiektywne.</p>
-              <p className="mt-2">Opisywany produkt: Nancy's Lem od Hello Nancy • zdobywca Nagrody 2025 w dziedzinie technologii dla dobrostanu kobiet</p>
+              <p className="mt-2">Opisywany produkt: Nancy's Lem od Hello Nancy</p>
             </div>
           </div>
         </div>

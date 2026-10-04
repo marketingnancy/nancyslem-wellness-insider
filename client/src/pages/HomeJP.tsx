@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Check, Package, Shield, Truck, X, Clock, TrendingUp, Award, Heart, Edit3 } from "lucide-react";
+import { Star, Check, Package, Shield, Truck, X, Clock, TrendingUp, Heart, Edit3 } from "lucide-react";
 import { ImageGallery } from "@/components/ImageGallery";
+import { AsSeenIn, ExpertReviews, HeadlineProof, RealReviews, ReviewPullQuote } from "@/components/proof/ProofSections";
+import proof from "@/components/proof/i18n/jp";
+import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
 
 export default function HomeJP() {
   const [showStickyBar, setShowStickyBar] = useState(false);
   const [showTimer, setShowTimer] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes in seconds
+  useStoreTapFeedback(proof.openingStore);
 
-  const [visitorCount, setVisitorCount] = useState(1847);
 
   // Sticky CTA bar and timer on scroll
   useEffect(() => {
@@ -27,14 +30,6 @@ export default function HomeJP() {
   }, [showTimer]);
 
 
-
-  // Simulate visitor count fluctuation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVisitorCount(prev => prev + Math.floor(Math.random() * 7) - 3); // Random +/- 3
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => { document.documentElement.lang = "ja"; }, []);
 
@@ -99,7 +94,7 @@ export default function HomeJP() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4.8（19,391件のレビュー）・販売100万個突破</span>
+              <span className="text-sm font-medium">⭐ {proof.rating} ({proof.reviewsLabel}) • {proof.soldShort}</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -108,12 +103,15 @@ export default function HomeJP() {
                   <span className="text-sm line-through text-white/70">¥26,300</span>
                   <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">¥12,800 OFF</span>
                 </div>
-                {showTimer && (
-                  <div className="flex items-center gap-1 text-xs mt-0.5">
-                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    <span>終了まで {formatTime(timeLeft)}</span>
-                  </div>
-                )}
+                <div className="flex items-center gap-2 text-xs mt-0.5">
+                  <span className="md:hidden font-medium">⭐ {proof.ratingShort}</span>
+                  {showTimer && (
+                    <span className="flex items-center gap-1">
+                      <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                      <span>終了まで {formatTime(timeLeft)}</span>
+                    </span>
+                  )}
+                </div>
               </div>
               <a 
                 href="https://hellonancy.com/en-jp/products/lem" 
@@ -152,11 +150,12 @@ export default function HomeJP() {
             <span className="bg-gray-100 px-3 py-1 rounded-full">製品レビュー</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-            100万回を超える「心地よさ」。50代からの女性が、バイブレーターを手放して「レモン」を選ぶわけ
+            110万回を超える「心地よさ」。50代からの女性が、バイブレーターを手放して「レモン」を選ぶわけ
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
             50代を過ぎた何千人もの女性が、これまでのバイブレーターから、レモンのかたちをした「理学療法」発想のこのアイテムへ。なぜ乗り換えるのか、じっくり取材しました。わかったことを、ありのままにお伝えします。
           </p>
+          <HeadlineProof copy={proof} />
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF1493] to-[#FFE14D]" />
@@ -192,24 +191,19 @@ export default function HomeJP() {
 
       {/* Hero Image */}
       <section className="container max-w-4xl py-8">
+        <a href="https://hellonancy.com/en-jp/products/lem">
         <img 
           src="/PDP.jpg" 
           alt="ベッドサイドに置かれた Hello Nancy の Lem ウェルネスアイテム"
           className="w-full rounded-lg shadow-lg"
         />
+        </a>
         <p className="text-sm text-gray-500 mt-2 italic">Hello Nancy の Lem は、ベッドサイドに置いてもさりげなく。たいていは、飾りのレモンだと思われます。写真：Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
       <section className="bg-white py-6 border-y border-gray-200">
         <div className="container max-w-4xl">
-          {/* Live Visitor Count */}
-          <div className="flex items-center justify-center gap-2 mb-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span>いま<strong className="text-gray-900">{visitorCount.toLocaleString()}</strong>人がこの記事を読んでいます</span>
-            </div>
-          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
             <div className="flex flex-col items-center gap-2">
               <Package className="w-6 h-6 text-[#FF1493]" />
@@ -310,12 +304,7 @@ export default function HomeJP() {
             でも、本当のすごさは物理のしくみにあります。やわらかな吸引が真空のような効果を生み、酸素をたっぷり含んだ血液を、奥のほうまでぐっと呼びこむ。何年も眠っていた神経を、そっと目覚めさせてくれるのです。
           </p>
 
-          <div className="bg-white p-6 rounded-lg mt-6 border-2 border-[#FFE14D]">
-            <p className="text-lg italic text-gray-900 mb-2">
-              「オーガズムを、そのまますくい上げてくれるみたいで……脈打つような感覚が、ずっと長く続くんです」
-            </p>
-            <p className="font-semibold text-gray-700">— アリシャさん、ベータテスター（検証済みのレビューより）</p>
-          </div>
+          <ReviewPullQuote copy={proof} />
         </div>
 
         {/* Comparison Table */}
@@ -467,7 +456,7 @@ export default function HomeJP() {
 
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">フォトギャラリー</h3>
-            <ImageGallery images={galleryImages} />
+            <ImageGallery images={galleryImages} cta={{ href: "https://hellonancy.com/en-jp/products/lem", label: proof.galleryCta }} />
           </div>
         </div>
 
@@ -776,10 +765,10 @@ export default function HomeJP() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
-                <Award className="w-8 h-8 text-white" />
+                <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">受賞歴も</h3>
-              <p className="text-sm text-gray-600">国際ウェルネス研究所による「2025年 女性ウェルネステック賞」を受賞</p>
+              <h3 className="font-bold text-gray-900 mb-2">{proof.ordersTitle}</h3>
+              <p className="text-sm text-gray-600">{proof.ordersBody}</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -792,8 +781,8 @@ export default function HomeJP() {
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">100万個を突破</h3>
-              <p className="text-sm text-gray-600">2023年の発売から、世界じゅうで100万個以上が選ばれています</p>
+              <h3 className="font-bold text-gray-900 mb-2">{proof.soldTitle}</h3>
+              <p className="text-sm text-gray-600">{proof.soldBody}</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FFE14D] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -804,94 +793,26 @@ export default function HomeJP() {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg max-w-3xl mx-auto">
+          <div className="bg-white p-6 rounded-lg max-w-4xl mx-auto">
             <h3 className="font-bold text-lg text-gray-900 mb-3 text-center">メディア掲載</h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <img src="/timeout_logo.webp" alt="Time Out" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/tatler_logo.webp" alt="Tatler" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/sarasense_logo.webp" alt="Sarasense" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/zenify_logo.webp" alt="Zenify" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-              <img src="/vocal_logo.webp" alt="Vocal" className="h-8 object-contain grayscale hover:grayscale-0 transition-all" />
-            </div>
+            <AsSeenIn />
           </div>
         </div>
       </article>
 
 
 
+      <ExpertReviews copy={proof} />
+
       {/* Written Reviews */}
-      <section className="container py-16 md:py-24">
+      <section id="reviews" className="container py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             使った方からの、本音の声
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 5点満点中4.8点（購入が確認できた19,391件のレビュー）</p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">「エストロゲンクリームより、ずっといい」</p>
-                <p className="text-gray-700 italic">
-                  「『楽しみ』のために買ったわけじゃないんです。お医者さんに、めぐりが大事だと言われて。でも、これがすごくて。すっと力が抜けるおかげで、汗だくで目覚めることもなく、朝までぐっすり。わたしの新しいビタミン剤、ですね」
-                </p>
-                <p className="font-semibold text-gray-900">— サラ J. さん、58歳</p>
-                <p className="text-xs text-gray-500">✓ 購入確認済み</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FF1493]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">「もっと早く出会いたかった」</p>
-                <p className="text-gray-700 italic">
-                  「前に Lelo Sona を試したんですが、わたしには強すぎて。Lem は敏感なところにもじゅうぶんやさしいのに、ちゃんと届く深さがあるんです。文句なしの満点です」
-                </p>
-                <p className="font-semibold text-gray-900">— カーリーさん、購入確認済み</p>
-                <p className="text-xs text-gray-500">✓ 購入確認済み</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">「もう夢中です」</p>
-                <p className="text-gray-700 italic">
-                  「すっかり夢中です。Lem の吸い付くような感覚が、もう最高で。達するときには、オーガズムをそのまますくい上げてくれるみたいで、脈打つ感覚がずっと長く続くんです。本当に、すごくいい」
-                </p>
-                <p className="font-semibold text-gray-900">— アリシャさん、ベータテスター</p>
-                <p className="text-xs text-gray-500">✓ 購入確認済み</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FF1493]">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#FFE14D] text-[#FFE14D]" />
-                  ))}
-                </div>
-                <p className="font-bold text-gray-900">「これまでの常識が変わりました」</p>
-                <p className="text-gray-700 italic">
-                  「デリケートなアイテムには、さりげなさを求めるタイプ。そんなわたしにとって、これ以上ない選びでした。吸引の感覚は、これまで試したどれとも、まるで違います」
-                </p>
-                <p className="font-semibold text-gray-900">— マキシンさん、購入確認済み</p>
-                <p className="text-xs text-gray-500">✓ 購入確認済み</p>
-              </CardContent>
-            </Card>
-          </div>
+          <RealReviews copy={proof} pageLang="jp" />
         </div>
       </section>
 
@@ -1282,7 +1203,7 @@ export default function HomeJP() {
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
               <p>© 2025 Wellness Insider. All rights reserved. 記事は独立した立場で、公正に制作しています。</p>
-              <p className="mt-2">特集アイテム：Nancy's Lem by Hello Nancy ・ 2025年 女性ウェルネステック賞 受賞</p>
+              <p className="mt-2">特集アイテム：Nancy's Lem by Hello Nancy</p>
             </div>
           </div>
         </div>
