@@ -99,7 +99,7 @@ export default function HomeRO() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4,7 (14.907 recenzii) • peste 1 mil. vândute</span>
+              <span className="text-sm font-medium">⭐ 4,8 (19.391 recenzii) • peste 1 mil. vândute</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -786,7 +786,7 @@ export default function HomeRO() {
                 <Star className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Recenzii verificate</h3>
-              <p className="text-sm text-gray-600">4,7★ în medie, din partea a 14.907 cumpărătoare verificate (nicio recenzie falsă)</p>
+              <p className="text-sm text-gray-600">4,8★ în medie, din partea a 19.391 cumpărătoare verificate (nicio recenzie falsă)</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -825,7 +825,7 @@ export default function HomeRO() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Ce spun cumpărătoarele verificate
           </h2>
-          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,7 din 5 (14.907 recenzii verificate)</p>
+          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,8 din 5 (19.391 recenzii verificate)</p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">

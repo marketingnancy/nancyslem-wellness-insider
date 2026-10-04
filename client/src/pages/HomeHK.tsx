@@ -99,7 +99,7 @@ export default function HomeHK() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4.7（14,907 個評價）• 賣出超過 100 萬件</span>
+              <span className="text-sm font-medium">⭐ 4.8（19,391 個評價）• 賣出超過 100 萬件</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -786,7 +786,7 @@ export default function HomeHK() {
                 <Star className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">已驗證評價</h3>
-              <p className="text-sm text-gray-600">14,907 位已驗證買家俾出 4.7★ 平均分（唔係假評價）</p>
+              <p className="text-sm text-gray-600">19,391 位已驗證買家俾出 4.8★ 平均分（唔係假評價）</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -825,7 +825,7 @@ export default function HomeHK() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             已驗證買家點講
           </h2>
-          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 5 星滿分得 4.7 分（14,907 個已驗證評價）</p>
+          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 5 星滿分得 4.8 分（19,391 個已驗證評價）</p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">

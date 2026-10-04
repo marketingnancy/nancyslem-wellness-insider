@@ -99,7 +99,7 @@ export default function Home() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4,7 (14 907 avis) • 1M+ vendus</span>
+              <span className="text-sm font-medium">⭐ 4,8 (19 391 avis) • 1M+ vendus</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -786,7 +786,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
                 <Star className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Avis vérifiés</h3>
-              <p className="text-sm text-gray-600">4,7★ de moyenne sur 14 907 acheteuses vérifiées (aucun faux avis)</p>
+              <p className="text-sm text-gray-600">4,8★ de moyenne sur 19 391 acheteuses vérifiées (aucun faux avis)</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -825,7 +825,7 @@ Nous avons cherché à comprendre pourquoi des milliers de femmes de plus de 50 
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Ce qu'en disent les acheteuses vérifiées
           </h2>
-          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,7 sur 5 (14 907 avis vérifiés)</p>
+          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,8 sur 5 (19 391 avis vérifiés)</p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">

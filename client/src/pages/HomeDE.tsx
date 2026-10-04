@@ -99,7 +99,7 @@ export default function Home() {
         <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-sm font-medium">⭐ 4.7 (14.907 Bewertungen) • 1 Mio.+ Verkauft</span>
+              <span className="text-sm font-medium">⭐ 4.8 (19.391 Bewertungen) • 1 Mio.+ Verkauft</span>
             </div>
             <div className="flex items-center justify-between w-full md:w-auto gap-4">
               <div className="flex flex-col items-start md:items-end">
@@ -785,7 +785,7 @@ export default function Home() {
                 <Star className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Verifizierte Bewertungen</h3>
-              <p className="text-sm text-gray-600">4,7★ im Schnitt von 14.907 verifizierten Käuferinnen (keine gefälschten Bewertungen)</p>
+              <p className="text-sm text-gray-600">4,8★ im Schnitt von 19.391 verifizierten Käuferinnen (keine gefälschten Bewertungen)</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#FF1493] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -824,7 +824,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Was verifizierte Käuferinnen sagen
           </h2>
-          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,7 von 5 (14.907 verifizierte Bewertungen)</p>
+          <p className="text-center text-xl text-gray-600 mb-12">⭐⭐⭐⭐⭐ 4,8 von 5 (19.391 verifizierte Bewertungen)</p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-white hover:shadow-xl transition-shadow border-2 border-[#FFE14D]">
