@@ -87,3 +87,21 @@ export function useOfferTimer(): { showTimer: boolean; timeLeft: number } {
 
   return { showTimer: seen && timeLeft > 0, timeLeft };
 }
+
+/**
+ * Same 15-minute landing clock, but running and visible from the first second
+ * (no wait for the offer section). Used by the Halloween ad-landing variants.
+ */
+export function useLandingCountdown(): { secondsLeft: number; ended: boolean } {
+  const [start] = useState(getLandedAt);
+  const [left, setLeft] = useState(() => secondsLeft(start));
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      const l = secondsLeft(start);
+      setLeft(l);
+      if (l <= 0) window.clearInterval(id);
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [start]);
+  return { secondsLeft: left, ended: left <= 0 };
+}

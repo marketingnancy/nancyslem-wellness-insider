@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useLandingCountdown } from "@/lib/offer-timer";
 
 // Halloween 2026 ad-landing variants of the English page (/halloween-a, /halloween-b).
 // Each one matches a cluster of Evrim's Halloween native ads:
@@ -7,9 +7,6 @@ import { useEffect, useState } from "react";
 // The control is the unchanged homepage. Reviews below are real Loox reviews (5 stars, verified).
 
 export type HalloweenVariant = "a" | "b";
-
-// Halloween offer ends 31 Oct 2026, 23:59 US Eastern.
-export const HALLOWEEN_ENDS = Date.parse("2026-10-31T23:59:59-04:00");
 
 export interface HalloweenReview {
   name: string;
@@ -101,18 +98,11 @@ export const HALLOWEEN: Record<HalloweenVariant, HalloweenCopy> = {
   },
 };
 
-/** Live countdown to the end of the Halloween offer. */
+/** The Halloween price "hold": 15 minutes from landing, ticking from the first second. */
 export function useHalloweenCountdown() {
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    const id = window.setInterval(() => setNow(Date.now()), 1000);
-    return () => window.clearInterval(id);
-  }, []);
-  const left = Math.max(0, Math.floor((HALLOWEEN_ENDS - now) / 1000));
-  const d = Math.floor(left / 86400);
-  const h = Math.floor((left % 86400) / 3600);
-  const m = Math.floor((left % 3600) / 60);
-  const s = left % 60;
+  const { secondsLeft, ended } = useLandingCountdown();
   const pad = (n: number) => n.toString().padStart(2, "0");
-  return { ended: left === 0, label: d > 0 ? `${d}d ${pad(h)}h ${pad(m)}m` : `${pad(h)}:${pad(m)}:${pad(s)}` };
+  const m = Math.floor(secondsLeft / 60);
+  const s = secondsLeft % 60;
+  return { ended, urgent: secondsLeft <= 5 * 60, mm: pad(m), ss: pad(s), label: `${pad(m)}:${pad(s)}` };
 }

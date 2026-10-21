@@ -8,6 +8,7 @@ import proof from "@/components/proof/i18n/en";
 import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
 import { useOfferTimer } from "@/lib/offer-timer";
 import { HALLOWEEN, useHalloweenCountdown, type HalloweenVariant } from "@/lib/halloween";
+import { HalloweenTimer } from "@/components/HalloweenTimer";
 
 const LEM_URL = "https://hellonancy.com/products/lem";
 
@@ -67,11 +68,16 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
           </div>
         </div>
         {hw && (
-          <div className="bg-[#1a1a1a] text-white text-[11px] sm:text-xs h-8 flex items-center justify-center gap-1.5 px-3 whitespace-nowrap overflow-hidden">
+          <div className={`${countdown.urgent && !countdown.ended ? "bg-red-700" : "bg-red-600"} text-white text-[11px] sm:text-xs h-8 flex items-center justify-center gap-1.5 px-3 whitespace-nowrap overflow-hidden font-semibold`}>
             <span aria-hidden>🎃</span>
-            <span className="font-semibold">Halloween treat:</span>
-            <span>$89<span className="hidden sm:inline"> (save $70)</span> + free<span className="hidden sm:inline"> discreet</span> shipping</span>
-            {!countdown.ended && <span className="text-[#FFE14D] font-mono font-semibold">· {countdown.label}</span>}
+            {countdown.ended ? (
+              <span>Halloween treat: $89<span className="hidden sm:inline"> (save $70)</span> + free shipping</span>
+            ) : (
+              <>
+                <span className="uppercase">$89 Halloween price reserved for</span>
+                <span className="bg-white text-red-600 font-mono font-bold rounded px-1.5 py-0.5 text-xs sm:text-sm">{countdown.label}</span>
+              </>
+            )}
           </div>
         )}
       </header>
@@ -92,7 +98,12 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                 </div>
                 <div className="flex items-center gap-2 text-xs mt-0.5">
                   <span className="md:hidden font-medium">⭐ {proof.ratingShort}</span>
-                  {hw && <span className="text-white/90">Ships discreetly</span>}
+                  {hw && !countdown.ended && (
+                    <span className="flex items-center gap-1 font-bold">
+                      <span className="w-2 h-2 bg-white rounded-full animate-ping" />
+                      <span className="font-mono">{countdown.label}</span> left
+                    </span>
+                  )}
                   {!hw && showTimer && (
                     <span className="flex items-center gap-1">
                       <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
@@ -143,6 +154,7 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
             We investigated why thousands of women over 50 are ditching traditional vibrators for this "physiotherapy" device that looks like a lemon. Here's what we found.
           </p>
           <HeadlineProof copy={proof} />
+          {hw && <div className="mb-4 max-w-md"><HalloweenTimer /></div>}
           {hw && (
             <a href={LEM_URL} className="block mb-6">
               <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6 shadow-lg">
@@ -260,11 +272,12 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                   </Card>
                 ))}
               </div>
-              <a href={LEM_URL} className="block mt-5 text-center">
+              <div className="mt-5 max-w-md mx-auto"><HalloweenTimer title="Your Halloween price is still reserved for" /></div>
+              <a href={LEM_URL} className="block mt-4 text-center">
                 <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6">
                   Treat yourself: $89 (save $70)
                 </Button>
-                <span className="block text-xs text-gray-500 mt-2">Ships discreetly · Halloween treat ends Oct 31</span>
+                <span className="block text-xs text-gray-500 mt-2">Ships discreetly · Free shipping · 30-day guarantee</span>
               </a>
             </div>
           </div>
@@ -880,12 +893,7 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                     ⚡ LIMITED TIME READER OFFER ⚡
                   </div>
                   {hw ? (
-                    !countdown.ended && (
-                      <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 bg-[#1a1a1a] text-white px-4 py-3 rounded-lg mb-4">
-                        <span className="font-bold whitespace-nowrap">🎃 Halloween treat ends in:</span>
-                        <span className="font-mono text-xl font-bold text-[#FFE14D] whitespace-nowrap">{countdown.label}</span>
-                      </div>
-                    )
+                    <div className="mb-4"><HalloweenTimer title="🎃 Halloween reader price expires in" size="lg" /></div>
                   ) : showTimer && (
                     <div className="flex items-center justify-center gap-2 bg-red-500 text-white px-6 py-3 rounded-lg mb-4 animate-pulse">
                       <Clock className="w-5 h-5" />
