@@ -8,7 +8,6 @@ import proof from "@/components/proof/i18n/en";
 import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
 import { useOfferTimer } from "@/lib/offer-timer";
 import { HALLOWEEN, useHalloweenCountdown, type HalloweenVariant } from "@/lib/halloween";
-import { HalloweenTimer } from "@/components/HalloweenTimer";
 
 const LEM_URL = "https://hellonancy.com/products/lem";
 
@@ -98,12 +97,7 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                 </div>
                 <div className="flex items-center gap-2 text-xs mt-0.5">
                   <span className="md:hidden font-medium">⭐ {proof.ratingShort}</span>
-                  {hw && !countdown.ended && (
-                    <span className="flex items-center gap-1 font-bold">
-                      <span className="w-2 h-2 bg-white rounded-full animate-ping" />
-                      <span className="font-mono">{countdown.label}</span> left
-                    </span>
-                  )}
+                  {hw && <span className="text-white/90">Ships discreetly</span>}
                   {!hw && showTimer && (
                     <span className="flex items-center gap-1">
                       <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
@@ -154,7 +148,6 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
             We investigated why thousands of women over 50 are ditching traditional vibrators for this "physiotherapy" device that looks like a lemon. Here's what we found.
           </p>
           <HeadlineProof copy={proof} />
-          {hw && <div className="mb-4 max-w-md"><HalloweenTimer /></div>}
           {hw && (
             <a href={LEM_URL} className="block mb-6">
               <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6 shadow-lg">
@@ -272,8 +265,7 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                   </Card>
                 ))}
               </div>
-              <div className="mt-5 max-w-md mx-auto"><HalloweenTimer title="Your Halloween price is still reserved for" /></div>
-              <a href={LEM_URL} className="block mt-4 text-center">
+              <a href={LEM_URL} className="block mt-5 text-center">
                 <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6">
                   Treat yourself: $89 (save $70)
                 </Button>
@@ -892,9 +884,7 @@ export default function Home({ variant }: { variant?: HalloweenVariant; params?:
                   <div className="inline-block bg-[#FFE14D] text-black px-6 py-3 rounded-full text-sm font-bold mb-4">
                     ⚡ LIMITED TIME READER OFFER ⚡
                   </div>
-                  {hw ? (
-                    <div className="mb-4"><HalloweenTimer title="🎃 Halloween reader price expires in" size="lg" /></div>
-                  ) : showTimer && (
+                  {!hw && showTimer && (
                     <div className="flex items-center justify-center gap-2 bg-red-500 text-white px-6 py-3 rounded-lg mb-4 animate-pulse">
                       <Clock className="w-5 h-5" />
                       <span className="font-bold">Offer expires in:</span>
