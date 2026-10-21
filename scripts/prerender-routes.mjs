@@ -45,6 +45,11 @@ export const LOCALES = {
   hk: "zh-HK",
 };
 
+// Ad-landing variants of the English page (Halloween 2026). Served as real HTML
+// files like the locales, but noindex and canonical to the homepage, and left out
+// of the hreflang set so they never compete with "/" in search.
+export const AD_VARIANTS = ["halloween-a", "halloween-b"];
+
 const url = (slug) => `${ORIGIN}/${slug}`;
 
 // Fail the build if App.tsx and LOCALES drift apart — otherwise a new locale
@@ -54,7 +59,7 @@ function assertRoutesMatchApp() {
   const appRoutes = [...app.matchAll(/<Route\s+path=\{?"\/([^"]*)"\}?/g)]
     .map((m) => m[1])
     .filter((p) => p !== "404");
-  const known = Object.keys(LOCALES);
+  const known = [...Object.keys(LOCALES), ...AD_VARIANTS];
   const missing = appRoutes.filter((r) => !known.includes(r));
   const extra = known.filter((r) => !appRoutes.includes(r));
   if (missing.length || extra.length) {
@@ -105,8 +110,18 @@ function main() {
     fs.writeFileSync(path.join(OUT, file), render(template, slug, lang));
   }
 
+  for (const slug of AD_VARIANTS) {
+    fs.writeFileSync(
+      path.join(OUT, `${slug}.html`),
+      template.replace(
+        /\n\s*<\/head>/,
+        `\n    <link rel="canonical" href="${url("")}" />\n    <meta name="robots" content="noindex" />\n  </head>`,
+      ),
+    );
+  }
+
   fs.writeFileSync(path.join(OUT, ".nojekyll"), "");
-  console.log(`prerender-routes: wrote index.html + ${Object.keys(LOCALES).length - 1} locale pages + 404.html`);
+  console.log(`prerender-routes: wrote index.html + ${Object.keys(LOCALES).length - 1} locale pages + ${AD_VARIANTS.length} ad variants + 404.html`);
 }
 
 main();

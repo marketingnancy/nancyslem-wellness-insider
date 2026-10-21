@@ -7,19 +7,27 @@ import { AsSeenIn, ExpertReviews, HeadlineProof, RealReviews, ReviewPullQuote } 
 import proof from "@/components/proof/i18n/en";
 import { useStoreTapFeedback } from "@/lib/store-tap-feedback";
 import { useOfferTimer } from "@/lib/offer-timer";
+import { HALLOWEEN, useHalloweenCountdown, type HalloweenVariant } from "@/lib/halloween";
 
-export default function Home() {
-  const [showStickyBar, setShowStickyBar] = useState(false);
+const LEM_URL = "https://hellonancy.com/products/lem";
+
+/** `variant` turns on the Halloween ad-landing changes; without it this is the unchanged homepage. */
+export default function Home({ variant }: { variant?: HalloweenVariant; params?: unknown } = {}) {
+  const hw = variant ? HALLOWEEN[variant] : null;
+  const [showStickyBar, setShowStickyBar] = useState(!!hw);
   const { showTimer, timeLeft } = useOfferTimer();
+  const countdown = useHalloweenCountdown();
   useStoreTapFeedback(proof.openingStore);
 
 
-  // Sticky CTA bar on scroll (the offer timer lives in useOfferTimer)
+  // Sticky CTA bar on scroll (the offer timer lives in useOfferTimer).
+  // Halloween variants show it from the first screen.
   useEffect(() => {
+    if (hw) return;
     const handleScroll = () => setShowStickyBar(window.scrollY > 800);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [hw]);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -58,11 +66,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {hw && (
+          <div className="bg-[#1a1a1a] text-white text-[11px] sm:text-xs h-8 flex items-center justify-center gap-1.5 px-3 whitespace-nowrap overflow-hidden">
+            <span aria-hidden>🎃</span>
+            <span className="font-semibold">Halloween treat:</span>
+            <span>$89<span className="hidden sm:inline"> (save $70)</span> + free<span className="hidden sm:inline"> discreet</span> shipping</span>
+            {!countdown.ended && <span className="text-[#FFE14D] font-mono font-semibold">· {countdown.label}</span>}
+          </div>
+        )}
       </header>
 
       {/* Sticky CTA Bar */}
       {showStickyBar && (
-        <div className="fixed top-[65px] md:top-[73px] left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg animate-in slide-in-from-top">
+        <div className={`fixed ${hw ? "top-[97px] md:top-[105px]" : "top-[65px] md:top-[73px]"} left-0 right-0 z-40 bg-[#FF1493] text-white py-2 shadow-lg${hw ? "" : " animate-in slide-in-from-top"}`}>
           <div className="container max-w-4xl px-4 flex items-center justify-between">
             <div className="hidden md:flex items-center gap-2">
               <span className="text-sm font-medium">⭐ {proof.rating} ({proof.reviewsLabel}) • {proof.soldShort}</span>
@@ -76,7 +92,8 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 text-xs mt-0.5">
                   <span className="md:hidden font-medium">⭐ {proof.ratingShort}</span>
-                  {showTimer && (
+                  {hw && <span className="text-white/90">Ships discreetly</span>}
+                  {!hw && showTimer && (
                     <span className="flex items-center gap-1">
                       <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
                       <span>Ends in {formatTime(timeLeft)}</span>
@@ -100,7 +117,7 @@ export default function Home() {
                 }}
               >
                 <Button className="bg-white text-[#FF1493] hover:bg-gray-100 font-bold">
-                  Shop Now
+                  {hw ? "Treat yourself" : "Shop Now"}
                 </Button>
               </a>
             </div>
@@ -109,8 +126,11 @@ export default function Home() {
       )}
 
       {/* Article Metadata */}
-      <section className="bg-white py-8 md:py-16 border-b border-gray-200">
+      <section className={`bg-white ${hw ? "pt-20 pb-8 md:pt-24 md:pb-12" : "py-8 md:py-16"} border-b border-gray-200`}>
         <div className="container max-w-4xl px-4">
+          {hw && (
+            <p className="text-base sm:text-lg font-semibold italic text-[#FF1493] mb-3">🎃 {hw.kicker}</p>
+          )}
           <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-gray-600 mb-4">
             <span className="text-[#FF1493] font-semibold bg-[#FF1493]/10 px-3 py-1 rounded-full">HEALTH & WELLNESS</span>
             <span className="hidden sm:inline">•</span>
@@ -123,6 +143,14 @@ export default function Home() {
             We investigated why thousands of women over 50 are ditching traditional vibrators for this "physiotherapy" device that looks like a lemon. Here's what we found.
           </p>
           <HeadlineProof copy={proof} />
+          {hw && (
+            <a href={LEM_URL} className="block mb-6">
+              <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6 shadow-lg">
+                Treat yourself: $89 (save $70)
+              </Button>
+              <span className="block text-xs text-gray-500 mt-2">Ships discreetly · Free shipping · 30-day guarantee</span>
+            </a>
+          )}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF1493] to-[#FFE14D]" />
@@ -150,6 +178,7 @@ export default function Home() {
             </div>
             <p className="text-gray-700 text-xs leading-tight">
               <span className="font-bold text-gray-900 mr-1">Editor's Note:</span>
+              {hw && <span className="font-semibold text-gray-900">{hw.editorLead} </span>}
               This article contains affiliate links. We may earn a commission if you purchase through them, at no extra cost to you. We only recommend products we've thoroughly researched and tested.
             </p>
           </div>
@@ -159,13 +188,13 @@ export default function Home() {
       {/* Hero Image */}
       <section className="container max-w-4xl py-8">
         <a href="https://hellonancy.com/products/lem">
-        <img 
-          src="/PDP.jpg" 
-          alt="Nancy's Lem wellness device on nightstand" 
+        <img
+          src={hw ? "/halloween/nightstand.jpg" : "/PDP.jpg"}
+          alt="Nancy's Lem wellness device on nightstand"
           className="w-full rounded-lg shadow-lg"
         />
         </a>
-        <p className="text-sm text-gray-500 mt-2 italic">The Nancy's Lem sits discreetly on a nightstand—most people think it's a decorative lemon. Photo: Hello Nancy</p>
+        <p className="text-sm text-gray-500 mt-2 italic">{hw ? hw.heroCaption : "The Nancy's Lem sits discreetly on a nightstand—most people think it's a decorative lemon."} Photo: Hello Nancy</p>
       </section>
 
       {/* Trust Indicators */}
@@ -194,6 +223,53 @@ export default function Home() {
 
       {/* Article Body */}
       <article className="container max-w-4xl py-12 space-y-8">
+        {/* Halloween variants: the ads' argument first, then matching real reviews */}
+        {hw && (
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 sm:p-8 rounded-xl">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{hw.mechanismTitle}</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">{hw.mechanismIntro}</p>
+              <ul className="space-y-2 mb-5">
+                {hw.rubbed.map((r) => (
+                  <li key={r} className="flex items-start gap-2 text-gray-700">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>{r}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded">
+                <p className="text-green-900 leading-relaxed">
+                  <Check className="w-5 h-5 text-green-600 inline mr-1 -mt-0.5" />
+                  {hw.lemPoint}
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{hw.reviewsTitle}</h3>
+              <div className="grid md:grid-cols-3 gap-3">
+                {hw.reviews.map((r) => (
+                  <Card key={r.name} className="bg-white border-2 border-[#FFE14D] py-0 gap-0">
+                    <CardContent className="p-4 space-y-2">
+                      <div className="flex gap-0.5">
+                        {[0, 1, 2, 3, 4].map((i) => <Star key={i} className="w-4 h-4 fill-[#FFB800] text-[#FFB800]" />)}
+                      </div>
+                      <p className="text-gray-800 text-sm leading-snug">{r.text}</p>
+                      <p className="text-sm"><span className="font-semibold text-gray-900">{r.name}</span><span className="text-gray-500"> · {r.date}</span></p>
+                      <p className="text-xs text-green-700 font-medium">✓ {proof.verifiedBuyer}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <a href={LEM_URL} className="block mt-5 text-center">
+                <Button size="lg" className="w-full sm:w-auto bg-[#FF1493] hover:bg-[#E01280] text-white text-lg px-8 py-6">
+                  Treat yourself: $89 (save $70)
+                </Button>
+                <span className="block text-xs text-gray-500 mt-2">Ships discreetly · Halloween treat ends Oct 31</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Introduction */}
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Why We're Talking About This</h2>
@@ -803,7 +879,14 @@ export default function Home() {
                   <div className="inline-block bg-[#FFE14D] text-black px-6 py-3 rounded-full text-sm font-bold mb-4">
                     ⚡ LIMITED TIME READER OFFER ⚡
                   </div>
-                  {showTimer && (
+                  {hw ? (
+                    !countdown.ended && (
+                      <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 bg-[#1a1a1a] text-white px-4 py-3 rounded-lg mb-4">
+                        <span className="font-bold whitespace-nowrap">🎃 Halloween treat ends in:</span>
+                        <span className="font-mono text-xl font-bold text-[#FFE14D] whitespace-nowrap">{countdown.label}</span>
+                      </div>
+                    )
+                  ) : showTimer && (
                     <div className="flex items-center justify-center gap-2 bg-red-500 text-white px-6 py-3 rounded-lg mb-4 animate-pulse">
                       <Clock className="w-5 h-5" />
                       <span className="font-bold">Offer expires in:</span>
@@ -864,8 +947,9 @@ export default function Home() {
 
                 <a href="https://hellonancy.com/products/lem"   className="w-full">
                   <Button size="lg" className="w-full bg-[#FF1493] hover:bg-[#E01280] text-white text-xl py-7 shadow-xl">
-                    Shop Now - $89 (Save $70)
+                    {hw ? "Treat yourself: $89 (Save $70)" : "Shop Now - $89 (Save $70)"}
                   </Button>
+                  {hw && <span className="block text-center text-sm text-gray-600 mt-2">Ships discreetly in plain packaging</span>}
                 </a>
 
                 <div className="bg-green-50 border-2 border-green-200 p-4 rounded-lg">

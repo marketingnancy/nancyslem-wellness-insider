@@ -27,6 +27,8 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/halloween-a"}>{() => <Home variant="a" />}</Route>
+      <Route path={"/halloween-b"}>{() => <Home variant="b" />}</Route>
       <Route path={"/jp"} component={HomeJP} />
       <Route path={"/nl"} component={HomeNL} />
       <Route path={"/de"} component={HomeDE} />
