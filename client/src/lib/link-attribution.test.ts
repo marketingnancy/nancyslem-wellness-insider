@@ -10,6 +10,17 @@ const BASE = "https://modernwellnessinsider.com/de";
 const PDP = "https://hellonancy.com/products/lem";
 
 describe("collectParams", () => {
+  it("continues Triple Whale campaign attribution onto the Nancy product URL", () => {
+    const query = "?tw_source=facebook&tw_adid=ad-42&tw_campaign=campaign-1&tw_adsetid=set-2&fbadid=meta-ad&gadid=google-ad";
+    const incoming = collectParams(query);
+    const target = new URL(withAttribution(`${PDP}?variant=42#offer`, incoming, BASE));
+    new URLSearchParams(query).forEach((value, key) => {
+      expect(target.searchParams.get(key)).toBe(value);
+    });
+    expect(target.searchParams.get("variant")).toBe("42");
+    expect(target.hash).toBe("#offer");
+  });
+
   it("keeps utm_* and known click ids", () => {
     expect(
       collectParams(

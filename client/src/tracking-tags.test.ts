@@ -17,6 +17,12 @@ const BRIDGE_TAG =
   '<script data-cfasync="false" defer src="https://sub.hellonancy.com/bridge/v1.js"></script>';
 
 describe("client/index.html tracking tags", () => {
+  it("includes one local Triple Whale installer in the shell copied to every locale", () => {
+    expect(count(head, 'src="/nancy-triplewhale.js"')).toBe(1);
+    expect(count(html, 'src="/nancy-triplewhale.js"')).toBe(1);
+    expect(fs.existsSync(path.resolve(__dirname, "../public/nancy-triplewhale.js"))).toBe(true);
+  });
+
   it("loads the Hello Nancy bridge exactly once, verbatim, in <head>", () => {
     expect(count(html, "sub.hellonancy.com/bridge/v1.js")).toBe(1);
     expect(count(head, BRIDGE_TAG)).toBe(1);

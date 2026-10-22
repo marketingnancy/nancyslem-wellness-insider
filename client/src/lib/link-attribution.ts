@@ -40,6 +40,12 @@ const TRACKING_PARAMS = new Set([
   "msclkid", // Microsoft
   "ttclid", // TikTok
   "twclid", // X
+  "tw_source", // Triple Whale campaign attribution
+  "tw_adid",
+  "tw_campaign",
+  "tw_adsetid",
+  "fbadid",
+  "gadid",
   "li_fat_id", // LinkedIn
   "sccid", // Snapchat
   "rdt_cid", // Reddit
@@ -192,6 +198,11 @@ function patchAnchor(
     HelloNancyBridge?: { decorate: (href: string) => string };
   }).HelloNancyBridge;
   if (typeof bridge?.decorate === "function") patched = bridge.decorate(patched);
+  const tripleWhale = (window as Window & {
+    NancyTripleWhale?: { decorate: (href: string) => string };
+  }).NancyTripleWhale;
+  // The shared pixel owns campaign changes after this install's first snapshot.
+  if (typeof tripleWhale?.decorate === "function") patched = tripleWhale.decorate(patched);
   if (patched !== href) anchor.setAttribute("href", patched);
 }
 

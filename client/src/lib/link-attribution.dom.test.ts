@@ -75,4 +75,35 @@ describe("installLinkAttribution", () => {
     observer.disconnect();
     expect(mutations).toBe(0);
   });
+
+  it("composes the current shared campaign before its initial snapshot can rewrite hrefs", async () => {
+    const state = window as Window & { NancyTripleWhale?: { decorate: (href: string) => string } };
+    state.NancyTripleWhale = { decorate: href => {
+      const url = new URL(href);
+      for (const key of ["tblci", "utm_campaign", "utm_term", "fbclid", "tw_adid"]) url.searchParams.delete(key);
+      url.searchParams.set("utm_source", "google");
+      url.searchParams.set("gadid", "new-ad");
+      return url.href;
+    } };
+    const anchor = document.createElement("a");
+    anchor.href = "https://hellonancy.com/products/lem?variant=42&discount=KEEP&utm_term=old-term#offer";
+    document.body.appendChild(anchor);
+    await new Promise(resolve => setTimeout(resolve, 0));
+    const params = new URL(anchor.href).searchParams;
+    expect(params.get("utm_source")).toBe("google");
+    expect(params.get("gadid")).toBe("new-ad");
+    expect(params.has("tblci")).toBe(false);
+    expect(params.has("utm_term")).toBe(false);
+    expect(params.get("variant")).toBe("42");
+    expect(params.get("discount")).toBe("KEEP");
+    expect(new URL(anchor.href).hash).toBe("#offer");
+    let mutations = 0;
+    const observer = new MutationObserver(records => { mutations += records.length; });
+    observer.observe(anchor, { attributes: true, attributeFilter: ["href"] });
+    anchor.dispatchEvent(new Event("pointerdown", { bubbles: true }));
+    await new Promise(resolve => setTimeout(resolve, 0));
+    observer.disconnect();
+    expect(mutations).toBe(0);
+    delete state.NancyTripleWhale;
+  });
 });
