@@ -11,7 +11,7 @@
 
   var STORE = 'hello-nancy-toys.myshopify.com';
   var SESSION_KEY = 'nancy_triplewhale_campaign_v1';
-  var KEYS = ('tw_source tw_adid tw_campaign tw_adsetid fbadid gadid fbclid gclid dclid gbraid wbraid gclsrc gad_source gad_campaignid msclkid ttclid twclid li_fat_id sccid sc_click_id rdt_cid epik obclid tblci taboola_click_id irclickid').split(' ');
+  var KEYS = ('tw_source tw_adid tw_campaign tw_adsetid fbadid gadid fbclid gclid dclid gbraid wbraid gclsrc gad_source gad_campaignid msclkid ttclid twclid li_fat_id sccid sc_click_id rdt_cid epik obclid tblci taboola_click_id irclickid campaign_id adset_id ad_id').split(' ');
   var HOSTS = ('hellonancy.com www.hellonancy.com try.hellonancy.com nancyuniverse.com www.nancyuniverse.com feelnancy.com www.feelnancy.com get.officialnancy.com').split(' ');
   var FLOW_HOST = /^(?:get\.|www\.)?nancyflow\.(?:com|co\.uk|ca|co\.nz|de|nl|fr|it|se|dk)$/i;
   var campaign = {};
