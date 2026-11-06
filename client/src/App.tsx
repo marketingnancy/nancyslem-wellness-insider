@@ -22,6 +22,7 @@ import HomeRO from "./pages/HomeRO";
 import HomeGR from "./pages/HomeGR";
 import HomePT from "./pages/HomePT";
 import HomeHK from "./pages/HomeHK";
+import HomeLem from "./pages/HomeLem";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/halloween-a"}>{() => <Home variant="a" />}</Route>
       <Route path={"/halloween-b"}>{() => <Home variant="b" />}</Route>
+      <Route path={"/lem"} component={HomeLem} />
       <Route path={"/jp"} component={HomeJP} />
       <Route path={"/nl"} component={HomeNL} />
       <Route path={"/de"} component={HomeDE} />

@@ -48,7 +48,8 @@ export const LOCALES = {
 // Ad-landing variants of the English page (Halloween 2026). Served as real HTML
 // files like the locales, but noindex and canonical to the homepage, and left out
 // of the hreflang set so they never compete with "/" in search.
-export const AD_VARIANTS = ["halloween-a", "halloween-b"];
+// "lem" = the original nancylem.manus.space page, re-hosted 6 Nov 2026.
+export const AD_VARIANTS = ["halloween-a", "halloween-b", "lem"];
 
 const url = (slug) => `${ORIGIN}/${slug}`;
 
