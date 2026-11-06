@@ -23,6 +23,12 @@ describe("client/index.html tracking tags", () => {
     expect(fs.existsSync(path.resolve(__dirname, "../public/nancy-triplewhale.js"))).toBe(true);
   });
 
+  it("includes one local Snapchat installer in the shell copied to every locale", () => {
+    expect(count(head, 'src="/nancy-snapchat.js"')).toBe(1);
+    expect(count(html, 'src="/nancy-snapchat.js"')).toBe(1);
+    expect(fs.existsSync(path.resolve(__dirname, "../public/nancy-snapchat.js"))).toBe(true);
+  });
+
   it("loads the Hello Nancy bridge exactly once, verbatim, in <head>", () => {
     expect(count(html, "sub.hellonancy.com/bridge/v1.js")).toBe(1);
     expect(count(head, BRIDGE_TAG)).toBe(1);
