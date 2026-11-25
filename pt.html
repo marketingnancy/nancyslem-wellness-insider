@@ -86,6 +86,58 @@
     </script>
     <!-- End of Taboola Pixel Code -->
 
+    <!-- Taboola click_cta (account 2143240 only) -->
+    <!-- Counts every click on a CTA that leaves for the store, independent of the
+         store's UK cookie banner. The loader above serves both accounts; tfa.js
+         routes each push by its own id, so there is deliberately no second loader.
+         tracking-tags.test.ts extracts and runs this block - keep the markers. -->
+    <script type="text/javascript">
+      /* click_cta:begin */
+      (function (w, d) {
+        if (w.__nancyTaboolaClickCta) return; // double-install guard
+        w.__nancyTaboolaClickCta = true;
+
+        var handled = typeof WeakSet === 'function' ? new WeakSet() : null; // one push per event
+        var LEGAL = /^\/(?:policies|pages\/(?:privacy|terms|refund|shipping|contact)|privacy|terms|legal|cookie)/i;
+        var STORE_PATH = /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?(?:products|collections|cart|checkout)(?:\/|$)/i;
+
+        // Hostname + path pattern, never an exact URL: decorators (bridge,
+        // Triple Whale, link-attribution.ts) rewrite hrefs and append params.
+        function isStoreCta(a) {
+          var host = String(a.hostname || '').toLowerCase();
+          var path = a.pathname || '/';
+          if (a.protocol !== 'https:' && a.protocol !== 'http:') return false; // mailto:, tel:
+          if (host === 'hellonancy.com' || host === 'www.hellonancy.com') return STORE_PATH.test(path);
+          // Bridge / shop / try hops on a hellonancy subdomain
+          if (/\.hellonancy\.com$/.test(host)) return !LEGAL.test(path);
+          // Nancyflow store (apex, www., get.)
+          if (/^(?:get\.|www\.)?nancyflow\.(?:com|co\.uk|ca|co\.nz|de|nl|fr|it|se|dk)$/.test(host)) return !LEGAL.test(path);
+          return false;
+        }
+
+        function onCtaEvent(e) {
+          try {
+            // click = primary activation (mouse, modifier-click, keyboard Enter).
+            // auxclick also fires for right-click in Chrome, so only button 1.
+            if (e.type === 'click' ? e.button !== 0 : e.button !== 1) return;
+            if (handled) { if (handled.has(e)) return; handled.add(e); }
+            var t = e.target;
+            var a = t && t.closest ? t.closest('a[href]') : null;
+            if (!a || !isStoreCta(a)) return;
+            w._tfa = w._tfa || [];
+            w._tfa.push({ notify: 'event', name: 'click_cta', id: 2143240 });
+          } catch (err) { /* tracking must never break the page */ }
+        }
+
+        // Capture phase on document: runs before React/SPA handlers, so a
+        // stopPropagation() or re-route cannot swallow it. No preventDefault.
+        d.addEventListener('click', onCtaEvent, true);
+        d.addEventListener('auxclick', onCtaEvent, true);
+      })(window, document);
+      /* click_cta:end */
+    </script>
+    <!-- End of Taboola click_cta -->
+
     <!-- Reddit Pixel -->
     <script>
     !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j3xe4m7w7k79",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j3xe4m7w7k79');rdt('track', 'PageVisit');
